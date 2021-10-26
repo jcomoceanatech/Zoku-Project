@@ -1,0 +1,12 @@
+<list id="addressform_fieldid">
+  <value>ADDR1</value>
+  <value>ADDR2</value>
+  <value>ADDR3</value>
+  <value>ADDRESSEE</value>
+  <value>ADDRPHONE</value>
+  <value>ATTENTION</value>
+  <value>CITY</value>
+  <value>COUNTRY</value>
+  <value>STATE</value>
+  <value>ZIP</value>
+</list>
