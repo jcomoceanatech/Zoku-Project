@@ -1,0 +1,31 @@
+<list id="transactionform_sublistid">
+  <value feature="WORKFLOW">ACTIVEWORKFLOWS</value>
+  <value>ACTIVITIES</value>
+  <value feature="APPROVALROUTING">APPROVALS</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ARRNGRLRCDS</value>
+  <value feature="ADVBILLING">BILLINGSCHEDULE</value>
+  <value feature="ASYNCBIZEVENTSRAISING">BIZEVTHISTORY</value>
+  <value>CALLS</value>
+  <value>CASES</value>
+  <value>EVENTS</value>
+  <value feature="BILLSCOSTS">EXPCOST</value>
+  <value>EXPENSE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">EXPENSEPLANMESSAGE</value>
+  <value feature="GIFTCERTIFICATES">GIFTCERTREDEMPTION</value>
+  <value feature="GLAUDITNUMBERING">GLIMPACTCHANGES</value>
+  <value feature="INSTALLMENTS">INSTALLMENTS</value>
+  <value>ITEM</value>
+  <value feature="BILLSCOSTS">ITEMCOST</value>
+  <value feature="INTRANSITPAYMENTS">ITPRLRCDS</value>
+  <value>LINKS</value>
+  <value feature="DOCUMENTS">MEDIAITEM</value>
+  <value>MESSAGES</value>
+  <value feature="MULTIPARTNER">PARTNERS</value>
+  <value>PROMOTIONS</value>
+  <value feature="TEAMSELLING">SALESTEAM</value>
+  <value>SYSTEMNOTES</value>
+  <value>TASKS</value>
+  <value feature="TIMETRACKINGBILLSCOSTS">TIME</value>
+  <value>USERNOTES</value>
+  <value feature="WORKFLOW">WORKFLOWHISTORY</value>
+</list>

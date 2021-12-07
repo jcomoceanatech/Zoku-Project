@@ -1,0 +1,33 @@
+<list id="entryform_subtabid">
+  <value>CRMCONTACTS</value>
+  <value>ENTITYCURJURISDICTIONS</value>
+  <value>ENTITYEDUCATION</value>
+  <value feature="EXPENSEREPORTSANDMULTICURRENCY">ENTITYEXPREPTCURRENCIES</value>
+  <value>ENTITYHRPERSONAL</value>
+  <value>ENTITYHRWORKSTATUS</value>
+  <value>ENTITYJURISDICTIONS</value>
+  <value>ENTITYPAYFED</value>
+  <value>ENTITYPROMOCODES</value>
+  <value>ENTITYQUALIFICATION</value>
+  <value>ENTITYSUBSCRIPTIONS</value>
+  <value feature="JOBCOSTING">ENTITYSUBTAB_BBUDGET</value>
+  <value feature="JOBCOSTING">ENTITYSUBTAB_CBUDGET</value>
+  <value>ENTITYWORKFLOW</value>
+  <value>EVENTFILE</value>
+  <value>EVENTMEDIA</value>
+  <value feature="JOBCOSTING">EVENTSUBTAB_BBUDGET</value>
+  <value feature="JOBCOSTING">EVENTSUBTAB_CBUDGET</value>
+  <value>EVENTSUPPORT</value>
+  <value>EVENTWORKFLOW</value>
+  <value>ITEMINVENTORYNUMBERS</value>
+  <value>ITEMLOCATIONS</value>
+  <value>ITEMMATRIX</value>
+  <value>ITEMMEMBERS</value>
+  <value feature="ADVANCEDJOBS">ITEMPROJECTS</value>
+  <value>ITEMPROJECTS</value>
+  <value>ITEMRELITEMS</value>
+  <value>ITEMTRANSLATION</value>
+  <value>ITEMVENDORS</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMWORKFLOW</value>
+  <value>ITEMWORKFLOW</value>
+</list>

@@ -1,0 +1,1342 @@
+<list id="entryform_fieldid">
+  <value>ACADEMICYEAR</value>
+  <value>ACCESSLEVEL</value>
+  <value>ACCESSROLE</value>
+  <value>ACCOUNT</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">ACCOUNTINGBOOK</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ACCOUNTINGBOOK</value>
+  <value>ACCOUNTINGBOOK</value>
+  <value>ACCOUNTMAPPINGDESCRIPTION</value>
+  <value>ACCOUNTMAPPINGID</value>
+  <value>ACCOUNTMAPPINGKEY</value>
+  <value>ACCOUNTNUMBER</value>
+  <value feature="SUBSCRIPTIONBILLING">ACTION</value>
+  <value>ACTUALDELIVERYDATE</value>
+  <value>ACTUALRUNTIME</value>
+  <value>ACTUALSETUPTIME</value>
+  <value>ACTUALSHIPPINGDATE</value>
+  <value>ACTUALTIME</value>
+  <value>ACTUALWORK</value>
+  <value>ADATE</value>
+  <value>ADDR1</value>
+  <value>ADDR2</value>
+  <value>ADDR3</value>
+  <value>ADDRESS</value>
+  <value>ADDRESSEE</value>
+  <value>ADDRPHONE</value>
+  <value>ADVANCERENEWALPERIODNUMBER</value>
+  <value>ADVANCERENEWALPERIODUNIT</value>
+  <value>AEIC</value>
+  <value>AGING</value>
+  <value>ALCOHOLRECIPIENTTYPE</value>
+  <value>ALIENNUMBER</value>
+  <value>ALLDAYEVENT</value>
+  <value>ALLLOCATIONSCUSTOMERRETURN</value>
+  <value>ALLLOCATIONSFULFILLMENT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ALLOCATEDCONTRACTCOSTAMOUNT</value>
+  <value feature="RESOURCEALLOCATIONS">ALLOCATEDHOURS</value>
+  <value feature="RESOURCEALLOCATIONS">ALLOCATEDTIME</value>
+  <value feature="RESOURCEALLOCATIONS">ALLOCATEDWORK</value>
+  <value feature="ADVANCEDJOBS">ALLOCATEPAYROLLEXPENSES</value>
+  <value>ALLOCATIONAMOUNT</value>
+  <value>ALLOCATIONRESOURCE</value>
+  <value>ALLOCATIONTYPE</value>
+  <value feature="ADVANCEDJOBS">ALLOWALLRESOURCESFORTASKS</value>
+  <value>ALLOWANCE</value>
+  <value>ALLOWCROSSSUBCUSTOMERRETURN</value>
+  <value>ALLOWCROSSSUBFULFILLMENT</value>
+  <value>ALLOWEDSUBSIDIARIES</value>
+  <value>ALLOWEXPENSES</value>
+  <value feature="RESOURCEALLOCATIONS">ALLOWTASKTIMEFORRSRCALLOC</value>
+  <value>ALLOWTIME</value>
+  <value>ALTEMAIL</value>
+  <value feature="ITEMDEMANDPLANNING">ALTERNATEDEMANDSOURCEITEM</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ALTERNATEQUANTITY</value>
+  <value>ALTERNATESOURCEITEM</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ALTERNATEUNITS</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ALTERNATEUNITSTYPE</value>
+  <value>ALTNAME</value>
+  <value feature="NOTADVANCEDJOBS">ALTPHONE</value>
+  <value>ALTPHONE</value>
+  <value>AMORTIZATIONENDDATE</value>
+  <value>AMORTIZATIONPERIOD</value>
+  <value>AMORTIZATIONSCHEDULE</value>
+  <value>AMORTIZATIONSTARTDATE</value>
+  <value>AMORTIZATIONTEMPLATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">AMOUNT</value>
+  <value>AMOUNT</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">AMOUNTSOURCE</value>
+  <value>AMOUNTSOURCE</value>
+  <value>ANALYSISDURATION</value>
+  <value>APPLYDISCOUNTTO</value>
+  <value feature="JOBCOSTING">APPLYPROJECTEXPENSETYPETOALL</value>
+  <value feature="SUBSCRIPTIONBILLING">APPROVALDATE</value>
+  <value>APPROVALLIMIT</value>
+  <value feature="SUBSCRIPTIONBILLING">APPROVALSTATUS</value>
+  <value>APPROVALSTATUS</value>
+  <value>APPROVER</value>
+  <value>ARRANGEMENTLEVELRECLASS</value>
+  <value>ASSETACCOUNT</value>
+  <value>ASSIGNED</value>
+  <value>ASSIGNEDWEBSITE</value>
+  <value>ASSIGNTASKS</value>
+  <value>ASSISTANT</value>
+  <value>ASSISTANTPHONE</value>
+  <value feature="ATPORSUPPLYALLOC">ATPLEADTIME</value>
+  <value feature="NOTMLIANDAVAILABLETOPROMISE">ATPLEADTIME</value>
+  <value feature="AVAILABLETOPROMISE">ATPMETHOD</value>
+  <value>ATRIGGER</value>
+  <value>ATTENTION</value>
+  <value>AUDIENCE</value>
+  <value>AUTHWORKDATE</value>
+  <value feature="MFGROUTING">AUTOCALCULATELAG</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">AUTOEXPANDKITFORREVENUEMGMT</value>
+  <value>AUTOLEADTIME</value>
+  <value feature="BILLINGACCOUNTS">AUTONAME</value>
+  <value feature="SUBSCRIPTIONBILLING">AUTONAME</value>
+  <value>AUTONAME</value>
+  <value>AUTOPARTNERCODE</value>
+  <value>AUTOPREFERREDSTOCKLEVEL</value>
+  <value>AUTORENEWAL</value>
+  <value>AUTOREORDERPOINT</value>
+  <value>AVAILABLEFORALLASSEMBLIES</value>
+  <value>AVAILABLEFORALLLOCATIONS</value>
+  <value feature="TIMEOFFMANAGEMENT">AVAILABLENOW</value>
+  <value>AVAILABLEOFFLINE</value>
+  <value>AVAILABLETOPARTNERS</value>
+  <value>AVERAGECOST</value>
+  <value feature="ITEMDEMANDPLANNING">BACKWARDCONSUMPTIONDAYS</value>
+  <value>BACKWARDCONSUMPTIONDAYS</value>
+  <value feature="PAYABLES">BALANCE</value>
+  <value feature="RECEIVABLES">BALANCE</value>
+  <value>BALANCEPRIMARY</value>
+  <value>BANKTRANSACTIONCODE</value>
+  <value>BASEBOOK</value>
+  <value>BASECOST</value>
+  <value>BASELINE</value>
+  <value>BASEUNIT</value>
+  <value feature="COMPENSATIONTRACKING">BASEWAGE</value>
+  <value feature="COMPENSATIONTRACKING">BASEWAGETYPE</value>
+  <value feature="JOBCOSTING">BBUDGETSHOWCALCULATEDLINES</value>
+  <value feature="JOBCOSTING">BBUDGETUSECALCULATEDVALUES</value>
+  <value>BCN</value>
+  <value>BEFORESUBSCRIPTIONENDDATE</value>
+  <value>BILLADDRESS</value>
+  <value>BILLADDRESSLIST</value>
+  <value>BILLDATE</value>
+  <value feature="ADVRECEIVING">BILLEXCHRATEVARIANCEACCT</value>
+  <value feature="BILLINGACCOUNTS">BILLINGACCOUNT</value>
+  <value feature="HIDDEN_BILLINGACCOUNTONPROJECT">BILLINGACCOUNT</value>
+  <value feature="SUBSCRIPTIONBILLING">BILLINGACCOUNT</value>
+  <value>BILLINGACCOUNT</value>
+  <value>BILLINGACCOUNTSTARTDATE</value>
+  <value feature="BILLINGCLASSES">BILLINGCLASS</value>
+  <value>BILLINGCLASS</value>
+  <value>BILLINGITEM</value>
+  <value>BILLINGMODE</value>
+  <value feature="BILLINGRATECARDS">BILLINGRATECARD</value>
+  <value>BILLINGRATECARD</value>
+  <value feature="ADVANCEDJOBS">BILLINGSCHEDULE</value>
+  <value feature="BILLINGACCOUNTS">BILLINGSCHEDULE</value>
+  <value>BILLINGSCHEDULE</value>
+  <value>BILLINGSUBSCRIPTIONSTATUS</value>
+  <value feature="INTERCOMPTIMEEXPMSC">BILLINGSUBSIDIARY</value>
+  <value>BILLINGTRANSACTIONFORM</value>
+  <value>BILLINGTRANSACTIONTYPE</value>
+  <value>BILLOFLADING</value>
+  <value feature="ADVANCEDBILLOFMATERIALS">BILLOFMATERIALS</value>
+  <value>BILLOFMATERIALS</value>
+  <value>BILLPAY</value>
+  <value feature="ADVRECEIVING">BILLPRICEVARIANCEACCT</value>
+  <value feature="ADVRECEIVING">BILLQTYVARIANCEACCT</value>
+  <value>BILLTO</value>
+  <value>BIRTHDATE</value>
+  <value>BOMQUANTITY</value>
+  <value>BONUSAMOUNTABSOLUTE</value>
+  <value>BONUSAMOUNTPERCENTAGE</value>
+  <value>BONUSAWARDDATE</value>
+  <value>BONUSCOMMENT</value>
+  <value>BONUSCURRENCY</value>
+  <value>BONUSEMPLOYEE</value>
+  <value>BONUSEMPLOYEEBASEWAGE</value>
+  <value>BONUSEMPLOYEEBASEWAGETYPE</value>
+  <value>BONUSEMPLOYEECURRENCY</value>
+  <value>BONUSSTATUS</value>
+  <value feature="VARIABLE_PAY_TBRBCT">BONUSTARGET</value>
+  <value feature="VARIABLE_PAY_TBRBCT">BONUSTARGETCOMMENT</value>
+  <value feature="VARIABLE_PAY_TBRBCT">BONUSTARGETPAYFREQUENCY</value>
+  <value feature="VARIABLE_PAY_TBRBCT">BONUSTARGETTYPE</value>
+  <value>BONUSTYPE</value>
+  <value>BUILDBROKEN</value>
+  <value>BUILDENTIREASSEMBLY</value>
+  <value>BUILDFIXED</value>
+  <value>BUILDTARGET</value>
+  <value feature="DEMANDPLANNING_MLI_WORKORDERS">BUILDTIME</value>
+  <value feature="ITEMDEMANDPLANNING_WORKORDERS">BUILDTIME</value>
+  <value feature="SFA">BUYINGREASON</value>
+  <value feature="SFA">BUYINGTIMEFRAME</value>
+  <value>CALCULATEDAMOUNT</value>
+  <value feature="ADVANCEDJOBS">CALCULATEDENDDATE</value>
+  <value feature="ADVANCEDJOBS">CALCULATEDENDDATEBASELINE</value>
+  <value feature="PLANNEDWORK">CALCULATEDSTARTDATE</value>
+  <value feature="PLANNEDWORK">CALCULATEDSTARTDATEBASELINE</value>
+  <value feature="PLANNEDWORK">CALCULATEDWORK</value>
+  <value feature="PLANNEDWORK">CALCULATEDWORKBASELINE</value>
+  <value>CAMPAIGNCATEGORY</value>
+  <value>CAMPAIGNEVENT</value>
+  <value>CAMPAIGNID</value>
+  <value>CANBEAUTOAPPLIED</value>
+  <value>CANNOTBECOMBINED</value>
+  <value>CAP</value>
+  <value>CAPHOURS</value>
+  <value>CAPMONEY</value>
+  <value>CAPTYPE</value>
+  <value>CASENUMBER</value>
+  <value>CASETASKEVENT</value>
+  <value feature="BILLINGACCOUNTS">CASHSALEFORM</value>
+  <value>CATALOGTYPE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">CATCHUPPERIOD</value>
+  <value>CATCHUPPERIOD</value>
+  <value>CATEGORY</value>
+  <value feature="JOBCOSTINGRESALLOCATIONS">CBUDGETLABORBUDGETFROMALLOC</value>
+  <value feature="JOBCOSTING">CBUDGETSHOWCALCULATEDLINES</value>
+  <value feature="JOBCOSTING">CBUDGETUSECALCULATEDVALUES</value>
+  <value feature="CHARGEBASEDBILLING">CHARGEAMOUNTBILLED</value>
+  <value feature="CHARGEBASEDBILLING">CHARGEAMOUNTHOLDFORBILLING</value>
+  <value feature="CHARGEBASEDBILLING">CHARGEAMOUNTPENDING</value>
+  <value feature="CHARGEBASEDBILLING">CHARGEAMOUNTREADYFORBILLING</value>
+  <value feature="CHARGEBASEDBILLING">CHARGEAMOUNTREMAINING</value>
+  <value>CHARGEDATE</value>
+  <value>CHARGEEMPLOYEE</value>
+  <value feature="CHARGEBASEDBILLING">CHARGEEXPENSEAMOUNT</value>
+  <value feature="CHARGEBASEDBILLING">CHARGELABORAMOUNT</value>
+  <value>CHARGERULETYPE</value>
+  <value>CHARGETYPE</value>
+  <value>CITY</value>
+  <value>CITYZIP</value>
+  <value feature="CLASSES">CLASS</value>
+  <value feature="SUBSCRIPTIONBILLING">CLASS</value>
+  <value>CLASS</value>
+  <value>CLEVEL</value>
+  <value>CLICKSTREAM</value>
+  <value>CODE</value>
+  <value>CODEPATTERN</value>
+  <value>COGSACCOUNT</value>
+  <value>COMBINATIONTYPE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">COMMENTS</value>
+  <value>COMMENTS</value>
+  <value>COMMISSIONPAYMENTPREFERENCE</value>
+  <value>COMPANY</value>
+  <value>COMPANYNAME</value>
+  <value feature="COMPENSATIONTRACKING">COMPENSATIONCURRENCY</value>
+  <value>COMPLETEDDATE</value>
+  <value>COMPLETEDQUANTITY</value>
+  <value>COMPONENTYIELD</value>
+  <value>CONCURRENTWEBSERVICESUSER</value>
+  <value>CONFIGID</value>
+  <value>CONNECTIVITYMETHOD</value>
+  <value>CONSOLAGING</value>
+  <value>CONSOLBALANCE</value>
+  <value>CONSOLDAYSOVERDUE</value>
+  <value>CONSOLDEPOSITBALANCE</value>
+  <value>CONSOLOVERDUEBALANCE</value>
+  <value>CONSOLUNBILLEDORDERS</value>
+  <value>CONSTRAINTTYPE</value>
+  <value>CONSUMPTIONUNIT</value>
+  <value>CONTACT</value>
+  <value>CONTACTCAMPAIGNEVENT</value>
+  <value>CONTACTSOURCE</value>
+  <value>CONTACTSOURCECAMPAIGNCATEGORY</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">CONTINGENTREVENUEHANDLING</value>
+  <value>CONTINGENTREVENUEHANDLING</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">CONTRAACCOUNT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">CONTRACTCOSTALLOCATIONPCT</value>
+  <value>CONTRACTEXPENSEACCT</value>
+  <value>CONTRACTEXPENSEOFFSETACCT</value>
+  <value>CONVCOSTPERCUSTOMER</value>
+  <value>CONVERSIONS</value>
+  <value>COPYDESCRIPTION</value>
+  <value feature="ACCOUNTING">COST</value>
+  <value>COST</value>
+  <value feature="INVENTORY">COSTACCOUNTINGSTATUS</value>
+  <value>COSTAMORTIZATIONAMOUNT</value>
+  <value feature="STANDARDCOSTING">COSTCATEGORY</value>
+  <value>COSTCHART</value>
+  <value>COSTESTIMATE</value>
+  <value>COSTESTIMATETYPE</value>
+  <value>COSTINGGROUPCURRENCY</value>
+  <value feature="MFGROUTING">COSTINGLOTSIZE</value>
+  <value>COSTINGMETHOD</value>
+  <value>COSTPERCUSTOMER</value>
+  <value>COUNTRY</value>
+  <value>COUNTRYOFMANUFACTURE</value>
+  <value>COUPONCODEFILE</value>
+  <value>COURSEID</value>
+  <value feature="BILLINGRATECARDS">CREATECHARGERULE</value>
+  <value feature="BILLINGACCOUNTS">CREATEDBY</value>
+  <value feature="SUBSCRIPTIONBILLING">CREATEDBY</value>
+  <value>CREATEDBY</value>
+  <value feature="BILLINGACCOUNTS">CREATEDDATE</value>
+  <value>CREATEDDATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">CREATEDFROM</value>
+  <value>CREATEDFROM</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">CREATEEXPENSEPLANSON</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">CREATEREVENUEPLANSON</value>
+  <value>CREATEREVENUEPLANSON</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">CREATIONTRIGGEREDBY</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">CREATIONTRIGGEREDBY</value>
+  <value>CREDITDEBIT</value>
+  <value>CREDITHOLDOVERRIDE</value>
+  <value>CREDITLIMIT</value>
+  <value>CREDITMEMO</value>
+  <value>CREDITMEMOLINE</value>
+  <value>CSCHOOL</value>
+  <value>CUMULATIVEPERCENTCOMPLETE</value>
+  <value feature="MULTICURRENCY">CURRENCY</value>
+  <value feature="SUBSCRIPTIONBILLING">CURRENCY</value>
+  <value>CURRENCY</value>
+  <value>CURRENCYFORMATSAMPLE</value>
+  <value>CUSTOMDIMENSION</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">CUSTOMER</value>
+  <value feature="BILLINGACCOUNTS">CUSTOMER</value>
+  <value feature="SUBSCRIPTIONBILLING">CUSTOMER</value>
+  <value feature="TIMESHEETS">CUSTOMER</value>
+  <value>CUSTOMER</value>
+  <value>CUSTOMERCATEGORY</value>
+  <value feature="BILLINGACCOUNTS">CUSTOMERDEFAULT</value>
+  <value>CUSTOMERGROUP</value>
+  <value>CUSTOMERS</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">CUSTOMFORM</value>
+  <value feature="BILLINGACCOUNTS">CUSTOMFORM</value>
+  <value feature="INVENTORYSTATUS">CUSTOMFORM</value>
+  <value feature="SUBSCRIPTIONBILLING">CUSTOMFORM</value>
+  <value feature="WMSSYSTEM">CUSTOMFORM</value>
+  <value>CUSTOMFORM</value>
+  <value feature="INVENTORY">CUSTRETURNVARIANCEACCOUNT</value>
+  <value>DATECONVERTEDTOINV</value>
+  <value feature="SUBSCRIPTIONBILLING">DATECREATED</value>
+  <value>DATECREATED</value>
+  <value>DATEENROLLED</value>
+  <value>DATERUN</value>
+  <value>DAYSBEFOREEXPIRATION</value>
+  <value feature="RECEIVABLES">DAYSOVERDUE</value>
+  <value>DECLAREDVALUE</value>
+  <value feature="EXPREPORTS">DEFAULTACCTCORPCARDEXP</value>
+  <value>DEFAULTADDRESS</value>
+  <value feature="SUPPLYALLOCATION">DEFAULTALLOCATIONSTRATEGY</value>
+  <value feature="ACCOUNTING">DEFAULTBANKACCOUNT</value>
+  <value feature="EXPENSEREPORTSANDMULTICURRENCY">DEFAULTEXPENSEREPORTCURRENCY</value>
+  <value feature="MULTISHIPTO">DEFAULTITEMSHIPMETHOD</value>
+  <value feature="ADVANCEDJOBS">DEFAULTJOBRESOURCEROLE</value>
+  <value feature="COMMITABLEORDERS">DEFAULTORDERPRIORITY</value>
+  <value>DEFAULTRENEWALMETHOD</value>
+  <value>DEFAULTRENEWALPLAN</value>
+  <value>DEFAULTRENEWALPRICEBOOK</value>
+  <value>DEFAULTRENEWALTERM</value>
+  <value>DEFAULTRENEWALTRANTYPE</value>
+  <value feature="ADVRECEIVING">DEFAULTRETURNCOST</value>
+  <value feature="ASSEMBLIES">DEFAULTREVISION</value>
+  <value feature="TAX_OVERHAULING">DEFAULTTAXREG</value>
+  <value>DEFERCONTRACTEXPENSEACCT</value>
+  <value>DEFERRALACCOUNT</value>
+  <value>DEFERREDREVENUEACCOUNT</value>
+  <value>DEFERREVREC</value>
+  <value>DELIVERED</value>
+  <value>DEMANDLOCATION</value>
+  <value>DEMANDLOCATIONDATE</value>
+  <value>DEMANDLOCATIONSUBSIDIARY</value>
+  <value>DEMANDMODIFIER</value>
+  <value feature="ITEMDEMANDPLANNING">DEMANDSOURCE</value>
+  <value feature="ITEMDEMANDPLANNING">DEMANDTIMEFENCE</value>
+  <value>DEMANDTIMEFENCE</value>
+  <value feature="DEPARTMENTS">DEPARTMENT</value>
+  <value feature="SUBSCRIPTIONBILLING">DEPARTMENT</value>
+  <value>DEPARTMENT</value>
+  <value feature="RECEIVABLES">DEPOSITBALANCE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">DESCRIPTION</value>
+  <value feature="INVENTORYSTATUS">DESCRIPTION</value>
+  <value feature="SUBSCRIPTIONBILLING">DESCRIPTION</value>
+  <value feature="WMSSYSTEM">DESCRIPTION</value>
+  <value>DESCRIPTION</value>
+  <value>DESTINATIONACCOUNT</value>
+  <value>DESTINATIONCLASS</value>
+  <value>DESTINATIONDEPARTMENT</value>
+  <value>DESTINATIONLOCATION</value>
+  <value>DIMENSION1</value>
+  <value>DIMENSION10</value>
+  <value>DIMENSION2</value>
+  <value>DIMENSION3</value>
+  <value>DIMENSION4</value>
+  <value>DIMENSION5</value>
+  <value>DIMENSION6</value>
+  <value>DIMENSION7</value>
+  <value>DIMENSION8</value>
+  <value>DIMENSION9</value>
+  <value>DIRECTDEPOSIT</value>
+  <value>DIRECTION</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">DIRECTREVENUEPOSTING</value>
+  <value>DISCOUNT</value>
+  <value>DISCOUNTEDSALESAMOUNT</value>
+  <value>DISPLAYLINEDISCOUNTS</value>
+  <value feature="SUBSCRIPTIONBILLING">DISPLAYNAME</value>
+  <value>DISPLAYNAME</value>
+  <value>DISPLAYONLINE</value>
+  <value>DISPLAYSYMBOL</value>
+  <value>DISTANCEUNIT</value>
+  <value feature="DISTRIBUTIONRESOURCEPLANNING">DISTRIBUTIONCATEGORY</value>
+  <value>DISTRIBUTIONCATEGORY</value>
+  <value feature="DISTRIBUTIONRESOURCEPLANNING">DISTRIBUTIONNETWORK</value>
+  <value>DISTRIBUTIONNETWORK</value>
+  <value>DOB</value>
+  <value>DOCNUMCREATEDFROM</value>
+  <value>DONTSHOWPRICE</value>
+  <value>DRACCOUNT</value>
+  <value>DRIVERSLICENSENUMBER</value>
+  <value feature="DROPSHIPMENTS">DROPSHIPEXPENSEACCOUNT</value>
+  <value>DUEDATE</value>
+  <value>DUPLICATEOF</value>
+  <value feature="ASSEMBLIES">EFFECTIVEBOMCONTROL</value>
+  <value feature="SUBSCRIPTIONBILLING">EFFECTIVEDATE</value>
+  <value>EFFECTIVEDATE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">EFFECTIVEENDDATE</value>
+  <value>EFFECTIVEENDDATE</value>
+  <value>EFFECTIVEPERIOD</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">EFFECTIVESTARTDATE</value>
+  <value>EFFECTIVESTARTDATE</value>
+  <value>ELEMENTDATE</value>
+  <value feature="COMMISSIONS">ELIGIBLEFORCOMMISSION</value>
+  <value feature="PARTNERCOMMISSIONS">ELIGIBLEFORCOMMISSION</value>
+  <value feature="NOTADVANCEDJOBS">EMAIL</value>
+  <value>EMAIL</value>
+  <value>EMAILASSIGNEE</value>
+  <value>EMAILCELLS</value>
+  <value>EMAILEMPLOYEES</value>
+  <value>EMAILFORM</value>
+  <value>EMAILPREFERENCE</value>
+  <value>EMPLOYEE</value>
+  <value>EMPLOYEEFTESTATUS</value>
+  <value>EMPLOYEESTATUS</value>
+  <value>EMPLOYEETYPE</value>
+  <value>ENABLELIMITLOCATIONS</value>
+  <value feature="PERIODENDJOURNALENTRIES">ENABLEPERIODENDJOURNALS</value>
+  <value>ENABLERADIUS</value>
+  <value>ENDDATE</value>
+  <value>ENDDATEBASELINE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">ENDDATECHANGEIMPACT</value>
+  <value>ENDDATECHANGEIMPACT</value>
+  <value>ENDTIME</value>
+  <value>ENFORCEMINQTYINTERNALLY</value>
+  <value>ENTITY</value>
+  <value>ENTITYACCOUNT</value>
+  <value>ENTITYID</value>
+  <value>ENTITYSTATUS</value>
+  <value>ESCALATIONMESSAGE</value>
+  <value feature="SFA">ESTIMATEDBUDGET</value>
+  <value feature="NOTJOBCOSTING">ESTIMATEDCOST</value>
+  <value>ESTIMATEDCOST</value>
+  <value feature="JOBCOSTING">ESTIMATEDCOSTJC</value>
+  <value feature="ADVANCEDJOBS">ESTIMATEDGROSSPROFIT</value>
+  <value feature="ADVANCEDJOBS">ESTIMATEDGROSSPROFITPERCENT</value>
+  <value feature="ADVANCEDJOBS_NOTJOBCOSTING">ESTIMATEDLABORCOST</value>
+  <value>ESTIMATEDLABORCOST</value>
+  <value feature="ADVANCEDJOBS">ESTIMATEDLABORCOSTBASELINE</value>
+  <value feature="ADVANCEDJOBS_NOTJOBCOSTING">ESTIMATEDLABORCOSTBASELINE</value>
+  <value feature="ADVANCEDJOBS">ESTIMATEDLABORREVENUE</value>
+  <value feature="ADVANCEDJOBS_NOTJOBCOSTING">ESTIMATEDLABORREVENUE</value>
+  <value>ESTIMATEDMARGIN</value>
+  <value feature="NOTJOBCOSTING">ESTIMATEDREVENUE</value>
+  <value>ESTIMATEDREVENUE</value>
+  <value feature="JOBCOSTING">ESTIMATEDREVENUEJC</value>
+  <value>ESTIMATEDREVRECENDDATE</value>
+  <value>ESTIMATEDTIME</value>
+  <value feature="ADVANCEDJOBSANDNOTPLANNEDWORK">ESTIMATEDTIMEOVERRIDE</value>
+  <value>ESTIMATEDTIMEOVERRIDE</value>
+  <value feature="ADVANCEDJOBS">ESTIMATEDTIMEOVERRIDEBASELINE</value>
+  <value feature="ADVANCEDJOBSANDNOTPLANNEDWORK">ESTIMATEDTIMEOVERRIDEBASELINE</value>
+  <value feature="NOTPLANNEDWORK">ESTIMATEDWORK</value>
+  <value>ESTIMATEDWORK</value>
+  <value feature="NOTPLANNEDWORK">ESTIMATEDWORKBASELINE</value>
+  <value>ESTIMATEREVRECTEMPLATE</value>
+  <value>ETHNICITY</value>
+  <value>EVENTDATE</value>
+  <value>EVENTID</value>
+  <value>EVENTPURPOSE</value>
+  <value>EVENTTYPE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">EXCHANGERATE</value>
+  <value>EXCHANGERATE</value>
+  <value>EXCLUDEFROMSITEMAP</value>
+  <value>EXCLUDEITEMS</value>
+  <value>EXPAMTMULTIPLIER</value>
+  <value>EXPECTEDDELIVERYDATE</value>
+  <value>EXPECTEDRATE</value>
+  <value>EXPECTEDREVENUE</value>
+  <value>EXPECTEDSHIPPINGDATE</value>
+  <value>EXPENSEACCOUNT</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">EXPENSEAMORTIZATIONRULE</value>
+  <value feature="APPROVALROUTING">EXPENSELIMIT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">EXPENSEMIGRATEADJACCOUNT</value>
+  <value>EXPRBUILDER</value>
+  <value>EXTERNALABSTRACT</value>
+  <value>EXTERNALDETAILS</value>
+  <value>EXTERNALDOCUMENTNUMBER</value>
+  <value feature="INVENTORYSTATUS">EXTERNALID</value>
+  <value feature="WMSSYSTEM">EXTERNALID</value>
+  <value>EXTERNALID</value>
+  <value>EXTRA</value>
+  <value>FAIRVALUE</value>
+  <value>FAIRVALUEFORMULA</value>
+  <value>FAIRVALUEOVERRIDE</value>
+  <value>FAIRVALUERANGEPOLICY</value>
+  <value>FAMILY</value>
+  <value>FANAME</value>
+  <value feature="NOTADVANCEDJOBS">FAX</value>
+  <value>FAX</value>
+  <value>FEATUREDDESCRIPTION</value>
+  <value>FEDSTATUS</value>
+  <value>FEDUNEMP</value>
+  <value>FEDWITH</value>
+  <value>FEE</value>
+  <value>FEMAIL</value>
+  <value>FILLPASSWORD</value>
+  <value>FINANCIALINSTITUTION</value>
+  <value feature="ADVANCEDJOBS">FINISHBYDATE</value>
+  <value feature="ISSUEDB">FIRSTISSUEATTACHED</value>
+  <value feature="ISSUEDB">FIRSTISSUEREMOVED</value>
+  <value>FIRSTNAME</value>
+  <value>FIRSTUPDATED</value>
+  <value>FIRSTVISIT</value>
+  <value feature="ITEMDEMANDPLANNING">FIXEDLOTSIZE</value>
+  <value>FNAME</value>
+  <value feature="ADVANCEDJOBSCHARGEBASEDBILLING">FORECASTCHARGERUNONDEMAND</value>
+  <value>FORECASTENDDATE</value>
+  <value>FORECASTSTARTDATE</value>
+  <value>FORMATPROFILE</value>
+  <value feature="ITEMDEMANDPLANNING">FORWARDCONSUMPTIONDAYS</value>
+  <value>FORWARDCONSUMPTIONDAYS</value>
+  <value>FRAUDRISK</value>
+  <value>FREESHIPMETHOD</value>
+  <value feature="BILLINGACCOUNTS">FREQUENCY</value>
+  <value>FREQUENCY</value>
+  <value>FROMSUBSIDIARY</value>
+  <value>FULFILLMENTPRIORITYLEVEL</value>
+  <value feature="SUPPLYCHAINCONTROLTOWER">FUTUREHORIZON</value>
+  <value>FUTUREHORIZON</value>
+  <value>FUTUREHORIZONDATE</value>
+  <value>FXACCOUNT</value>
+  <value>FXRATE</value>
+  <value feature="MULTILOCINVT">GAINLOSSACCOUNT</value>
+  <value>GAINLOSSOFFSETTINGACCTTYPE</value>
+  <value>GDATE</value>
+  <value>GENDER</value>
+  <value>GENERATEACCRUALS</value>
+  <value>GENERATEMODIFICATIONELEMENTS</value>
+  <value>GIVEACCESS</value>
+  <value>GLOBALSUBSCRIPTIONSTATUS</value>
+  <value>GPATOTAL</value>
+  <value>GRADE</value>
+  <value>GROUPINGSTRATEGY</value>
+  <value feature="INVOICEGROUP">GROUPINVOICES</value>
+  <value>GROUPORDER</value>
+  <value>HANDLINGCOST</value>
+  <value>HASOFFLINEACCESS</value>
+  <value>HEIGHT</value>
+  <value>HELPDESK</value>
+  <value>HIGHVALUE</value>
+  <value>HIGHVALUEPERCENT</value>
+  <value>HIREDATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">HOLDREVENUERECOGNITION</value>
+  <value>HOLDREVENUERECOGNITION</value>
+  <value>HOMEPHONE</value>
+  <value>HOURS</value>
+  <value>I9VERIFIED</value>
+  <value>ID</value>
+  <value feature="BILLINGACCOUNTS">IDNUMBER</value>
+  <value feature="SUBSCRIPTIONBILLING">IDNUMBER</value>
+  <value>IDNUMBER</value>
+  <value>IMAGE</value>
+  <value>IMMEDIATEDOWNLOAD</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">INACTIVE</value>
+  <value feature="BILLINGACCOUNTS">INACTIVE</value>
+  <value feature="INVENTORYSTATUS">INACTIVE</value>
+  <value>INACTIVE</value>
+  <value>INBOUNDEMAIL</value>
+  <value>INCLUDECHILDREN</value>
+  <value feature="ADVANCEDJOBS">INCLUDECRMTASKSINTOTALS</value>
+  <value feature="SUBSCRIPTIONBILLING">INCLUDEDQUANTITY</value>
+  <value feature="SUBSCRIPTIONBILLING">INCLUDEDUSAGE</value>
+  <value>INCLUDEINRENEWAL</value>
+  <value>INCLUDESTARTENDLINES</value>
+  <value feature="SUBSCRIPTIONBILLING">INCOMEACCOUNT</value>
+  <value>INCOMEACCOUNT</value>
+  <value>INCOMINGMESSAGE</value>
+  <value feature="PURCHASEORDERS">INCOTERM</value>
+  <value>INCOTERM</value>
+  <value>INHERITIPRULES</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">INITIALAMOUNT</value>
+  <value>INITIALAMOUNT</value>
+  <value>INITIALRESPONSETIME</value>
+  <value>INITIALS</value>
+  <value feature="SUBSCRIPTIONBILLING">INITIALTERM</value>
+  <value>INITIALTERM</value>
+  <value>INPUTQUANTITY</value>
+  <value feature="INTERCOMPANYAUTOELIMINATION">INTERCOCOGSACCOUNT</value>
+  <value feature="INTERCOMPANYAUTOELIMINATION">INTERCODEFREVACCOUNT</value>
+  <value feature="INTERCOMPANYAUTOELIMINATION">INTERCOEXPENSEACCOUNT</value>
+  <value feature="INTERCOMPANYAUTOELIMINATION">INTERCOINCOMEACCOUNT</value>
+  <value feature="INVENTORYSTATUS">INTERNALID</value>
+  <value feature="WMSSYSTEM">INTERNALID</value>
+  <value>INTERNALID</value>
+  <value>INTERNALONLY</value>
+  <value feature="INTRANSITPAYMENTS">INTRANSITBALANCE</value>
+  <value feature="INVENTORYSTATUS">INVENTORYAVAILABLE</value>
+  <value feature="INVENTORYSTATUS">INVENTORYAVAILFORALLOC</value>
+  <value feature="STANDARDCOSTING">INVENTORYCOSTTEMPLATE</value>
+  <value feature="STANDARDCOSTING">INVENTORYSTANDARDCOST</value>
+  <value>INVENTORYSUBSIDIARY</value>
+  <value>INVOICE</value>
+  <value feature="BILLINGACCOUNTS">INVOICEFORM</value>
+  <value>INVOICELINE</value>
+  <value>INVTCLASSIFICATION</value>
+  <value>INVTCOUNTINTERVAL</value>
+  <value>IPADDRESSRULE</value>
+  <value>IS1099ELIGIBLE</value>
+  <value>ISACCOUNTMAPPINGINACTIVE</value>
+  <value>ISADJUSTMENTONLY</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">ISAUTOLOCASSIGNMENTALLOWED</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">ISAUTOLOCASSIGNMENTSUSPENDED</value>
+  <value>ISBILLABLE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ISBOMITEMTYPE</value>
+  <value feature="SFA">ISBUDGETAPPROVED</value>
+  <value>ISCONSOLIDATED</value>
+  <value>ISDEFAULT</value>
+  <value>ISDONATIONITEM</value>
+  <value>ISDROPSHIPITEM</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">ISELIMINATE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ISELIMINATE</value>
+  <value feature="ADVANCEDJOBS">ISEXEMPT</value>
+  <value feature="ADVANCEDJOBS">ISEXEMPTTIME</value>
+  <value>ISFORRESCHEDULE</value>
+  <value>ISFULFILLABLE</value>
+  <value feature="GCO">ISGCOCOMPLIANT</value>
+  <value feature="SUBSCRIPTIONBILLING">ISINACTIVE</value>
+  <value feature="WMSSYSTEM">ISINACTIVE</value>
+  <value>ISINACTIVE</value>
+  <value>ISINDIVIDUAL</value>
+  <value>ISINTERCOMPANY</value>
+  <value feature="ADVANCEDJOBS">ISJOBMANAGER</value>
+  <value>ISJOBRESOURCE</value>
+  <value>ISJOBRESOURCEVEND</value>
+  <value>ISONLINE</value>
+  <value>ISOWNER</value>
+  <value feature="WORKORDERS">ISPHANTOM</value>
+  <value>ISPRETAX</value>
+  <value>ISPRIMARY</value>
+  <value>ISPRIVATE</value>
+  <value feature="ADVANCEDJOBS">ISPRODUCTIVE</value>
+  <value feature="ADVANCEDJOBS">ISPRODUCTIVETIME</value>
+  <value>ISPUBLIC</value>
+  <value>ISREVIEWED</value>
+  <value>ISSALESREP</value>
+  <value>ISSHOWSTOPPER</value>
+  <value>ISSPECIALORDERITEM</value>
+  <value>ISSPECIALWORKORDERITEM</value>
+  <value feature="STOREPICKUP">ISSTOREPICKUPALLOWED</value>
+  <value>ISSUE</value>
+  <value>ISSUEABSTRACT</value>
+  <value>ISSUENUMBER</value>
+  <value feature="ISSUEDB">ISSUEPRODUCT</value>
+  <value>ISSUEPRODUCT</value>
+  <value>ISSUEROLE</value>
+  <value>ISSUESTATUS</value>
+  <value>ISSUETAGS</value>
+  <value>ISSUETYPE</value>
+  <value>ISSUPPORTREP</value>
+  <value feature="NOTADVTAXENGINE">ISTAXABLE</value>
+  <value>ISTRANCODEMAPPINGEXCLUDE</value>
+  <value>ISTRANCODEMAPPINGINACTIVE</value>
+  <value feature="ADVANCEDJOBS">ISUTILIZED</value>
+  <value feature="ADVANCEDJOBS">ISUTILIZEDTIME</value>
+  <value>ISVSOEBUNDLE</value>
+  <value>ISVSOEPRICE</value>
+  <value feature="MFGWORKINPROCESS">ISWIP</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">ITEM</value>
+  <value>ITEM</value>
+  <value>ITEMACCOUNT</value>
+  <value feature="MULTISHIPTO">ITEMCARRIER</value>
+  <value>ITEMDESCRIPTION</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMID</value>
+  <value>ITEMID</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ITEMLABORCOSTAMOUNT</value>
+  <value>ITEMNAMENUMBER</value>
+  <value>ITEMPROCESSFAMILY</value>
+  <value>ITEMPROCESSGROUP</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ITEMRESALECOSTAMOUNT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ITEMREVENUECATEGORY</value>
+  <value>ITEMREVENUECATEGORY</value>
+  <value feature="MULTISHIPTO">ITEMSHIPMETHOD</value>
+  <value>ITEMSOURCE</value>
+  <value>ITEMTYPE</value>
+  <value>JOB</value>
+  <value feature="ADVANCEDJOBS">JOBBILLINGTYPE</value>
+  <value>JOBDESCRIPTION</value>
+  <value feature="ADVANCEDJOBS">JOBITEM</value>
+  <value feature="ADVANCEDJOBS">JOBPRICE</value>
+  <value>JOBTYPE</value>
+  <value>JOURNALENTRY</value>
+  <value>KEYWORD</value>
+  <value>KEYWORDS</value>
+  <value>LABORCOST</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">LABORDEFERREDEXPENSEACCT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">LABOREXPENSEACCT</value>
+  <value>LABORPRICE</value>
+  <value>LABORRESOURCES</value>
+  <value feature="LANDEDCOST">LANDEDCOSTALLOCATIONMETHOD</value>
+  <value feature="LANDEDCOST">LANDEDCOSTAMOUNT</value>
+  <value feature="LANDEDCOST">LANDEDCOSTCOSTCATEGORY</value>
+  <value feature="MULTICURRENCYLANDEDCOST">LANDEDCOSTCURRENCY</value>
+  <value feature="MULTICURRENCYLANDEDCOST">LANDEDCOSTEFFECTIVEDATE</value>
+  <value feature="MULTICURRENCYLANDEDCOST">LANDEDCOSTEXCHANGERATE</value>
+  <value feature="LANDEDCOST">LANDEDCOSTSHIPMENTITEMS</value>
+  <value>LANGUAGE</value>
+  <value feature="ADVANCEDJOBS">LASTBASELINEDATE</value>
+  <value feature="BILLINGACCOUNTS">LASTBILLCYCLEDATE</value>
+  <value>LASTBILLCYCLEDATE</value>
+  <value feature="BILLINGACCOUNTS">LASTBILLDATE</value>
+  <value>LASTBILLDATE</value>
+  <value>LASTCUSTOMERMESSAGERECEIVED</value>
+  <value feature="ISSUEDB">LASTISSUEATTACHED</value>
+  <value feature="ISSUEDB">LASTISSUEREMOVED</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">LASTMERGEDFROMARRANGEMENT</value>
+  <value>LASTMESSAGEDATE</value>
+  <value>LASTMODIFIEDBY</value>
+  <value>LASTMODIFIEDDATE</value>
+  <value>LASTNAME</value>
+  <value>LASTPAGEVISITED</value>
+  <value>LASTPAIDDATE</value>
+  <value>LASTPURCHASEPRICE</value>
+  <value>LASTREOPENEDDATE</value>
+  <value>LASTREVIEWDATE</value>
+  <value>LASTVISIT</value>
+  <value>LEADSGENERATED</value>
+  <value>LEADSOURCE</value>
+  <value feature="ADVINVENTORYMGMT">LEADTIME</value>
+  <value>LEADTIME</value>
+  <value>LEGACYBOMFORASSEMBLY</value>
+  <value>LEGALNAME</value>
+  <value>LENGTH</value>
+  <value>LIABILITYACCOUNT</value>
+  <value>LIMITEDLOCATIONS</value>
+  <value>LIMITTIMETOASSIGNEES</value>
+  <value>LINECREATEDFROM</value>
+  <value>LINENUMBER</value>
+  <value>LNAME</value>
+  <value feature="LOCATIONS">LOCATION</value>
+  <value feature="MULTILOCINVT">LOCATION</value>
+  <value>LOCATION</value>
+  <value feature="STOREPICKUP">LOCATIONALLOWSTOREPICKUP</value>
+  <value>LOCATIONRADIUS</value>
+  <value feature="STOREPICKUP">LOCATIONSTOREPICKUPBUFFERSTOCK</value>
+  <value>LOCATIONTYPE</value>
+  <value>LOCATIONURLALIAS</value>
+  <value feature="WEEKLYTIMESHEETS">LOCKSTATUS</value>
+  <value>LONGDESCRIPTION</value>
+  <value>LOWVALUE</value>
+  <value>LOWVALUEPERCENT</value>
+  <value>MACHINERESOURCES</value>
+  <value>MANUFACTURER</value>
+  <value>MANUFACTURERADDR1</value>
+  <value>MANUFACTURERCITY</value>
+  <value>MANUFACTURERSTATE</value>
+  <value>MANUFACTURERTARIFF</value>
+  <value>MANUFACTURERTAXID</value>
+  <value>MANUFACTURERZIP</value>
+  <value feature="MFGROUTING">MANUFACTURINGCHARGEITEM</value>
+  <value>MANUFACTURINGCOSTTEMPLATE</value>
+  <value feature="OUTSOURCEDMFG">MANUFACTURINGLOCATIONS</value>
+  <value>MANUFACTURINGWORKCENTER</value>
+  <value>MAPPEDNETSUITEACCOUNT</value>
+  <value>MARGINTARGET</value>
+  <value>MARITALSTATUS</value>
+  <value feature="ADVRECEIVING">MATCHBILLTORECEIPT</value>
+  <value feature="ADVANCEDJOBS">MATERIALIZETIME</value>
+  <value feature="MATRIXITEMS">MATRIXITEMNAMETEMPLATE</value>
+  <value>MAXDONATIONAMOUNT</value>
+  <value>MAXIMUMQUANTITY</value>
+  <value>MAXLOCATIONS</value>
+  <value>MEDICARE</value>
+  <value feature="BILLINGACCOUNTS">MEMO</value>
+  <value feature="SUBSCRIPTIONBILLING">MEMO</value>
+  <value>MEMO</value>
+  <value>MESSAGE</value>
+  <value feature="ADVANCEDSITECUST">METATAGHTML</value>
+  <value>MILESTONE</value>
+  <value feature="NOTMULTICURRENCY">MINIMUMORDERAMOUNT</value>
+  <value>MINIMUMQUANTITY</value>
+  <value>MNAME</value>
+  <value>MOBILEPHONE</value>
+  <value>MODIFIEDBY</value>
+  <value>MODULE</value>
+  <value feature="ACCOUNTING">MONTHLYCLOSING</value>
+  <value feature="MOSS">MOSSAPPLIES</value>
+  <value>MPN</value>
+  <value>MSPROJOUTLINENUM</value>
+  <value>MSPROJPREDS</value>
+  <value>MSPROJRESOURCES</value>
+  <value>MSPROJSCHEDWORK</value>
+  <value>MSPROJSERVICEITEM</value>
+  <value>MSPROJUID</value>
+  <value>MULTMANUFACTUREADDR</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">NAME</value>
+  <value feature="BILLINGACCOUNTS">NAME</value>
+  <value feature="INVENTORYSTATUS">NAME</value>
+  <value feature="SUBSCRIPTIONBILLING">NAME</value>
+  <value feature="WMSSYSTEM">NAME</value>
+  <value>NAME</value>
+  <value>NEGATIVENUMBERFORMAT</value>
+  <value>NETSUITETRANSACTIONTYPE</value>
+  <value>NEWDETAILS</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">NEWSTANDARDMIGRATEDATE</value>
+  <value>NEXTAGCATEGORY</value>
+  <value feature="TIMESHEETS">NEXTAPPROVER</value>
+  <value>NEXTAPPROVER</value>
+  <value feature="BILLINGACCOUNTS">NEXTBILLCYCLEDATE</value>
+  <value>NEXTBILLCYCLEDATE</value>
+  <value>NEXTINVTCOUNTDATE</value>
+  <value>NEXTRENEWALSTARTDATE</value>
+  <value>NEXTREVIEWDATE</value>
+  <value feature="TIMETRACKINGBILLSCOSTS">NONBILLABLETASK</value>
+  <value>NOPRICEMESSAGE</value>
+  <value>NOTE</value>
+  <value>NOTEDATE</value>
+  <value>NOTES</value>
+  <value>NOTETYPE</value>
+  <value>NUMBERFORMAT</value>
+  <value>NUMBERTOGENERATE</value>
+  <value>NUMOFALLOWEDDOWNLOADS</value>
+  <value>OFFER</value>
+  <value>OFFERSUPPORT</value>
+  <value>OFFICEPHONE</value>
+  <value>ONSPECIAL</value>
+  <value>OPENINGBALANCE</value>
+  <value>OPENINGBALANCEACCOUNT</value>
+  <value>OPENINGBALANCEDATE</value>
+  <value>OPERATIONSEQUENCE</value>
+  <value>OPTFULFILLMENT</value>
+  <value>ORDER</value>
+  <value>ORGANIZER</value>
+  <value>ORIGIN</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ORIGINALCHANGEORDERDISCAMOUNT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ORIGINALCHANGEORDERQUANTITY</value>
+  <value>ORIGINALITEMSUBTYPE</value>
+  <value>ORIGINALITEMTYPE</value>
+  <value>ORIGINATINGSUBSIDIARY</value>
+  <value>OTHERRELATIONSHIPS</value>
+  <value>OUTGOINGMESSAGE</value>
+  <value>OUTOFSTOCKBEHAVIOR</value>
+  <value>OUTOFSTOCKMESSAGE</value>
+  <value feature="PLANNEDWORK">OUTSIDEPROJECTPLAN</value>
+  <value>OVERALLQUANTITYPRICINGTYPE</value>
+  <value feature="RECEIVABLES">OVERDUEBALANCE</value>
+  <value feature="STANDARDCOSTING">OVERHEADTYPE</value>
+  <value>OVERRIDECURRENCYFORMAT</value>
+  <value>OVERRIDERATE</value>
+  <value>OWNER</value>
+  <value>OWNERROLE</value>
+  <value>PAGETITLE</value>
+  <value>PAIDEXTERNALLY</value>
+  <value>PARENT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">PARENTBOMELEMENT</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">PARENTLINECURRENCY</value>
+  <value>PARENTLINECURRENCY</value>
+  <value>PARTNER</value>
+  <value>PARTNERCODE</value>
+  <value>PASSPORTNUMBER</value>
+  <value>PASSWORD</value>
+  <value>PASSWORD2</value>
+  <value>PASTHORIZON</value>
+  <value>PASTHORIZONDATE</value>
+  <value feature="PAYABLES">PAYABLESACCOUNT</value>
+  <value>PAYFREQUENCY</value>
+  <value>PAYMENTMETHOD</value>
+  <value>PAYROLLITEM</value>
+  <value feature="ENHANCEDPREMIERPAYROLL">PAYROLLWORKPLACE</value>
+  <value>PERCENTCOMPLETE</value>
+  <value feature="RESOURCEALLOCATIONS">PERCENTCOMPLETEBYRSRCALLOC</value>
+  <value>PERCENTTIMECOMPLETE</value>
+  <value>PERCENTWORKCOMPLETE</value>
+  <value feature="ITEMDEMANDPLANNING">PERIODICLOTSIZEDAYS</value>
+  <value feature="ITEMDEMANDPLANNING">PERIODICLOTSIZETYPE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">PERIODOFFSET</value>
+  <value>PERIODOFFSET</value>
+  <value>PERMITDISCOUNT</value>
+  <value feature="NOTADVANCEDJOBS">PHONE</value>
+  <value>PHONE</value>
+  <value feature="PHONETICSORT">PHONETICNAME</value>
+  <value feature="ADVANCEDJOBS">PLANNEDHOURS</value>
+  <value>PLANNEDPERIOD</value>
+  <value feature="PLANNEDWORK">PLANNEDWORK</value>
+  <value feature="PLANNEDWORK">PLANNEDWORKBASELINE</value>
+  <value feature="MULTICURRENCY">POCURRENCY</value>
+  <value>PONUMBER</value>
+  <value>PORATE</value>
+  <value>PORECEIPTCOST</value>
+  <value feature="JOBCOSTING">POSTED</value>
+  <value>POSTINGDISCOUNTAPPLIED</value>
+  <value>POVENDOR</value>
+  <value feature="SUPPLYCHAINCONTROLTOWER">PREDCONFIDENCE</value>
+  <value feature="SUPPLYCHAINCONTROLTOWER">PREDICTEDDAYS</value>
+  <value>PREFCCPROCESSOR</value>
+  <value>PREFERENCECRITERION</value>
+  <value>PREFERREDLOCATION</value>
+  <value>PREFERREDSTOCKLEVEL</value>
+  <value>PREFERREDSTOCKLEVELDAYS</value>
+  <value feature="MULTPRICE">PRICE</value>
+  <value>PRICE</value>
+  <value>PRICEBOOK</value>
+  <value>PRICEINTERVALFREQUENCY</value>
+  <value>PRICELEVEL</value>
+  <value feature="SUBSCRIPTIONBILLING">PRICEMODELTYPE</value>
+  <value>PRICINGGROUP</value>
+  <value>PRINTITEMS</value>
+  <value>PRINTONCHECKAS</value>
+  <value>PRIORITY</value>
+  <value>PROBABILITY</value>
+  <value feature="STANDARDCOSTING">PRODPRICEVARIANCEACCT</value>
+  <value feature="STANDARDCOSTING">PRODQTYVARIANCEACCT</value>
+  <value>PRODUCER</value>
+  <value>PRODUCT</value>
+  <value>PRODUCTFEED</value>
+  <value>PRODUCTSERVICE</value>
+  <value>PRODUCTTEAM</value>
+  <value>PROFILE</value>
+  <value>PROFIT</value>
+  <value>PROJECT</value>
+  <value feature="CHARGEBASEDBILLINGANDADVREVREC">PROJECTCOMPLETELYBILLED</value>
+  <value>PROJECTEDENDDATE</value>
+  <value feature="ADVANCEDJOBS">PROJECTEDENDDATEBASELINE</value>
+  <value feature="JOBCOSTING">PROJECTEXPENSETYPE</value>
+  <value>PROJECTFORMTEMPLATE</value>
+  <value>PROJECTIONDURATION</value>
+  <value>PROJECTIONINTERVAL</value>
+  <value>PROJECTIONMETHOD</value>
+  <value>PROJECTIONSTARTDATE</value>
+  <value feature="ADVANCEDJOBS">PROJECTMANAGER</value>
+  <value>PROJECTREVENUERULE</value>
+  <value>PROJECTTASK</value>
+  <value feature="ADVANCEDJOBS">PROJECTTEMPLATE</value>
+  <value>PROMOTIONCODE</value>
+  <value>PRORATEENDDATE</value>
+  <value>PRORATESTARTDATE</value>
+  <value>PURCHASEDESCRIPTION</value>
+  <value>PURCHASEORDER</value>
+  <value>PURCHASEORDERAMOUNT</value>
+  <value feature="APPROVALROUTING">PURCHASEORDERAPPROVALLIMIT</value>
+  <value>PURCHASEORDERAPPROVER</value>
+  <value feature="APPROVALROUTING">PURCHASEORDERLIMIT</value>
+  <value>PURCHASEORDERQUANTITY</value>
+  <value>PURCHASEORDERQUANTITYDIFF</value>
+  <value feature="STANDARDCOSTING">PURCHASEPRICEVARIANCEACCT</value>
+  <value feature="NOTADVTAXENGINE">PURCHASETAXCODE</value>
+  <value>PURCHASEUNIT</value>
+  <value>QUANTITY</value>
+  <value>QUANTITYAVAILABLE</value>
+  <value>QUANTITYAVAILABLEBASE</value>
+  <value>QUANTITYBACKORDERED</value>
+  <value>QUANTITYBILLED</value>
+  <value>QUANTITYCOMMITTED</value>
+  <value>QUANTITYEXPECTED</value>
+  <value>QUANTITYONHAND</value>
+  <value>QUANTITYONHANDBASE</value>
+  <value>QUANTITYONORDER</value>
+  <value>QUANTITYPRICINGSCHEDULE</value>
+  <value>QUANTITYRECEIVED</value>
+  <value>QUANTITYREMAINING</value>
+  <value>QUICKNOTE</value>
+  <value feature="CHARGEBASEDBILLING">RATE</value>
+  <value>RATE</value>
+  <value feature="TAXINCLUSIVEPRICING">RATEINCLUDINGTAX</value>
+  <value>RATEMULTIPLIER</value>
+  <value>RATEROUNDINGTYPE</value>
+  <value>RATESOURCETYPE</value>
+  <value feature="SUBSCRIPTIONBILLING">REACTIVATIONOPTION</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">RECALCADJUSTPERIODOFFSET</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">RECALCADJUSTPERIODOFFSET</value>
+  <value>RECEIPTAMOUNT</value>
+  <value>RECEIPTQUANTITY</value>
+  <value>RECEIPTQUANTITYDIFF</value>
+  <value>RECEIVABLESACCOUNT</value>
+  <value feature="MULTILOCINVT">RECEIVINGLOCATION</value>
+  <value>RECOGNITIONACCOUNT</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">RECOGNITIONMETHOD</value>
+  <value>RECOGNITIONMETHOD</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">RECOGNITIONPERIOD</value>
+  <value>RECOGNITIONPERIOD</value>
+  <value feature="RULEBASEDRECOGNITIONTREATMENT">RECOGNITIONTREATMENT</value>
+  <value feature="RULEBASEDRECOGNITIONTREATMENT">RECOGNITIONTREATMENTRULE</value>
+  <value>RECORD</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">RECORDNUMBER</value>
+  <value>RECORDNUMBER</value>
+  <value>RECORDTYPE</value>
+  <value>RECURRENCESTARTDATE</value>
+  <value>REFERENCEID</value>
+  <value>REFERRER</value>
+  <value>REFERRINGURL</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REFORECASTMETHOD</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REFORECASTMETHOD</value>
+  <value feature="WEEKLYTIMESHEETS">REJECTEDHOURS</value>
+  <value>REJECTIONNOTE</value>
+  <value>RELATEDITEMSDESCRIPTION</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">RELATEDREVENUEARRANGEMENT</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">RELATEDREVENUEELEMENT</value>
+  <value>RELATEDTRANSACTIONS</value>
+  <value>RELEASEDATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REMAININGDEFERREDBALANCE</value>
+  <value>REMAININGDEFERREDBALANCE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REMAININGDEFERREDCOSTBALANCE</value>
+  <value feature="CHARGEBASEDBILLING">REMAININGTIMETOCHARGE</value>
+  <value>REMAININGWORK</value>
+  <value>REMINDERDAYS</value>
+  <value>REMINDERMINUTES</value>
+  <value>REMINDERTYPE</value>
+  <value feature="SUBSCRIPTIONBILLING">RENEWALENDDATE</value>
+  <value feature="SUBSCRIPTIONBILLING">RENEWALMETHOD</value>
+  <value feature="SUBSCRIPTIONBILLING">RENEWALPLAN</value>
+  <value feature="SUBSCRIPTIONBILLING">RENEWALPRICEBOOK</value>
+  <value feature="SUBSCRIPTIONBILLING">RENEWALSTARTDATE</value>
+  <value feature="SUBSCRIPTIONBILLING">RENEWALTERM</value>
+  <value feature="SUBSCRIPTIONBILLING">RENEWALTRANTYPE</value>
+  <value>REORDERMULTIPLE</value>
+  <value>REORDERPOINT</value>
+  <value>REPLENISHMENTMETHOD</value>
+  <value>REPORTEDBY</value>
+  <value>REPRESENTINGSUBSIDIARY</value>
+  <value>REPRODUCE</value>
+  <value>REQUESTEDBY</value>
+  <value feature="BILLINGACCOUNTS">REQUESTOFFCYCLEINVOICE</value>
+  <value feature="SUBSCRIPTIONBILLING">REQUESTOFFCYCLEINVOICE</value>
+  <value feature="SUBSCRIPTIONBILLING">REQUESTOR</value>
+  <value>REQUIREPWDCHANGE</value>
+  <value>RESALENUMBER</value>
+  <value feature="ITEMDEMANDPLANNING">RESCHEDULEINDAYS</value>
+  <value>RESCHEDULEINDAYS</value>
+  <value feature="ITEMDEMANDPLANNING">RESCHEDULEOUTDAYS</value>
+  <value>RESCHEDULEOUTDAYS</value>
+  <value>RESIDENTSTATUS</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">RESIDUAL</value>
+  <value>RESIDUAL</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">RESIDUALDISCSALESAMOUNT</value>
+  <value>RESTRICTTOASSEMBLIES</value>
+  <value>RESTRICTTOLOCATIONS</value>
+  <value>RETURNOFELEMENT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REVENUEALLOCATIONGROUP</value>
+  <value>REVENUEALLOCATIONGROUP</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REVENUEALLOCATIONRATIO</value>
+  <value>REVENUEARRANGEMENT</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REVENUEMIGRATEADJACCOUNT</value>
+  <value>REVENUEPLAN</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REVENUEPLANCURRENCY</value>
+  <value>REVENUEPLANCURRENCY</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REVENUEPLANSTATUS</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REVENUEPLANTYPE</value>
+  <value>REVENUEPLANTYPE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REVENUERECOGNITIONRULE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REVENUERECOGNITIONRULE</value>
+  <value>REVENUERECOGNITIONRULE</value>
+  <value>REVENUERECONCILED</value>
+  <value>REVIEWER</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REVRECENDDATE</value>
+  <value>REVRECENDDATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REVRECENDDATESOURCE</value>
+  <value>REVRECENDDATESOURCE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">REVRECFORECASTRULE</value>
+  <value>REVRECFORECASTRULE</value>
+  <value feature="ADVREVRECANDMULTICURRENCY">REVRECLASSFXACCOUNT</value>
+  <value>REVRECOPTION</value>
+  <value>REVRECSCHEDULE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REVRECSTARTDATE</value>
+  <value>REVRECSTARTDATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">REVRECSTARTDATESOURCE</value>
+  <value>REVRECSTARTDATESOURCE</value>
+  <value>ROI</value>
+  <value>ROTATIONTYPE</value>
+  <value feature="WORKORDERS">ROUNDUPASCOMPONENT</value>
+  <value>RULE</value>
+  <value>RULEID</value>
+  <value>RULEORDER</value>
+  <value>RUNID</value>
+  <value>RUNRATE</value>
+  <value>SAFETYSTOCKLEVEL</value>
+  <value>SAFETYSTOCKLEVELDAYS</value>
+  <value>SALESAMOUNT</value>
+  <value>SALESDESCRIPTION</value>
+  <value>SALESORDER</value>
+  <value>SALESORDERLINE</value>
+  <value>SALESORDERLINENUMBER</value>
+  <value feature="SFA">SALESREADINESS</value>
+  <value>SALESREP</value>
+  <value>SALESROLE</value>
+  <value feature="NOTADVTAXENGINE">SALESTAXCODE</value>
+  <value feature="UNITSOFMEASURE">SALEUNIT</value>
+  <value>SALEUNIT</value>
+  <value>SALUTATION</value>
+  <value>SCHEDULEBCODE</value>
+  <value>SCHEDULEBNUMBER</value>
+  <value>SCHEDULEBQUANTITY</value>
+  <value feature="PLANNEDWORK">SCHEDULEDENDDATE</value>
+  <value feature="PLANNEDWORK">SCHEDULEDENDDATEBASELINE</value>
+  <value feature="PLANNEDWORK">SCHEDULINGMETHOD</value>
+  <value feature="MFGWORKINPROCESS">SCRAPACCT</value>
+  <value>SEARCHENGINE</value>
+  <value>SEARCHKEYWORDS</value>
+  <value>SEASONALDEMAND</value>
+  <value>SEMESTER</value>
+  <value>SENDEMAIL</value>
+  <value>SENDTRANSACTIONSVIA</value>
+  <value>SERIALNUMBER</value>
+  <value>SERIALNUMBERS</value>
+  <value>SERVICEENDDATE</value>
+  <value>SERVICEGROUP</value>
+  <value>SERVICEITEM</value>
+  <value>SERVICESTARTDATE</value>
+  <value>SETUPTIME</value>
+  <value>SEVERITY</value>
+  <value feature="BILLINGACCOUNTS">SHIPADDRESS</value>
+  <value feature="BILLINGACCOUNTS">SHIPADDRESSLIST</value>
+  <value>SHIPCOMPLETE</value>
+  <value>SHIPINDIVIDUALLY</value>
+  <value feature="MULTICURRENCYLANDEDCOST">SHIPMENTBASECURRENCY</value>
+  <value>SHIPMENTCREATEDDATE</value>
+  <value>SHIPMENTITEM</value>
+  <value>SHIPMENTITEMAMOUNT</value>
+  <value>SHIPMENTITEMDESCRIPTION</value>
+  <value feature="MULTICURRENCYLANDEDCOST">SHIPMENTITEMEFFECTIVEDATE</value>
+  <value feature="MULTICURRENCYLANDEDCOST">SHIPMENTITEMEXCHANGERATE</value>
+  <value>SHIPMENTMEMO</value>
+  <value>SHIPMENTNUMBER</value>
+  <value>SHIPMENTSTATUS</value>
+  <value>SHIPPACKAGE</value>
+  <value>SHIPPINGCARRIER</value>
+  <value>SHIPPINGCOST</value>
+  <value>SHIPPINGITEM</value>
+  <value>SHIPPINGPARTNER</value>
+  <value>SHOPPINGDOTCOMCATEGORY</value>
+  <value>SHOPZILLACATEGORYID</value>
+  <value>SHOWDEFAULTDONATIONAMOUNT</value>
+  <value>SIMULATIONNUMBER</value>
+  <value>SITEMAPPRIORITY</value>
+  <value>SOCIALSECURITY</value>
+  <value>SOCIALSECURITYNUMBER</value>
+  <value>SOFTDESCRIPTOR</value>
+  <value>SOLUTIONCODE</value>
+  <value>SOURCE</value>
+  <value>SOURCEACCOUNT</value>
+  <value>SOURCECLASS</value>
+  <value>SOURCEDEPARTMENT</value>
+  <value>SOURCELOCATION</value>
+  <value feature="BILLINGRATECARDS">SOURCESERVICEITEMFROMRATECARD</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">SOURCETYPE</value>
+  <value>SOURCEWEBSITE</value>
+  <value>SPAMLOCK</value>
+  <value>SPECIALSDESCRIPTION</value>
+  <value>SSCORE</value>
+  <value>STAGE</value>
+  <value>STANDARDCOSTVERSION</value>
+  <value feature="BILLINGACCOUNTS">STARTDATE</value>
+  <value>STARTDATE</value>
+  <value feature="ADVANCEDJOBS">STARTDATEBASELINE</value>
+  <value>STARTDATEBASELINE</value>
+  <value feature="TIMEOFFMANAGEMENT">STARTDATETIMEOFFCALC</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">STARTOFFSET</value>
+  <value>STARTOFFSET</value>
+  <value>STARTTIME</value>
+  <value>STATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">STATUS</value>
+  <value feature="MULTIBOOK">STATUS</value>
+  <value>STATUS</value>
+  <value>STOCKDESCRIPTION</value>
+  <value>STOCKUNIT</value>
+  <value>STOPIFCAPPED</value>
+  <value>STOREDESCRIPTION</value>
+  <value>STOREDETAILEDDESCRIPTION</value>
+  <value>STOREDISPLAYIMAGE</value>
+  <value>STOREDISPLAYNAME</value>
+  <value>STOREDISPLAYTHUMBNAIL</value>
+  <value>STOREITEMTEMPLATE</value>
+  <value>STRATEGY</value>
+  <value>STRENGTHS</value>
+  <value>STUDENTID</value>
+  <value>STUDEPARTMENT</value>
+  <value>STUEMAIL</value>
+  <value>STUNATIONALITY</value>
+  <value feature="WEEKLYTIMESHEETS">SUBMITTEDHOURS</value>
+  <value>SUBPARTNERLOGIN</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTION</value>
+  <value>SUBSCRIPTION</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTIONCHANGEORDERSTATUS</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTIONLINE</value>
+  <value>SUBSCRIPTIONLINE</value>
+  <value>SUBSCRIPTIONLINEDISCOUNT</value>
+  <value>SUBSCRIPTIONLINEQUANTITY</value>
+  <value>SUBSCRIPTIONLINESTATUS</value>
+  <value>SUBSCRIPTIONLINETYPE</value>
+  <value feature="SUBSCRIPTIONBILLING">SUBSCRIPTIONPLAN</value>
+  <value>SUBSCRIPTIONPLAN</value>
+  <value>SUBSCRIPTIONPLANLINE</value>
+  <value>SUBSCRIPTIONREVISION</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">SUBSIDIARY</value>
+  <value feature="SUBSIDIARIES">SUBSIDIARY</value>
+  <value>SUBSIDIARY</value>
+  <value>SUPERVISOR</value>
+  <value>SUPERVISORAPPROVAL</value>
+  <value>SUPERVISORPHONE</value>
+  <value>SUPPLYLOCATION</value>
+  <value>SUPPLYLOCATIONDATE</value>
+  <value>SUPPLYLOCATIONSUBSIDIARY</value>
+  <value feature="ITEMDEMANDPLANNING">SUPPLYLOTSIZINGMETHOD</value>
+  <value feature="ITEMDEMANDPLANNING">SUPPLYREPLENISHMENTMETHOD</value>
+  <value feature="ITEMDEMANDPLANNING">SUPPLYTIMEFENCE</value>
+  <value>SUPPLYTIMEFENCE</value>
+  <value feature="ITEMDEMANDPLANNING">SUPPLYTYPE</value>
+  <value>SUPPLYTYPE</value>
+  <value>SUPPORTCASE</value>
+  <value>SUPPORTFIRSTREPLY</value>
+  <value>SYMBOLPLACEMENT</value>
+  <value feature="ADVANCEDJOBS">TARGETUTILIZATION</value>
+  <value>TAXABLE</value>
+  <value feature="CANADA">TAXEXEMPT</value>
+  <value>TAXFRACTIONUNIT</value>
+  <value>TAXIDNUM</value>
+  <value>TAXITEM</value>
+  <value>TAXROUNDING</value>
+  <value feature="ADVTAXENGINE">TAXSCHEDULE</value>
+  <value feature="ACCOUNTING">TEGATAMATURITY</value>
+  <value>TEMPLATE</value>
+  <value>TEMPLATESTORED</value>
+  <value>TERMINATIONBYDEATH</value>
+  <value feature="TERMINATIONREASONTRACKING">TERMINATIONCATEGORY</value>
+  <value>TERMINATIONDATE</value>
+  <value feature="TERMINATIONREASONTRACKING">TERMINATIONDETAILS</value>
+  <value feature="TERMINATIONREASONTRACKING">TERMINATIONREASON</value>
+  <value feature="TERMINATIONREASONTRACKING">TERMINATIONREGRETTED</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">TERMINDAYS</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">TERMINDAYS</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">TERMINMONTHS</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">TERMINMONTHS</value>
+  <value>TERMINMONTHS</value>
+  <value feature="PAYABLES">TERMS</value>
+  <value feature="RECEIVABLES">TERMS</value>
+  <value>TERRITORY</value>
+  <value>TIME</value>
+  <value feature="ADVANCEDJOBSTIMETRACKING">TIMEAPPROVAL</value>
+  <value feature="TIMETRACKING">TIMEAPPROVER</value>
+  <value>TIMEAPPROVER</value>
+  <value>TIMEDEVENT</value>
+  <value>TIMEELAPSED</value>
+  <value>TIMELINETYPE</value>
+  <value feature="ADVANCEDJOBSTIMETRACKING">TIMEMODIFIED</value>
+  <value feature="TIMEOFFMANAGEMENT">TIMEOFFBALANCES</value>
+  <value feature="TIMEOFFMANAGEMENT">TIMEOFFPLAN</value>
+  <value feature="TIMEOFFMANAGEMENT">TIMEOFFTYPE</value>
+  <value>TIMEONHOLD</value>
+  <value>TIMEOPEN</value>
+  <value>TIMERECORD</value>
+  <value>TIMEREMAINING</value>
+  <value>TIMETOASSIGN</value>
+  <value>TIMETOCLOSE</value>
+  <value>TITLE</value>
+  <value>TOSUBSIDIARY</value>
+  <value>TOTAL</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">TOTALAMORTIZED</value>
+  <value>TOTALHOURS</value>
+  <value feature="MULTILOCINVT">TOTALQUANTITYONHAND</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">TOTALRECOGNIZED</value>
+  <value>TOTALRECOGNIZED</value>
+  <value>TOTALREVENUE</value>
+  <value feature="LANDEDCOST">TOTALUNITCOST</value>
+  <value>TOTALVALUE</value>
+  <value>TRACKCODE</value>
+  <value>TRACKLANDEDCOST</value>
+  <value>TRANCODEMAPPINGDESCRIPTION</value>
+  <value>TRANCODEMAPPINGID</value>
+  <value>TRANDATE</value>
+  <value>TRANSACTION</value>
+  <value>TRANSACTIONLINE</value>
+  <value>TRANSACTIONPARSER</value>
+  <value>TRANSACTIONPOLARITY</value>
+  <value>TRANSACTIONTYPE</value>
+  <value feature="MULTILOCINVT">TRANSFERPRICE</value>
+  <value feature="RULEBASEDRECOGNITIONTREATMENT">TREATMENTOVERRIDE</value>
+  <value>TSCORE</value>
+  <value>TWOSTEPREVENUEALLOCATION</value>
+  <value feature="ADVANCEDJOBS">TYPE</value>
+  <value feature="PAYABLESPURCHASEORDERS">UNBILLEDORDERS</value>
+  <value feature="RECEIVABLESSALESORDERS">UNBILLEDORDERS</value>
+  <value>UNBILLEDORDERSPRIMARY</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">UNBILLEDRECEIVABLEGROUP</value>
+  <value>UNBILLEDRECEIVABLEGROUPING</value>
+  <value>UNBUILDVARIANCEACCOUNT</value>
+  <value>UNIQUEVISITORS</value>
+  <value feature="UNITSOFMEASURE">UNIT</value>
+  <value>UNIT</value>
+  <value feature="LANDEDCOST">UNITLANDEDCOST</value>
+  <value feature="UNITSOFMEASURE">UNITS</value>
+  <value>UNITS</value>
+  <value feature="UNITSOFMEASURE">UNITSTYPE</value>
+  <value>UNITSTYPE</value>
+  <value>UPCCODE</value>
+  <value>URL</value>
+  <value>URLCOMPONENT</value>
+  <value>USAGEDATE</value>
+  <value feature="SUBSCRIPTIONBILLING">USAGEMULTIPLIERLINE</value>
+  <value>USAGEQUANTITY</value>
+  <value>USAGESUBSCRIPTION</value>
+  <value>USAGESUBSCRIPTIONLINE</value>
+  <value>USE</value>
+  <value feature="CHARGEBASEDBILRESALLOCATIONS">USEALLOCATEDTIMEFORFORECAST</value>
+  <value>USEBINS</value>
+  <value>USECACHEDCRMGROUP</value>
+  <value feature="WORKORDERS">USECOMPONENTYIELD</value>
+  <value>USECOMPONENTYIELD</value>
+  <value>USEEMPLOYEETEMPLATE</value>
+  <value>USEMARGINALRATES</value>
+  <value>USEMATERIALIZEDSAVEDSEARCH</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">USEPERCENTCOMPLETEOVERRIDE</value>
+  <value>USEPERQUEST</value>
+  <value>USESUBSTARTDATEASRSD</value>
+  <value>USETIMEDATA</value>
+  <value>USETYPE</value>
+  <value>VARIANCETYPE</value>
+  <value>VATREGNUMBER</value>
+  <value>VENDOR</value>
+  <value>VENDORNAME</value>
+  <value feature="PAYABLES">VENDRETURNVARIANCEACCOUNT</value>
+  <value>VERSION</value>
+  <value>VERSIONBROKEN</value>
+  <value>VERSIONFIXED</value>
+  <value>VERSIONTARGET</value>
+  <value>VERTICAL</value>
+  <value>VESSELNUMBER</value>
+  <value>VISAEXPDATE</value>
+  <value>VISATYPE</value>
+  <value>VISITS</value>
+  <value>VSOEDEFERRAL</value>
+  <value>VSOEDELIVERED</value>
+  <value>VSOEPERMITDISCOUNT</value>
+  <value>VSOEPRICE</value>
+  <value feature="VSOEORADVREVREC">VSOESOPGROUP</value>
+  <value>W4COMPLETED</value>
+  <value>WEAKNESSES</value>
+  <value>WEBLEAD</value>
+  <value feature="SUITECOMMERCEENTERPRISE">WEBSITE</value>
+  <value>WEIGHT</value>
+  <value>WIDTH</value>
+  <value feature="MFGWORKINPROCESS">WIPACCT</value>
+  <value feature="MFGWORKINPROCESS">WIPVARIANCEACCT</value>
+  <value feature="ADVANCEDJOBS">WORKCALENDAR</value>
+  <value>WORKCALENDAR</value>
+  <value feature="WEEKLYTIMESHEETS">WORKCALENDARHOURS</value>
+  <value>WORKORDER</value>
+  <value>WORKPLACE</value>
+  <value>ZIP</value>
+  <value>ZIPCODE</value>
+</list>

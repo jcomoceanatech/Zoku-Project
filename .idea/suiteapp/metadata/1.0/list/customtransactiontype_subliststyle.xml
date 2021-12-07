@@ -1,0 +1,7 @@
+<list id="customtransactiontype_subliststyle">
+  <value>BASIC</value>
+  <value>JOURNAL</value>
+  <value>HEADER_ONLY</value>
+  <value>SALES</value>
+  <value>PURCHASE</value>
+</list>

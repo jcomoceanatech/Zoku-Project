@@ -1,0 +1,5 @@
+<list id="workflowaction_triggertype_client">
+  <value>AFTERFIELDEDIT</value>
+  <value>AFTERFIELDSOURCING</value>
+  <value>BEFOREFIELDEDIT</value>
+</list>

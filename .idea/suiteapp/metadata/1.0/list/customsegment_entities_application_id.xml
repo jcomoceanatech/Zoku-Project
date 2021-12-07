@@ -1,0 +1,13 @@
+<list id="customsegment_entities_application_id">
+  <value internal="CONTACT">CONTACT</value>
+  <value internal="CUSTOMER">CUSTOMER</value>
+  <value internal="EMPLOYEE">EMPLOYEE</value>
+  <value internal="ENTITYGROUP">ENTITYGROUP</value>
+  <value internal="GENERICRESOURCE" feature="ADVANCEDJOBS">GENERICRESOURCE</value>
+  <value internal="JOB" feature="JOBS">JOB</value>
+  <value internal="OTHERNAME">OTHERNAME</value>
+  <value internal="PARTNER" feature="CRM">PARTNER</value>
+  <value internal="PROJECTTEMPLATE">PROJECTTEMPLATE</value>
+  <value internal="VENDOR" feature="ACCOUNTING">VENDOR</value>
+  <value internal="apply_to_website">WEBSITE</value>
+</list>

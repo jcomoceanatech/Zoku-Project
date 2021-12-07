@@ -1,0 +1,31 @@
+<list id="customsegment_entities_sourcelist">
+  <value internal="-169">STDENTITYAPPROVER</value>
+  <value internal="-127" feature="CRM">STDENTITYASSISTANT</value>
+  <value internal="-289" feature="MARKETING">STDENTITYCAMPAIGNEVENT</value>
+  <value internal="-67" feature="CLASSES">STDENTITYCLASS</value>
+  <value internal="-241">STDENTITYCOMPANY</value>
+  <value internal="-290" feature="MARKETING">STDENTITYCONTACTCAMPAIGNEVENT</value>
+  <value internal="-277" feature="MARKETING">STDENTITYCONTACTSOURCE</value>
+  <value internal="-325" feature="EXPREPORTS">STDENTITYDEFAULTACCTCORPCARDEXP</value>
+  <value internal="-66" feature="DEPARTMENTS">STDENTITYDEPARTMENT</value>
+  <value internal="-273" feature="REVENUECOMMITMENTS">STDENTITYDRACCOUNT</value>
+  <value internal="-232" feature="ACCOUNTING">STDENTITYEXPENSEACCOUNT</value>
+  <value internal="-274" feature="REVENUECOMMITMENTS">STDENTITYFXACCOUNT</value>
+  <value internal="-222" feature="ADVANCEDJOBS">STDENTITYJOBITEM</value>
+  <value internal="-47" feature="MARKETING">STDENTITYLEADSOURCE</value>
+  <value internal="-65" feature="LOCATIONS">STDENTITYLOCATION</value>
+  <value internal="-68">STDENTITYPARENT</value>
+  <value internal="-50" feature="CRM">STDENTITYPARENTPARTNER</value>
+  <value internal="-72" feature="CRM">STDENTITYPARTNER</value>
+  <value internal="-264" feature="PAYABLES">STDENTITYPAYABLESACCOUNT</value>
+  <value internal="-3261" feature="ADVANCEDJOBS">STDENTITYPROJECTMANAGER</value>
+  <value internal="-195" feature="PURCHASEREQS">STDENTITYPURCHASEORDERAPPROVER</value>
+  <value internal="-265" feature="RECEIVABLES">STDENTITYRECEIVABLESACCOUNT</value>
+  <value internal="-88">STDENTITYSALESREP</value>
+  <value internal="-43" feature="SUBSIDIARIES">STDENTITYSUBSIDIARY</value>
+  <value internal="-76">STDENTITYSUPERVISOR</value>
+  <value internal="-162" feature="ACCOUNTINGNOTTAX_OVERHAULING">STDENTITYTAXITEM</value>
+  <value internal="-199">STDENTITYTIMEAPPROVER</value>
+  <value internal="-3255" feature="TIMETRACKING">STDENTITYVENDORTIMEAPPROVER</value>
+  <value internal="-204">STDENTITYWORKPLACE</value>
+</list>

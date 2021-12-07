@@ -1,0 +1,237 @@
+<list id="transactionform_fieldid">
+  <value>ACCOUNT</value>
+  <value feature="MULTIBOOK">ACCOUNTINGBOOK</value>
+  <value>ACCOUNTNUMBER</value>
+  <value>ACTUALSHIPDATE</value>
+  <value>ADDRESS</value>
+  <value>AGING1</value>
+  <value>AGING2</value>
+  <value>AGING3</value>
+  <value>AGING4</value>
+  <value>AGING5</value>
+  <value>AGINGBAL</value>
+  <value feature="AUTOLOCATIONASSIGNMENT">ALACONFIGURATION</value>
+  <value feature="ALTERNATIVEPICKUPCONTACT">ALTERNATIVEPICKUPCONTACT</value>
+  <value>AMOUNTPAID</value>
+  <value>AMOUNTREMAINING</value>
+  <value>APACCT</value>
+  <value>APPROVALSTATUS</value>
+  <value>APPROVED</value>
+  <value>ARACCT</value>
+  <value feature="CHARGEBASEDBILLING">ASOFDATE</value>
+  <value feature="CCTRACKING">AUTHCODE</value>
+  <value>AUTOAPPLY</value>
+  <value feature="AUTOAPPLYPROMOTIONS">AUTOMATICALLYAPPLYPROMOTIONS</value>
+  <value feature="INTRANSITPAYMENTS">AVAILABLEBALANCE</value>
+  <value>AVAILABLEVENDORCREDIT</value>
+  <value>BALANCE</value>
+  <value feature="BARCODES">BARCODE</value>
+  <value>BILLADDRESS</value>
+  <value>BILLADDRESSLIST</value>
+  <value feature="BILLINGACCOUNTS">BILLINGACCOUNT</value>
+  <value feature="ADVBILLING">BILLINGSCHEDULE</value>
+  <value feature="BILLINGWORKCENTER">BULKSUBMISSIONID</value>
+  <value>CANHAVESTACKABLE</value>
+  <value feature="CCTRACKING">CARDDATAPROVIDED</value>
+  <value feature="CCTRACKING">CCAPPROVED</value>
+  <value feature="CCTRACKING">CCAVSSTREETMATCH</value>
+  <value feature="CCTRACKING">CCAVSZIPMATCH</value>
+  <value feature="CCTRACKING">CCDEFAULT</value>
+  <value feature="CCTRACKING">CCEXPIREDATE</value>
+  <value feature="CCTRACKING">CCISPURCHASECARDBIN</value>
+  <value feature="CCTRACKING">CCNAME</value>
+  <value>CCNUMBER</value>
+  <value feature="CCTRACKING">CCPROCESSASPURCHASECARD</value>
+  <value feature="CCTRACKING">CCSAVE</value>
+  <value feature="CCTRACKING">CCSECURITYCODE</value>
+  <value feature="CCTRACKING">CCSECURITYCODEMATCH</value>
+  <value feature="CCTRACKING">CCSTREET</value>
+  <value feature="CCTRACKING">CCZIPCODE</value>
+  <value feature="CCTRACKING">CHARGEIT</value>
+  <value>CHECKNUM</value>
+  <value feature="PAYMENTINSTRUMENTS">CHECKNUMBER</value>
+  <value feature="CLASSES">CLASS</value>
+  <value>COMPANYADDRESS</value>
+  <value>COMPANYFEDNUM</value>
+  <value>COMPANYLOGO</value>
+  <value>COMPANYNAME</value>
+  <value>COMPANYPHONE</value>
+  <value>COMPANYURL</value>
+  <value feature="CONSOLPAYMENTS">CONSOLIDATEBALANCE</value>
+  <value feature="PROMOCODES">COUPONCODE</value>
+  <value>CREATEDFROM</value>
+  <value feature="CCTRACKING">CREDITCARD</value>
+  <value feature="CCTRACKING">CREDITCARDPROCESSOR</value>
+  <value>CREDITTOTAL</value>
+  <value feature="MULTICURRENCY">CURRENCY</value>
+  <value>CUSTOMER</value>
+  <value feature="CCTRACKING">CUSTOMERCODE</value>
+  <value feature="SPLITTENDER">CUSTOMERPAYMENTAUTHORIZATION</value>
+  <value>CUSTOMFORM</value>
+  <value>DEBITTOTAL</value>
+  <value feature="REVENUERECOGNITION">DEFERREDREVENUE</value>
+  <value feature="DEPARTMENTS">DEPARTMENT</value>
+  <value>DISCOUNTAMOUNT</value>
+  <value>DISCOUNTDATE</value>
+  <value>DISCOUNTITEM</value>
+  <value>DISCOUNTRATE</value>
+  <value feature="ADVANCEDNUMBERINGSEQUENCES">DOCUMENTSEQUENCE</value>
+  <value feature="REVCOMORADVREVREC">DRACCOUNT</value>
+  <value>DUEDATE</value>
+  <value feature="PAYMENTINSTRUMENTS">DYNAMICDESCRIPTOR</value>
+  <value>EMPLOYEE</value>
+  <value>ENDDATE</value>
+  <value>ENTITY</value>
+  <value feature="SFA">ENTITYSTATUS</value>
+  <value feature="TAX_OVERHAULING">ENTITYTAXREGNUM</value>
+  <value feature="GROSSPROFIT">ESTGROSSPROFIT</value>
+  <value feature="GROSSPROFIT">ESTGROSSPROFITPERCENT</value>
+  <value feature="MULTICURRENCY">EXCHANGERATE</value>
+  <value feature="PARTNEREMPLOYEECOMMISSN">EXCLUDECOMMISSION</value>
+  <value feature="GLAUDITNUMBERING">EXCLUDEFROMGLNUMBERING</value>
+  <value feature="SFA">EXPECTEDCLOSEDATE</value>
+  <value feature="ADVANCEDEXPENSEMANAGEMENT">EXPENSEPLANSTATUS</value>
+  <value>FILE</value>
+  <value>FOB</value>
+  <value feature="ADVFORECASTING">FORECASTTYPE</value>
+  <value feature="INVOICEGROUP">FORINVOICEGROUPING</value>
+  <value>FORMTITLE</value>
+  <value feature="REVENUECOMMITMENTS">FXACCOUNT</value>
+  <value>GENERATETRANIDONSAVE</value>
+  <value feature="CCTRACKING">GETAUTH</value>
+  <value feature="GIFTCERTIFICATES">GIFTCERT</value>
+  <value feature="INVOICEGROUP">GROUPEDTO</value>
+  <value>HANDLINGCOST</value>
+  <value feature="PAYMENTINSTRUMENTS">HANDLINGMODE</value>
+  <value feature="NOTTAX_OVERHAULING">HANDLINGTAX1RATE</value>
+  <value feature="NOTTAX_OVERHAULING">HANDLINGTAX2RATE</value>
+  <value feature="TAX_OVERHAULING">HANDLINGTAXAMOUNT</value>
+  <value feature="NOTTAX_OVERHAULING">HANDLINGTAXCODE</value>
+  <value feature="CCTRACKING">IGNOREAVS</value>
+  <value feature="CCTRACKING">IGNORECSC</value>
+  <value feature="SFA">INCLUDEINFORECAST</value>
+  <value>INCOTERM</value>
+  <value feature="PAYMENTINSTRUMENTS">INPUTAUTHCODE</value>
+  <value feature="PAYMENTINSTRUMENTS">INPUTREFERENCECODE</value>
+  <value feature="INTERCOMPANYAUTOELIMINATION">INTERCOSTATUS</value>
+  <value feature="INTERCOMPANYAUTOELIMINATION">INTERCOTRANSACTION</value>
+  <value feature="MOSS">IPADDRESS</value>
+  <value feature="MOSS">IPADDRESSCOUNTRY</value>
+  <value feature="ADVANCEDORDERMANAGEMENTREQS">ISAOMAUTOMATED</value>
+  <value feature="CROSSSUBSIDIARYFULFILLMENT">ISCROSSSUBTRANSACTION</value>
+  <value feature="INTRANSITPAYMENTS">ISINTRANSITPAYMENT</value>
+  <value feature="MULTISHIPTO">ISMULTISHIPTO</value>
+  <value feature="CCTRACKING">ISRECURRINGPAYMENT</value>
+  <value feature="NOTPERLINETAXNOTTAX_OVERH">ISTAXABLE</value>
+  <value feature="ADVANCEDJOBS">JOB</value>
+  <value>LEADSOURCE</value>
+  <value feature="LOCATIONS">LOCATION</value>
+  <value>MEMO</value>
+  <value>MESSAGE</value>
+  <value>MESSAGESEL</value>
+  <value feature="MOSS">MOSSCOUNTRY</value>
+  <value feature="MOSS">MOSSCOUNTRYDETAIL</value>
+  <value>NEXTAPPROVER</value>
+  <value feature="TAX_OVERHAULING">NEXUS</value>
+  <value>OFFSETACCOUNT</value>
+  <value>ONETIME</value>
+  <value feature="OPPORTUNITIES">OPPORTUNITY</value>
+  <value feature="STOREPICKUP">ORDERFULFILLMENTCHOICE</value>
+  <value>ORDERSTATUS</value>
+  <value>OTHERREFNUM</value>
+  <value>OUTOFBALANCEBY</value>
+  <value feature="PAYMENTINSTRUMENTS">OUTPUTAUTHCODE</value>
+  <value feature="PAYMENTINSTRUMENTS">OUTPUTREFERENCECODE</value>
+  <value feature="INSTALLMENTS">OVERRIDEINSTALLMENTS</value>
+  <value>PAGENUMBER</value>
+  <value>PARENTEXPENSEALLOC</value>
+  <value>PARTNER</value>
+  <value>PAYEEADDRESSLIST</value>
+  <value>PAYMENT</value>
+  <value feature="PAYMENTINSTRUMENTS">PAYMENTCARDCSC</value>
+  <value>PAYMENTMETHOD</value>
+  <value feature="CCTRACKING">PAYMENTOPERATION</value>
+  <value feature="PAYMENTINSTRUMENTS">PAYMENTOPTION</value>
+  <value feature="PAYMENTINSTRUMENTS">PAYMENTPROCESSINGPROFILE</value>
+  <value>PAYMENTSESSIONAMOUNT</value>
+  <value feature="PAYPALINTEGRATION">PAYPALAUTHID</value>
+  <value feature="PAYPALINTEGRATION">PAYPALORDERID</value>
+  <value feature="PAYPALINTEGRATION">PAYPALSTATUS</value>
+  <value feature="PAYPALINTEGRATION">PAYPALTRANID</value>
+  <value>PENDING</value>
+  <value feature="CCTRACKING">PNREFNUM</value>
+  <value feature="ACCOUNTINGPERIODS">POSTINGPERIOD</value>
+  <value>PRINTVOUCHER</value>
+  <value feature="SFA">PROBABILITY</value>
+  <value>PROJECT</value>
+  <value feature="PROMOCODES">PROMOCODE</value>
+  <value feature="PURCHASECONTRACTS">PURCHASECONTRACT</value>
+  <value feature="REVENUERECOGNITION">RECOGNIZEDREVENUE</value>
+  <value>RECURANNUALLY</value>
+  <value>RECURMONTHLY</value>
+  <value>RECURQUARTERLY</value>
+  <value feature="INSTALLMENTS">RECURRENCEFREQUENCY</value>
+  <value feature="BILLINGACCOUNTS">RECURRINGBILL</value>
+  <value>RECURWEEKLY</value>
+  <value>REFUNDCHECK</value>
+  <value feature="INSTALLMENTS">REPEATEVERY</value>
+  <value feature="INSTALLMENTS">REPEATUNIT</value>
+  <value feature="REVENUECOMMITMENTS">REVCOMMITSTATUS</value>
+  <value feature="REVENUERECOGNITION">REVENUESTATUS</value>
+  <value>REVERSALDATE</value>
+  <value>REVERSALDEFER</value>
+  <value>REVERSALENTRY</value>
+  <value feature="OLDORNEWREVREC">REVRECENDDATE</value>
+  <value feature="REVENUECOMMITMENTS">REVRECONREVCOMMITMENT</value>
+  <value feature="REVENUERECOGNITION">REVRECSCHEDULE</value>
+  <value feature="OLDORNEWREVREC">REVRECSTARTDATE</value>
+  <value feature="BUSINESS">SALESEFFECTIVEDATE</value>
+  <value>SALESREP</value>
+  <value>SHIPADDRESS</value>
+  <value>SHIPADDRESSLIST</value>
+  <value>SHIPCARRIER</value>
+  <value>SHIPCOMPLETE</value>
+  <value>SHIPDATE</value>
+  <value>SHIPMETHOD</value>
+  <value>SHIPPINGCOST</value>
+  <value feature="NOTTAX_OVERHAULING">SHIPPINGTAX1RATE</value>
+  <value feature="NOTTAX_OVERHAULING">SHIPPINGTAX2RATE</value>
+  <value feature="TAX_OVERHAULING">SHIPPINGTAXAMOUNT</value>
+  <value feature="NOTTAX_OVERHAULING">SHIPPINGTAXCODE</value>
+  <value>SHIPTO</value>
+  <value feature="CCTRACKING">SOFTDESCRIPTOR</value>
+  <value>SOURCE</value>
+  <value>STARTDATE</value>
+  <value feature="SUBSIDIARIES">SUBSIDIARY</value>
+  <value feature="TAX_OVERHAULING">SUBSIDIARYTAXREGNUM</value>
+  <value>SUBTOTAL</value>
+  <value>SUPERVISORAPPROVAL</value>
+  <value feature="TAX_OVERHAULING">TAXDETAILSOVERRIDE</value>
+  <value feature="NOTPERLINETAXNOTTAX_OVERH">TAXITEM</value>
+  <value feature="TAX_OVERHAULING">TAXPOINTDATE</value>
+  <value feature="TAX_OVERHAULING">TAXPOINTDATEOVERRIDE</value>
+  <value feature="NOTPERLINETAXNOTTAX_OVERH">TAXRATE</value>
+  <value feature="TAX_OVERHAULING">TAXREGOVERRIDE</value>
+  <value>TAXTOTAL</value>
+  <value>TERMS</value>
+  <value>TITLE</value>
+  <value>TOBEEMAILED</value>
+  <value>TOBEFAXED</value>
+  <value>TOBEPRINTED</value>
+  <value>TOPRINT2</value>
+  <value feature="SUBSIDIARIES">TOSUBSIDIARY</value>
+  <value>TOTAL</value>
+  <value feature="TAX_OVERHAULING">TOTALAFTERTAXES</value>
+  <value feature="GROSSPROFIT">TOTALCOSTESTIMATE</value>
+  <value>TRACKINGNUMBERS</value>
+  <value>TRANDATE</value>
+  <value>TRANID</value>
+  <value feature="VSOEORADVREVREC">TRANISVSOEBUNDLE</value>
+  <value>TRANSACTIONNUMBER</value>
+  <value>UNBILLEDORDERS</value>
+  <value feature="VATNOTTAX_OVERHAULING">VATREGNUM</value>
+  <value>VISIBLETOCUSTOMER</value>
+  <value>VOIDJOURNAL</value>
+  <value feature="REVRECVSOE">VSOEAUTOCALC</value>
+  <value feature="CHARGEBASEDBILLING">WHICHCHARGESTOADD</value>
+</list>

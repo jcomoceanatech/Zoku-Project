@@ -1,0 +1,20 @@
+<list id="customtransactiontype_filterbyaccounttype">
+  <value internal="AcctPay">ACCTPAY</value>
+  <value internal="AcctRec">ACCTREC</value>
+  <value internal="Bank">BANK</value>
+  <value internal="COGS">COGS</value>
+  <value internal="CredCard">CREDCARD</value>
+  <value internal="DeferExpense">DEFEREXPENSE</value>
+  <value internal="DeferRevenue">DEFERREVENUE</value>
+  <value internal="Equity">EQUITY</value>
+  <value internal="Expense">EXPENSE</value>
+  <value internal="FixedAsset">FIXEDASSET</value>
+  <value internal="Income">INCOME</value>
+  <value internal="LongTermLiab">LONGTERMLIAB</value>
+  <value internal="OthAsset">OTHASSET</value>
+  <value internal="OthCurrAsset">OTHCURRASSET</value>
+  <value internal="OthCurrLiab">OTHCURRLIAB</value>
+  <value internal="OthExpense">OTHEXPENSE</value>
+  <value internal="OthIncome">OTHINCOME</value>
+  <value internal="UnbilledRec">UNBILLEDREC</value>
+</list>

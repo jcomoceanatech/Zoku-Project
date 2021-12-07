@@ -1,0 +1,27 @@
+<list id="customsegment_crm_sourcelist">
+  <value internal="-2202" feature="RESOURCEALLOCATIONS">STDEVENTALLOCATIONPROJECT</value>
+  <value internal="-2212" feature="RESOURCEALLOCATIONS">STDEVENTALLOCATIONPROJECTTASK</value>
+  <value internal="-2090">STDEVENTASSIGNED</value>
+  <value internal="-2097">STDEVENTCOMPANY</value>
+  <value internal="-2096">STDEVENTCONTACT</value>
+  <value internal="-2206" feature="RESOURCEALLOCATIONS">STDEVENTCUSTOMER</value>
+  <value internal="-2132" feature="ISSUEDB">STDEVENTDUPLICATEOF</value>
+  <value internal="-2076" feature="HELPDESK">STDEVENTHELPDESKEMPLOYEE</value>
+  <value internal="-2080">STDEVENTITEM</value>
+  <value internal="-2181" feature="ADVANCEDJOBS">STDEVENTJOB</value>
+  <value internal="-2210" feature="RESOURCEALLOCATIONS">STDEVENTNEXTAPPROVER</value>
+  <value internal="-2085">STDEVENTOPPORTUNITY</value>
+  <value internal="-2150" feature="ADVANCEDJOBS">STDEVENTORDER</value>
+  <value internal="-2077">STDEVENTORGANIZER</value>
+  <value internal="-2100">STDEVENTOWNER</value>
+  <value internal="-2151" feature="ADVANCEDJOBS">STDEVENTPARENT</value>
+  <value internal="-2075" feature="SUPPORT">STDEVENTPRODUCT</value>
+  <value internal="-2125" feature="MARKETING">STDEVENTPROMOTIONCODE</value>
+  <value internal="-2142" feature="ISSUEDB">STDEVENTREPORTEDBY</value>
+  <value internal="-2205" feature="RESOURCEALLOCATIONS">STDEVENTREQUESTEDBY</value>
+  <value internal="-2204" feature="RESOURCEALLOCATIONS">STDEVENTRESOURCE</value>
+  <value internal="-2144" feature="ISSUEDB">STDEVENTREVIEWER</value>
+  <value internal="-25001" feature="SUBSIDIARIES">STDEVENTSUBSIDIARY</value>
+  <value internal="-2109" feature="SUPPORT">STDEVENTSUPPORTCASE</value>
+  <value internal="-2178">STDEVENTTRANSACTION</value>
+</list>

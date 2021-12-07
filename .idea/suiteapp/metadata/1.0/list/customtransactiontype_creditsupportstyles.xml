@@ -1,0 +1,5 @@
+<list id="customtransactiontype_creditsupportstyles">
+  <value>BASIC</value>
+  <value>SALES</value>
+  <value>PURCHASE</value>
+</list>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AccountsInformationState">
+    <option name="accountsInformation">
+      <Toplevel>
+        <option name="molecules">
+          <Molecules>
+            <option name="molecule">
+              <array>
+                <Molecule>
+                  <option name="UUID" value="559904ba-e569-48bd-a5dc-18bca6b4c11c" />
+                  <option name="description" value="Production" />
+                  <option name="url" value="system.netsuite.com" />
+                </Molecule>
+              </array>
+            </option>
+          </Molecules>
+        </option>
+        <option name="sdkSettings">
+          <SdkSettings>
+            <option name="moleculeSettings">
+              <MoleculeSettings>
+                <option name="moleculeSetting">
+                  <array>
+                    <MoleculeSetting>
+                      <option name="accounts">
+                        <Accounts>
+                          <option name="account">
+                            <array>
+                              <Account>
+                                <option name="companies">
+                                  <Companies>
+                                    <option name="company">
+                                      <array>
+                                        <Company>
+                                          <option name="UUID" value="368d80b9-48ca-47a6-9b7e-69e91973ca41" />
+                                          <option name="accountType" value="SANDBOX" />
+                                          <option name="id" value="6961610_SB1" />
+                                          <option name="name" value="XM STUDIOS PTE. LTD." />
+                                          <option name="restDomain" value="6961610-sb1.restlets.api.netsuite.com" />
+                                          <option name="roles">
+                                            <Roles>
+                                              <option name="role">
+                                                <array>
+                                                  <Role>
+                                                    <option name="name" value="Administrator" />
+                                                    <option name="nkey" value="3" />
+                                                  </Role>
+                                                </array>
+                                              </option>
+                                            </Roles>
+                                          </option>
+                                          <option name="systemDomain" value="6961610-sb1.app.netsuite.com" />
+                                          <option name="webservicesDomain" value="6961610-sb1.suitetalk.api.netsuite.com" />
+                                        </Company>
+                                      </array>
+                                    </option>
+                                  </Companies>
+                                </option>
+                                <option name="email" value="nsdev@zokusuite.com" />
+                                <option name="password" value="338c4be47189db5aac8ccef01c7bc63c" />
+                              </Account>
+                            </array>
+                          </option>
+                        </Accounts>
+                      </option>
+                      <option name="molecule">
+                        <Molecule>
+                          <option name="UUID" value="559904ba-e569-48bd-a5dc-18bca6b4c11c" />
+                        </Molecule>
+                      </option>
+                    </MoleculeSetting>
+                  </array>
+                </option>
+              </MoleculeSettings>
+            </option>
+          </SdkSettings>
+        </option>
+      </Toplevel>
+    </option>
+  </component>
+</project>

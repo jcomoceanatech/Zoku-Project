@@ -1,0 +1,46 @@
+<list id="customsegment_transactionbody_sourcelist">
+  <value internal="-3107" feature="ACCOUNTING">STDBODYACCOUNT</value>
+  <value internal="-3513" feature="MULTIBOOK">STDBODYACCOUNTINGBOOK</value>
+  <value internal="-3304" feature="EXPREPORTS">STDBODYACCTCORPCARDEXP</value>
+  <value internal="-3214" feature="INVENTORY">STDBODYADJLOCATION</value>
+  <value internal="-4295" feature="EXPREPORTS">STDBODYADVANCEACCOUNT</value>
+  <value internal="-4608" feature="AUTOLOCATIONASSIGNMENT">STDBODYALACONFIGURATION</value>
+  <value internal="-3208" feature="ACCOUNTING">STDBODYAPACCT</value>
+  <value internal="-3161" feature="ACCOUNTING">STDBODYARACCT</value>
+  <value internal="-3211" feature="ASSEMBLIES">STDBODYASSEMBLYITEM</value>
+  <value internal="-3076" feature="CLASSES">STDBODYCLASS</value>
+  <value internal="-3067">STDBODYCREATEDFROM</value>
+  <value internal="-3062">STDBODYCUSTOMER</value>
+  <value internal="-3070" feature="OPPORTUNITIES">STDBODYDECISIONMAKER</value>
+  <value internal="-3075" feature="DEPARTMENTS">STDBODYDEPARTMENT</value>
+  <value internal="-3164">STDBODYDEPOSIT</value>
+  <value internal="-3116" feature="ACCOUNTING">STDBODYDISCOUNTITEM</value>
+  <value internal="-3233" feature="REVCOMORADVREVREC">STDBODYDRACCOUNT</value>
+  <value internal="-3089">STDBODYEMPLOYEE</value>
+  <value internal="-3100">STDBODYENTITY</value>
+  <value internal="-3230">STDBODYENTITYEMPLOYEE</value>
+  <value internal="-3279" feature="ACCOUNTING">STDBODYEXPENSEACCOUNT</value>
+  <value internal="-3234" feature="REVENUECOMMITMENTS">STDBODYFXACCOUNT</value>
+  <value internal="-3066">STDBODYITEM</value>
+  <value internal="-42109" feature="MULTILOCINVT">STDBODYITEMFULFILLMENT</value>
+  <value internal="-3065" feature="ADVANCEDJOBS">STDBODYJOB</value>
+  <value internal="-3071" feature="MARKETING">STDBODYLEADSOURCE</value>
+  <value internal="-3074" feature="LOCATIONS">STDBODYLOCATION</value>
+  <value internal="-3224">STDBODYNEXTAPPROVER</value>
+  <value internal="-3084" feature="OPPORTUNITIES">STDBODYOPPORTUNITY</value>
+  <value internal="-3083" feature="CRM">STDBODYPARTNER</value>
+  <value internal="-3159">STDBODYPAYMENTCUSTOMER</value>
+  <value internal="-3130" feature="PROMOCODES">STDBODYPROMOCODE</value>
+  <value internal="-3294" feature="PURCHASECONTRACTS">STDBODYPURCHASECONTRACT</value>
+  <value internal="-4609">STDBODYREVERSALENTRY</value>
+  <value internal="-26301">STDBODYSALESORDER</value>
+  <value internal="-3090">STDBODYSALESREP</value>
+  <value internal="-3227" feature="NOTTAX_OVERHAULING">STDBODYSHIPPINGTAXCODE</value>
+  <value internal="-3091">STDBODYSHIPTO</value>
+  <value internal="-3064" feature="SUBSIDIARIES">STDBODYSUBSIDIARY</value>
+  <value internal="-3140" feature="ACCOUNTINGNOTTAX_OVERHAULING">STDBODYTAXITEM</value>
+  <value internal="-3215" feature="INVENTORY">STDBODYTOLOCATION</value>
+  <value internal="-3222" feature="SUBSIDIARIES">STDBODYTOSUBSIDIARY</value>
+  <value internal="-3216" feature="INVENTORY">STDBODYTRANSFERLOCATION</value>
+  <value internal="-3063" feature="ACCOUNTING">STDBODYVENDOR</value>
+</list>

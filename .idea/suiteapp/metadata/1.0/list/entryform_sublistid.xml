@@ -1,0 +1,231 @@
+<list id="entryform_sublistid">
+  <value>BOMCALLS</value>
+  <value>BOMCOMPONENT</value>
+  <value>BOMEVENTS</value>
+  <value>BOMMEDIAITEM</value>
+  <value>BOMSYSTEMNOTES</value>
+  <value>BOMTASKS</value>
+  <value>ENTITYACCESS</value>
+  <value>ENTITYACCESSHISTORY</value>
+  <value>ENTITYACHACCT</value>
+  <value>ENTITYACTIVEWORKFLOWS</value>
+  <value>ENTITYACTIVITIES</value>
+  <value feature="NOTADVANCEDJOBS">ENTITYADDRESSBOOK</value>
+  <value>ENTITYADDRESSBOOK</value>
+  <value feature="BILLINGACCOUNTS">ENTITYBILLINGACCOUNTS</value>
+  <value feature="SUBSCRIPTIONBILLING">ENTITYBILLINGSUBSCRIPTIONS</value>
+  <value feature="VARIABLE_PAY_TBRBCT">ENTITYBONUSES</value>
+  <value>ENTITYBULKMERGE</value>
+  <value>ENTITYCALLS</value>
+  <value>ENTITYCAMPAIGNS</value>
+  <value>ENTITYCARTCONTENTS</value>
+  <value>ENTITYCASES</value>
+  <value>ENTITYCLICKSTREAMS</value>
+  <value feature="COMMISSIONS">ENTITYCOMMISSION</value>
+  <value>ENTITYCOMPANY</value>
+  <value>ENTITYCONTACT</value>
+  <value>ENTITYCREDITCARDS</value>
+  <value>ENTITYCURJURISDICTIONS</value>
+  <value feature="MULTICURRENCYCUSTOMER">ENTITYCURRENCY</value>
+  <value feature="MULTICURRENCYVENDOR">ENTITYCURRENCY</value>
+  <value>ENTITYCUSTOMERS</value>
+  <value>ENTITYDD</value>
+  <value>ENTITYDEALITEM</value>
+  <value>ENTITYDOWNLOAD</value>
+  <value>ENTITYEDUCATION</value>
+  <value>ENTITYEFTACCT</value>
+  <value>ENTITYEMERGENCYCONTACT</value>
+  <value>ENTITYEMPPERMS</value>
+  <value>ENTITYEVENTS</value>
+  <value>ENTITYFINHIST</value>
+  <value>ENTITYGROUPPRICING</value>
+  <value>ENTITYHOSTEDHITS</value>
+  <value>ENTITYHREDUCATION</value>
+  <value>ENTITYHRSUPERVISORHIST</value>
+  <value>ENTITYISSUES</value>
+  <value>ENTITYITEMORDERS</value>
+  <value>ENTITYITEMPRICING</value>
+  <value>ENTITYITEMS</value>
+  <value>ENTITYJOBRESOURCES</value>
+  <value>ENTITYJOBS</value>
+  <value feature="ADVANCEDJOBS">ENTITYJOBTASKS</value>
+  <value>ENTITYJURISDICTIONHIST</value>
+  <value>ENTITYKEYWORDS</value>
+  <value>ENTITYMEDIAITEM</value>
+  <value>ENTITYMESSAGES</value>
+  <value>ENTITYMILESTONES</value>
+  <value>ENTITYONLINEFORMEVENTS</value>
+  <value>ENTITYONLINEFORMS</value>
+  <value>ENTITYOPPORTUNITIES</value>
+  <value>ENTITYPAGEHITS</value>
+  <value>ENTITYPARTNERS</value>
+  <value>ENTITYPAYACCRUED</value>
+  <value>ENTITYPAYCONTRIB</value>
+  <value>ENTITYPAYDEDUCT</value>
+  <value>ENTITYPAYEARN</value>
+  <value feature="PAYMENTINSTRUMENTS">ENTITYPAYMENTINSTRUMENTS</value>
+  <value>ENTITYPAYWITH</value>
+  <value>ENTITYPAYWITHOTHER</value>
+  <value>ENTITYPAYWITHSTATE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">ENTITYPCTCOMPLETEOVERRIDE</value>
+  <value feature="JOBCOSTING">ENTITYPLSTATEMENT</value>
+  <value>ENTITYPRICINGSCHEDULE</value>
+  <value>ENTITYPROMOCODE</value>
+  <value feature="CHARGEBASEDBILLING">ENTITYRATES</value>
+  <value>ENTITYREFERRER</value>
+  <value feature="RESOURCEALLOCATIONS">ENTITYRESOURCEALLOCATION</value>
+  <value>ENTITYROLES</value>
+  <value>ENTITYSALESTEAM</value>
+  <value feature="MULTISUBSIDIARYCUSTOMER">ENTITYSUBMACHINE</value>
+  <value feature="SUBSIDIARIES">ENTITYSUBMACHINE</value>
+  <value>ENTITYSUBORDINATES</value>
+  <value>ENTITYSUBS</value>
+  <value>ENTITYSUBSCRIPTIONMSGMACH</value>
+  <value>ENTITYSUBSCRIPTIONS</value>
+  <value>ENTITYSYSTEMNOTES</value>
+  <value>ENTITYTASKS</value>
+  <value feature="TAX_OVERHAULING">ENTITYTAXREGISTRATION</value>
+  <value feature="TIMETRACKING">ENTITYTIME</value>
+  <value>ENTITYTIME</value>
+  <value>ENTITYTIMEITEM</value>
+  <value feature="RESALLOCATIONSANDTIMEOFFMNGMNT">ENTITYTIMEOFFCONFLICTS</value>
+  <value>ENTITYUPSELL</value>
+  <value>ENTITYUSERNOTES</value>
+  <value feature="WBS">ENTITYWBS</value>
+  <value>ENTITYWORKFLOWHISTORY</value>
+  <value>EVENTACTIVEWORKFLOWS</value>
+  <value>EVENTACTIVITIES</value>
+  <value>EVENTASSIGNEE</value>
+  <value>EVENTATTENDEE</value>
+  <value>EVENTBROKENINVERSION</value>
+  <value>EVENTCALLS</value>
+  <value>EVENTCAMPAIGNDIRECTMAIL</value>
+  <value>EVENTCAMPAIGNDRIP</value>
+  <value>EVENTCAMPAIGNEMAIL</value>
+  <value>EVENTCAMPAIGNEVENT</value>
+  <value>EVENTCASE</value>
+  <value>EVENTCASES</value>
+  <value>EVENTCONTACT</value>
+  <value>EVENTCOSTDETAIL</value>
+  <value>EVENTDEFAULTEVENT</value>
+  <value>EVENTDETAILS</value>
+  <value>EVENTESCALATEHIST</value>
+  <value>EVENTESCALATETO</value>
+  <value>EVENTEVENTRESPONSE</value>
+  <value>EVENTEVENTS</value>
+  <value>EVENTFIXEDINVERSION</value>
+  <value>EVENTINVITECALENDAR</value>
+  <value>EVENTISSUES</value>
+  <value>EVENTMEDIAITEM</value>
+  <value>EVENTMESSAGES</value>
+  <value>EVENTPREDECESSOR</value>
+  <value>EVENTRELATEDISSUES</value>
+  <value>EVENTRESOURCE</value>
+  <value>EVENTSOLUTIONS</value>
+  <value>EVENTSYSTEMNOTES</value>
+  <value>EVENTTARGETVERSION</value>
+  <value>EVENTTASKS</value>
+  <value>EVENTTIMEITEM</value>
+  <value feature="TIMEOFFMANAGEMENT">EVENTTIMEOFFCONFLICTS</value>
+  <value feature="TIMEOFFMANAGEMENT">EVENTTIMEOFFDETAILS</value>
+  <value>EVENTTOPICS</value>
+  <value>EVENTTRANSACTIONS</value>
+  <value>EVENTUSERNOTES</value>
+  <value>EVENTWORKFLOWHISTORY</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMACTIVEWORKFLOWS</value>
+  <value>ITEMACTIVEWORKFLOWS</value>
+  <value>ITEMBILLINGRATE</value>
+  <value>ITEMBINNUMBER</value>
+  <value>ITEMBINNUMBERSEARCH</value>
+  <value>ITEMCALLS</value>
+  <value>ITEMCORRELATEDITEMS</value>
+  <value>ITEMEVENTS</value>
+  <value feature="MERCHANDISEHIERARCHY">ITEMHIERARCHYVERSIONS</value>
+  <value>ITEMINVENTORYDETAILSRCH</value>
+  <value>ITEMINVENTORYNUMBERSRCH</value>
+  <value>ITEMINVENTORYSTATUSSRCH</value>
+  <value>ITEMITEMVENDOR</value>
+  <value>ITEMLOCATIONS</value>
+  <value>ITEMMEDIAITEM</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMMEMBER</value>
+  <value>ITEMMFGROUTING</value>
+  <value>ITEMNUMBERS</value>
+  <value>ITEMPRESITEMS</value>
+  <value>ITEMPRICE</value>
+  <value>ITEMSITECATEGORY</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMSYSTEMNOTES</value>
+  <value>ITEMSYSTEMNOTES</value>
+  <value>ITEMTASKS</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMTRANSACTIONS</value>
+  <value>ITEMTRANSACTIONS</value>
+  <value>ITEMTRANSLATIONS</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMUSERNOTES</value>
+  <value>ITEMUSERNOTES</value>
+  <value feature="SUBSCRIPTIONBILLING">ITEMWORKFLOWHISTORY</value>
+  <value>ITEMWORKFLOWHISTORY</value>
+  <value>OTHERACCOUNTMAPPING</value>
+  <value feature="WEEKLYTIMESHEETS">OTHERACTIVEWORKFLOWS</value>
+  <value>OTHERACTIVEWORKFLOWS</value>
+  <value>OTHERBILLINGSCHEDULE</value>
+  <value>OTHERBILLREQUEST</value>
+  <value>OTHERCALLS</value>
+  <value>OTHERCAMPAIGNS</value>
+  <value>OTHERCHANGEORDER</value>
+  <value>OTHERCHARGERULE</value>
+  <value feature="CHARGEBASEDBILLING">OTHERCHARGES</value>
+  <value>OTHERCHARGES</value>
+  <value>OTHERCOSTDETAIL</value>
+  <value>OTHERCUSTOMERRETURN</value>
+  <value>OTHERDATESFIXEDAMOUNT</value>
+  <value>OTHERDATESPCTFROMTOTAL</value>
+  <value>OTHERDISTRIBUTIONCATEGORY</value>
+  <value>OTHERDISTRIBUTIONSOURCE</value>
+  <value>OTHERENROLL</value>
+  <value>OTHEREVENTS</value>
+  <value>OTHERFILTERS</value>
+  <value>OTHERFULFILLMENT</value>
+  <value>OTHERHISTORYTAB</value>
+  <value>OTHERITEM</value>
+  <value>OTHERITEMS</value>
+  <value feature="LANDEDCOST">OTHERLANDEDCOST</value>
+  <value>OTHERLINES</value>
+  <value feature="GROUPAVERAGECOSTING">OTHERLOCATION</value>
+  <value>OTHERMEDIAITEM</value>
+  <value>OTHERNEWLINEITEMS</value>
+  <value>OTHEROPPORTUNITIES</value>
+  <value>OTHERORDER</value>
+  <value>OTHERPARTNERS</value>
+  <value>OTHERPLANNINGMESSAGE</value>
+  <value feature="NOTMULTICURRENCY">OTHERRATECARDPRICING</value>
+  <value feature="MULTICURRENCY">OTHERRATECARDPRICINGMULTI</value>
+  <value feature="ADVANCEDJOBS">OTHERRATECARDPROJECTS</value>
+  <value>OTHERRATECARDVERSION</value>
+  <value>OTHERRECURRENCEST</value>
+  <value>OTHERRELATEDSUBSCR</value>
+  <value>OTHERRENEWALHISTORY</value>
+  <value>OTHERRENEWALSTEPS</value>
+  <value>OTHERRESOURCERATEOVERRIDE</value>
+  <value feature="ADVANCEDREVENUERECOGNITION">OTHERREVELEMENTS</value>
+  <value>OTHERROUTINGCOMPONENT</value>
+  <value>OTHERROUTINGSTEP</value>
+  <value>OTHERSUBLINE</value>
+  <value>OTHERSUBLINEFROMPLAN</value>
+  <value>OTHERSUBSCRIPTIONS</value>
+  <value feature="GROUPAVERAGECOSTING">OTHERSYSTEMNOTES</value>
+  <value feature="SUBSCRIPTIONBILLING">OTHERSYSTEMNOTES</value>
+  <value feature="TIMESHEETRECORDANY">OTHERSYSTEMNOTES</value>
+  <value>OTHERSYSTEMNOTES</value>
+  <value>OTHERTASKS</value>
+  <value>OTHERTASKSFIXEDAMOUNT</value>
+  <value>OTHERTASKSPCTFROMTOTAL</value>
+  <value>OTHERTRANCODEMAPPING</value>
+  <value>OTHERTRANSACTIONS</value>
+  <value>OTHERTRANSLATIONS</value>
+  <value>OTHERUSERNOTES</value>
+  <value feature="WEEKLYTIMESHEETS">OTHERWORKFLOWHISTORY</value>
+  <value>OTHERWORKFLOWHISTORY</value>
+  <value feature="WORKFLOW">TIMEACTIVEWORKFLOWS</value>
+  <value feature="CHARGEBASEDBILLING">TIMECHARGES</value>
+  <value>TIMESYSTEMNOTES</value>
+  <value feature="WORKFLOW">TIMEWORKFLOWHISTORY</value>
+</list>

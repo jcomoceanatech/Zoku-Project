@@ -1,0 +1,27 @@
+<list id="transactionform_tabid">
+  <value>APPLICATIONS</value>
+  <value feature="CHARGEBASEDBILLING">CHARGES</value>
+  <value>CUSTOM</value>
+  <value feature="ACCOUNTING">GLIMPACTTAB</value>
+  <value>LINES</value>
+  <value feature="ADVBILLING">MILESTONES</value>
+  <value feature="MULTIBOOK">MULTIBOOK</value>
+  <value feature="MULTIPARTNER">MULTIPARTNER</value>
+  <value>PAYEEADDRESS</value>
+  <value>PROMOTIONSTAB</value>
+  <value feature="ALTERNATIVEPICKUPCONTACT">STOREPICKUP</value>
+  <value feature="TAX_OVERHAULING">TAXES</value>
+  <value feature="TEAMSELLING">TEAMSELLING</value>
+  <value>TRANSACTIONACCOUNTING</value>
+  <value>TRANSACTIONADDRESS</value>
+  <value>TRANSACTIONBILLING</value>
+  <value>TRANSACTIONCOMMUNICATION</value>
+  <value>TRANSACTIONITEMS</value>
+  <value>TRANSACTIONOUTPUTOPTIONS</value>
+  <value>TRANSACTIONPAYMENT</value>
+  <value>TRANSACTIONRELATEDRECORDS</value>
+  <value>TRANSACTIONRELATIONSHIPS</value>
+  <value>TRANSACTIONSHIPPING</value>
+  <value>TRANSACTIONSYSTEMINFORMATION</value>
+  <value feature="WORKFLOW">WORKFLOW</value>
+</list>

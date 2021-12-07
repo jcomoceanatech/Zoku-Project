@@ -1,0 +1,7 @@
+<list id="generic_permission_level">
+  <value internal="0">NONE</value>
+  <value internal="1">VIEW</value>
+  <value internal="2">CREATE</value>
+  <value internal="3">EDIT</value>
+  <value internal="4">FULL</value>
+</list>
