@@ -65,6 +65,13 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
                     label: 'Cancel Product Allocation',
                     functionName: 'cancelProductAllocation'
                 });
+
+                // currentForm.addButton({
+                //     id: 'custpage_add_quantity',
+                //     label: 'Additional Quantity',
+                //     //functionName: 'cancelProductAllocation'
+                // });
+
                 // if ((getInventoryStatusChangeStatus === "") && (getProductAllocationStatus === libHelper.allocationStatus.PENDING)) {
                 //     currentForm.addButton({
                 //         id: 'custpage_create_inventory_status_change',
@@ -175,6 +182,12 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
             if(flNewAllocationQuantity && flOldAllocationQuantity) {
                 if(flOldAllocationQuantity != flNewAllocationQuantity) {
                     var recSalesOrder = record.load({type:"salesorder", id: newRecord.getValue(libHelper.PRODUCT_ALLOCATION_RECORD.SALES_ORDER), isDynamic:true });
+                    var lookupFieldItem = search.lookupFields({
+                        type: search.Type.ITEM,
+                        id: recSalesOrder.getSublistValue({sublistId: "item", fieldId: "item", line: 1}),
+                        columns: ['custitem_zk_deposit_amount']
+                    });
+
                     var currLine = recSalesOrder.selectLine({ sublistId: 'item', line: 1 });
                     var flOriginalRate = currLine.getCurrentSublistValue({sublistId: "item", fieldId:"custcol_original_rate"});
                     var flDiscount = currLine.getCurrentSublistValue({sublistId: "item", fieldId:"custcol_discount_percent"}) || 0;
@@ -186,13 +199,18 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
                     currLine.setCurrentSublistValue({sublistId:"item", fieldId:"rate", value: flDiscountedRate});
                     currLine.commitLine({ sublistId: 'item' });
 
+                    var flDepositAmount = (lookupFieldItem.custitem_zk_deposit_amount) ? lookupFieldItem.custitem_zk_deposit_amount : 0;
+                    var flAdvanceDepositRate = (flDiscountedRate < flDepositAmount) ? flDiscountedRate : flDepositAmount;
+
                     var currLine = recSalesOrder.selectLine({ sublistId: 'item', line: 0 });
-                    currLine.setCurrentSublistValue({sublistId:"item", fieldId:"rate", value: flDiscountedRate});
+                    currLine.setCurrentSublistValue({sublistId:"item", fieldId:"rate", value: flAdvanceDepositRate});
+                    currLine.setCurrentSublistValue({sublistId:"item", fieldId:"custcol_original_rate", value: flAdvanceDepositRate});
                     currLine.setCurrentSublistValue({sublistId:"item", fieldId:"quantity", value: flNewAllocationQuantity});
                     currLine.commitLine({ sublistId: 'item' });
 
                     var currLine = recSalesOrder.selectLine({ sublistId: 'item', line: 2 });
-                    currLine.setCurrentSublistValue({sublistId:"item", fieldId:"rate", value: flDiscountedRate * -1});
+                    currLine.setCurrentSublistValue({sublistId:"item", fieldId:"rate", value: flAdvanceDepositRate * -1});
+                    currLine.setCurrentSublistValue({sublistId:"item", fieldId:"custcol_original_rate", value: flAdvanceDepositRate * -1});
                     currLine.setCurrentSublistValue({sublistId:"item", fieldId:"quantity", value: flNewAllocationQuantity});
                     currLine.commitLine({ sublistId: 'item' });
 
@@ -208,9 +226,11 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
         var intCustomerCategory = (objProductAllocation.category) ? objProductAllocation.category : "";
         var intPricingGroup = (objProductAllocation.pricinggroup) ? objProductAllocation.pricinggroup : "";
         var fetchItemRate = getItemPrice(objProductAllocation);
+        var flDepositAmount = (objProductAllocation.depositamount) ? objProductAllocation.depositamount : 0;
         var flDiscount = parseFloat(getCustomerDiscountPercent(intCustomerCategory, intPricingGroup));
         var flDiscountAmount = fetchItemRate * parseFloat(flDiscount/100);
         var flDiscountedRate = fetchItemRate - flDiscountAmount;
+        var flAdvanceDepositRate = (flDiscountedRate < flDepositAmount) ? flDiscountedRate : flDepositAmount;
 
         var createSalesOrder = record.create({
             type: 'salesorder',
@@ -228,8 +248,8 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
         currentLine.setSublistValue({ sublistId: 'item', fieldId: 'class', line: 0, value: objProductAllocation.class });
         // currentLine.setSublistValue({ sublistId: 'item', fieldId: 'price', line: 0, value: objProductAllocation.pricelevel });
         currentLine.setSublistValue({ sublistId: 'item', fieldId: 'quantity', line: 0, value: parseFloat(objProductAllocation.custrecord_zk_pa_allocated_quantity) });
-        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'custcol_original_rate', line: 0, value: fetchItemRate });
-        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'rate', line: 0, value: flDiscountedRate });
+        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'custcol_original_rate', line: 0, value: flAdvanceDepositRate });
+        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'rate', line: 0, value: flAdvanceDepositRate });
 
         var currentLine = createSalesOrder.insertLine({ sublistId: 'item', line: 1 });
         currentLine.setSublistValue({ sublistId: 'item', fieldId: 'item', line: 1, value: objProductAllocation.custrecord_zk_pa_item });
@@ -248,9 +268,9 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
         currentLine.setSublistValue({ sublistId: 'item', fieldId: 'class', line: 2, value: objProductAllocation.class });
         // currentLine.setSublistValue({ sublistId: 'item', fieldId: 'price', line: 2, value: objProductAllocation.pricelevel });
         currentLine.setSublistValue({ sublistId: 'item', fieldId: 'quantity', line: 2, value: parseFloat(objProductAllocation.custrecord_zk_pa_allocated_quantity) });
-        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'custcol_original_rate', line: 2, value: fetchItemRate * -1 });
-        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'rate', line: 2, value: flDiscountedRate * -1 });
-        var idSalesOrder = createSalesOrder.save();`x`
+        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'custcol_original_rate', line: 2, value: flAdvanceDepositRate * -1 });
+        currentLine.setSublistValue({ sublistId: 'item', fieldId: 'rate', line: 2, value: flAdvanceDepositRate * -1 });
+        var idSalesOrder = createSalesOrder.save();
 
         if(idSalesOrder) {
             updateEstimatedManufacturedQuantityFromClientScript(objProductAllocation.custrecord_zk_pa_item, objProductAllocation.custrecord_zk_pa_allocated_quantity, "acknowledge");
@@ -275,6 +295,7 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
                 search.createColumn({name: "custrecord_zk_pa_location"}),
                 search.createColumn({name: "department",join: "CUSTRECORD_ZK_PA_ITEM"}),
                 search.createColumn({name: "custitem_zk_advance_item",join: "CUSTRECORD_ZK_PA_ITEM"}),
+                search.createColumn({name: "custitem_zk_deposit_amount",join: "CUSTRECORD_ZK_PA_ITEM"}),
                 search.createColumn({name: "class",join: "CUSTRECORD_ZK_PA_ITEM"}),
                 search.createColumn({name: "pricinggroup",join: "CUSTRECORD_ZK_PA_ITEM"}),
                 search.createColumn({name: "currency",join: "CUSTRECORD_ZK_PA_DISTRIBUTOR"}),
@@ -295,6 +316,7 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
                     custrecord_zk_pa_salesorder: result.getValue({name:"custrecord_zk_pa_salesorder"}),
                     custrecord_zk_pa_location: result.getValue({name:"custrecord_zk_pa_location"}),
                     advanceitem: result.getValue({name: "custitem_zk_advance_item",join: "CUSTRECORD_ZK_PA_ITEM"}) || "846",
+                    depositamount: result.getValue({name: "custitem_zk_deposit_amount",join: "CUSTRECORD_ZK_PA_ITEM"}),
                     department: result.getValue({name: "department",join: "CUSTRECORD_ZK_PA_ITEM"}),
                     class: result.getValue({name: "class",join: "CUSTRECORD_ZK_PA_ITEM"}),
                     pricinggroup: result.getValue({name: "pricinggroup",join: "CUSTRECORD_ZK_PA_ITEM"}),
@@ -310,7 +332,6 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
 
     function getCustomerDiscountPercent(intCustomerCategory, intPricingGroup) {
         var discountPercent = 0;
-
         if(!intCustomerCategory || !intPricingGroup) return discountPercent;
 
         var discountSearchObj = search.create({
@@ -358,7 +379,6 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
                 if(arrQtyRange.length == 2) {
                     if (parseFloat(objProductAllocation.custrecord_zk_pa_allocated_quantity) <= parseFloat(intLimit)) {
                         flLineItemRate = currentRange[intIndex].getValue('unitprice');
-                        console.log(objProductAllocation.custrecord_zk_pa_allocated_quantity + " <= " +intLimit + " ===== "+flLineItemRate);
                         break;
                     }
                 } else if(arrQtyRange.length == 1) {

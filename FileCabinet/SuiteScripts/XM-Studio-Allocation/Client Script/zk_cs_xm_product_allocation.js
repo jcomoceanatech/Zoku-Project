@@ -88,35 +88,6 @@ define(['N/currentRecord', 'N/record', 'N/ui/dialog', 'N/search', 'N/email'], fu
                     recProductAllocation.setValue("custrecord_zk_pa_to_process_so", true);
                     recProductAllocation.save();
 
-                    // var intSalesOrder = createSalesOrder(objProductAllocation);
-                    // if(intSalesOrder) {
-                    //     record.submitFields({
-                    //         type: 'customrecord_zk_product_allocation',
-                    //         id: getProductAllocationId,
-                    //         values: {
-                    //             custrecord_zk_pa_status: '1',
-                    //             custrecord_zk_pa_salesorder: intSalesOrder
-                    //         }
-                    //     });
-                    //
-                    //     sendAcknowledgedNotification(objProductAllocation);
-                    //
-                    //     function success(result) {
-                    //         if (result === true) {
-                    //             window.location.reload(true);
-                    //         }
-                    //     }
-                    //
-                    //     function failure(reason) {
-                    //         console.log('Failure: ' + reason)
-                    //     }
-                    //
-                    //     dialog.alert({
-                    //         title: 'Success',
-                    //         message: 'Acknowledged!, Sales Order created'
-                    //     }).then(success).catch(failure);
-                    // }
-
                     sendAcknowledgedNotification(objProductAllocation);
                     function success(result) {
                         if (result === true) {

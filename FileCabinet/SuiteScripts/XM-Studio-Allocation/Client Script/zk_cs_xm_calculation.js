@@ -80,7 +80,7 @@ define(['N/search','N/record'], function(search, record) {
                     } else if(flOldQuantity != flNewQuantity) {
                         var intItemId = currentRecord.getCurrentSublistValue({sublistId: "item", fieldId: "item"});
                         var intLocationId = currentRecord.getValue({fieldId: "location"});
-                        var objProductAllocations = getProductAllocations(intItemId, intLocationId);
+                        var objProductAllocations = getProductAllocations(intItemId);
                         var flTotalPendingProductAllocation = 0;
                         var flAdditionalQty = flNewQuantity - flOldQuantity;
                         var lookupFieldItem = search.lookupFields({
@@ -148,21 +148,29 @@ define(['N/search','N/record'], function(search, record) {
         if(intProductAllocationId) {
             var flNewQuantity = currentRecord.getSublistValue({sublistId: "item", fieldId: "quantity", line: 1});
             var flNewRate = currentRecord.getSublistValue({sublistId: "item", fieldId: "rate", line: 1});
-            var flNewAmount = currentRecord.getSublistValue({sublistId: "item", fieldId: "amount", line: 1});
             var flNewOriginalRate = currentRecord.getSublistValue({sublistId: "item", fieldId: "custcol_original_rate", line: 1});
             if(flOldQuantity != flNewQuantity) {
+                var lookupFieldItem = search.lookupFields({
+                    type: search.Type.ITEM,
+                    id: currentRecord.getSublistValue({sublistId: "item", fieldId: "item", line: 1}),
+                    columns: ['custitem_zk_deposit_amount']
+                });
+                var flDepositAmount = (lookupFieldItem.custitem_zk_deposit_amount) ? lookupFieldItem.custitem_zk_deposit_amount : 0;
+                var flAdvanceDepositRate = (flNewRate < flDepositAmount) ? flNewRate : flDepositAmount;
+                var flNewAmount = flAdvanceDepositRate * flNewQuantity;
+
                 var currentLine = currentRecord.selectLine({ sublistId: 'item', line: 0 });
                 currentLine.setCurrentSublistValue({sublistId: "item", fieldId: "quantity", value: flNewQuantity});
-                currentLine.setCurrentSublistValue({sublistId: "item", fieldId: "rate", value: flNewRate});
+                currentLine.setCurrentSublistValue({sublistId: "item", fieldId: "rate", value: flAdvanceDepositRate});
                 currentLine.setCurrentSublistValue({sublistId: "item", fieldId: "amount", value: flNewAmount});
-                currentLine.setCurrentSublistValue({sublistId: "item", fieldId: "custcol_original_rate", value: flNewOriginalRate});
+                currentLine.setCurrentSublistValue({sublistId: "item", fieldId: "custcol_original_rate", value: flAdvanceDepositRate});
                 currentLine.commitLine({ sublistId: 'item' });
 
                 var currentLine = currentRecord.selectLine({ sublistId: 'item', line: 2 });
                 currentRecord.setCurrentSublistValue({sublistId: "item", fieldId: "quantity", value: flNewQuantity});
-                currentRecord.setCurrentSublistValue({sublistId: "item", fieldId: "rate", value: flNewRate * -1});
+                currentRecord.setCurrentSublistValue({sublistId: "item", fieldId: "rate", value: flAdvanceDepositRate * -1});
                 currentRecord.setCurrentSublistValue({sublistId: "item", fieldId: "amount", value: flNewAmount * -1});
-                currentRecord.setCurrentSublistValue({sublistId: "item", fieldId: "custcol_original_rate", value: flNewOriginalRate * -1});
+                currentRecord.setCurrentSublistValue({sublistId: "item", fieldId: "custcol_original_rate", value: flAdvanceDepositRate * -1});
                 currentLine.commitLine({ sublistId: 'item' });
 
                 record.submitFields({
@@ -232,7 +240,7 @@ define(['N/search','N/record'], function(search, record) {
         currentRecord.setCurrentSublistValue({sublistId: "item", fieldId:"amount",value: flQuantity*flDiscountedRate });
     }
 
-    function getProductAllocations(intItemId, intLocationId) {
+    function getProductAllocations(intItemId) {
         var objData = {};
         var filters = [
             ["custrecord_zk_pa_item","is",intItemId], "AND",
@@ -255,7 +263,7 @@ define(['N/search','N/record'], function(search, record) {
                 objData[result.id] = {
                     'recordid': result.id,
                     'custrecord_zk_pa_allocated_quantity': result.getValue('custrecord_zk_pa_allocated_quantity') || 0,
-                    'custrecord_zk_pa_status': result.getText('custrecord_zk_pa_status'),
+                    'custrecord_zk_pa_status': result.getText('custrecord_zk_pa_status')
                 };
                 return true;
             });
@@ -286,5 +294,6 @@ define(['N/search','N/record'], function(search, record) {
         return discountPercent;
     }
 
-    return { fieldChanged: fieldChanged, saveRecord: saveRecord, pageInit: pageInit };
+    // return { fieldChanged: fieldChanged, saveRecord: saveRecord, pageInit: pageInit };
+    return { fieldChanged: fieldChanged, pageInit: pageInit };
 });

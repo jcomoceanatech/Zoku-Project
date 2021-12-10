@@ -30,18 +30,58 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
         var newRecord = scriptContext.newRecord;
 
         if(scriptContext.type == "delete" && oldRecord.getValue("custbody_zk_so_product_allocation")) {
-            updateEstimatedManufacturedQuantity(scriptContext);
+            updateEstimatedManufacturedQuantityCancelled(scriptContext);
         }
 
         if(newRecord.getValue("status") == "C" && oldRecord.getValue("custbody_zk_so_product_allocation")) {
-            updateEstimatedManufacturedQuantity(scriptContext);
+            updateEstimatedManufacturedQuantityCancelled(scriptContext);
         }
     }
 
-    function updateEstimatedManufacturedQuantity(context) {
+    function beforeSubmit(context) {
+        var newRecord = context.newRecord;
+        var oldRecord = context.oldRecord;
+        var intProductAllocationId = newRecord.getValue("custbody_zk_so_product_allocation");
+
+        if(intProductAllocationId) {
+            var flNewQuantity = newRecord.getSublistValue({sublistId: "item", fieldId: "quantity", line: 1});
+            var flOldQuantity = oldRecord.getSublistValue({sublistId: "item", fieldId: "quantity", line: 1});
+            var flNewRate = newRecord.getSublistValue({sublistId: "item", fieldId: "rate", line: 1});
+            var flNewOriginalRate = newRecord.getSublistValue({sublistId: "item", fieldId: "custcol_original_rate", line: 1});
+            if(flOldQuantity != flNewQuantity) {
+                var lookupFieldItem = search.lookupFields({
+                    type: search.Type.ITEM,
+                    id: newRecord.getSublistValue({sublistId: "item", fieldId: "item", line: 1}),
+                    columns: ['custitem_zk_deposit_amount']
+                });
+                var flDepositAmount = (lookupFieldItem.custitem_zk_deposit_amount) ? lookupFieldItem.custitem_zk_deposit_amount : 0;
+                var flAdvanceDepositRate = (flNewRate < flDepositAmount) ? flNewRate : flDepositAmount;
+                var flNewAmount = flAdvanceDepositRate * flNewQuantity;
+
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'quantity', line: 0, value: flNewQuantity });
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'rate', line: 0, value: flAdvanceDepositRate });
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'amount', line: 0, value: flNewAmount });
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'custcol_original_rate', line: 0, value: flAdvanceDepositRate });
+
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'quantity', line: 2, value: flNewQuantity });
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'rate', line: 2, value: flAdvanceDepositRate * -1 });
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'amount', line: 2, value: flNewAmount * -1 });
+                newRecord.setSublistValue({ sublistId: 'item', fieldId: 'custcol_original_rate', line: 2, value: flAdvanceDepositRate * -1 });
+
+                record.submitFields({
+                    type: 'customrecord_zk_product_allocation',
+                    id: intProductAllocationId,
+                    values: { 'custrecord_zk_pa_allocated_quantity': flNewQuantity }
+                });
+                updateEstimatedManufacturedQuantity(context);
+            }
+        }
+    }
+
+    function updateEstimatedManufacturedQuantityCancelled(context) {
         var oldRecord = context.oldRecord;
         var intItemId = oldRecord.getSublistValue({sublistId: "item", fieldId: "item", line: 1});
-        var flNewAllocationQuantity = oldRecord.getSublistValue({sublistId: "item", fieldId: "quantity", line: 0});
+        var flNewAllocationQuantity = oldRecord.getSublistValue({sublistId: "item", fieldId: "quantity", line: 1});
         var arrItemTypes = {
             "Description": "descriptionitem",
             "Discount": "discountitem",
@@ -66,11 +106,6 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
         var flEstimatedQuantity = lookupFieldItem.custitem_zk_available_manufacture_qty || 0;
         flRemaningQuantity = parseFloat(flEstimatedQuantity) + flNewAllocationQuantity;
 
-        log.debug("flEstimatedQuantity", flEstimatedQuantity);
-        log.debug("flNewAllocationQuantity", flNewAllocationQuantity);
-        log.debug("flRemaningQuantity", flRemaningQuantity);
-        log.debug(stItemType, intItemId);
-
         record.submitFields({
             type: stItemType,
             id: intItemId,
@@ -84,8 +119,54 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
         });
     }
 
-    return {
-        afterSubmit: afterSubmit
+    function updateEstimatedManufacturedQuantity(context) {
+        var newRecord = context.newRecord;
+        var oldRecord = context.oldRecord;
+        var flOldAllocationQuantity = oldRecord.getSublistValue({sublistId: "item", fieldId: "quantity", line: 1});
+        var intItemId = newRecord.getSublistValue({sublistId: "item", fieldId: "item", line: 1});
+        var flNewAllocationQuantity = newRecord.getSublistValue({sublistId: "item", fieldId: "quantity", line: 1});
+        var arrItemTypes = {
+            "Description": "descriptionitem",
+            "Discount": "discountitem",
+            "InvtPart": "inventoryitem",
+            "Kit": "kititem",
+            "Markup": "markupitem",
+            "NonInvtPart": "noninventoryitem",
+            "OthCharge": "otherchargeitem",
+            "Payment": "paymentitem",
+            "Service": "serviceitem"
+        };
+        var lookupFieldItem = search.lookupFields({
+            type: search.Type.ITEM,
+            id: intItemId,
+            columns: ['custitem_zk_available_manufacture_qty', 'type', 'isserialitem', 'islotitem']
+        });
+        var stItemType = arrItemTypes[lookupFieldItem.type[0].value];
+        if(lookupFieldItem.isserialitem) { stItemType = "serializedinventoryitem"; }
+        if(lookupFieldItem.islotitem) { stItemType = "lotnumberedinventoryitem"; }
+
+        var flRemaningQuantity = 0;
+        var flEstimatedQuantity = lookupFieldItem.custitem_zk_available_manufacture_qty || 0;
+
+        if (flNewAllocationQuantity > flOldAllocationQuantity) {
+            var flExcessQuantity = parseFloat(flNewAllocationQuantity) - parseFloat(flOldAllocationQuantity);
+            flRemaningQuantity = parseFloat(flEstimatedQuantity) - flExcessQuantity;
+        } else {
+            var flToBeReturnedQuantity = parseFloat(flOldAllocationQuantity) - parseFloat(flNewAllocationQuantity);
+            flRemaningQuantity = parseFloat(flEstimatedQuantity) + flToBeReturnedQuantity;
+        }
+
+        log.debug('flNewAllocationQuantity', flNewAllocationQuantity);
+        log.debug('flOldAllocationQuantity', flOldAllocationQuantity);
+        log.debug('flRemaningQuantity', flRemaningQuantity);
+
+        record.submitFields({
+            type: stItemType,
+            id: intItemId,
+            values: {custitem_zk_available_manufacture_qty: flRemaningQuantity}
+        });
     }
 
-});
+    return { beforeSubmit: beforeSubmit, afterSubmit: afterSubmit }
+
+    });
