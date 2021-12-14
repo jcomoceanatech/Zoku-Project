@@ -297,7 +297,8 @@ define(['N/record', 'N/search', 'N/config','N/file','N/runtime', 'N/format','N/u
                 search.createColumn({name: "custitem_zk_available_manufacture_qty"}),
                 search.createColumn({name: "custitem_zoku_brand_category"}),
                 search.createColumn({name: "custitem_zoku_brand_license_2"}),
-                search.createColumn({name: "custitem_zk_deposit_amount"})
+                search.createColumn({name: "custitem_zk_deposit_amount"}),
+                search.createColumn({name: "custitem_zk_distributor_pool"})
             ];
             var itemSearchObj = fn.runSearch("item",  null, filters, columns);
             if(itemSearchObj.length != 0) {
@@ -309,10 +310,11 @@ define(['N/record', 'N/search', 'N/config','N/file','N/runtime', 'N/format','N/u
                         'totalquantityonhand': itemSearchObj[intIndex].getValue('totalquantityonhand'),
                         'baseprice': itemSearchObj[intIndex].getValue('baseprice') || 0,
                         'estimatedquantity': itemSearchObj[intIndex].getValue('custitem_zk_estimated_manufacture_qty') || 0,
-                        'depositamount': itemSearchObj[intIndex].getValue('custitem_zk_deposit_amount'),
+                        'depositamount': itemSearchObj[intIndex].getValue('custitem_zk_deposit_amount') || 0,
                         'availablemanufacturequantity': itemSearchObj[intIndex].getValue('custitem_zk_available_manufacture_qty') || 0,
                         'category': itemSearchObj[intIndex].getValue('custitem_zoku_brand_category'),
-                        'brand': itemSearchObj[intIndex].getValue('custitem_zoku_brand_license_2')
+                        'brand': itemSearchObj[intIndex].getValue('custitem_zoku_brand_license_2'),
+                        'distributorpool': itemSearchObj[intIndex].getValue({name:"custitem_zk_distributor_pool"})
                     };
                 }
             }
@@ -348,7 +350,8 @@ define(['N/record', 'N/search', 'N/config','N/file','N/runtime', 'N/format','N/u
                     search.createColumn({name: "locationquantitycommitted", label: "Location Committed"}),
                     search.createColumn({name: "locationquantityonhand", label: "Location On Hand"}),
                     search.createColumn({name: "inventorylocation", label: "Inventory Location"}),
-                    search.createColumn({name: "locationquantityonorder", label: "Location On Order"})
+                    search.createColumn({name: "locationquantityonorder", label: "Location On Order"}),
+                    search.createColumn({name: "custitem_zk_distributor_pool", label: "Distributor Pool"})
                 ]
             });
             var searchResultCount = itemSearchObj.runPaged().count;
@@ -365,6 +368,7 @@ define(['N/record', 'N/search', 'N/config','N/file','N/runtime', 'N/format','N/u
                         inventorylocation: result.getText({name:"inventorylocation"}),
                         inventorylocationid: result.getValue({name:"inventorylocation"}),
                         locationquantityonorder: result.getValue({name:"locationquantityonorder"}) || 0,
+                        custitem_zk_distributor_pool: result.getValue({name:"custitem_zk_distributor_pool"})
                     };
                     return true;
                 });

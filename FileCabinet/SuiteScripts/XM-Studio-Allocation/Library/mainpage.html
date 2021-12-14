@@ -138,6 +138,17 @@
                         <input type="text" class="form-control" id="txtViewMemberPrice" name="txtViewMemberPrice" disabled>
                       </div>
                     </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="txtEditDistributorPool">Distributor Pool</label>
+                        <input type="text" class="form-control" id="txtEditDistributorPool" name="txtEditDistributorPool">
+                      </div>
+                    </div>
+                    <div class="col-md-1">
+                      <div class="form-group" style="margin-top: 23px;">
+                        <button type="submit" class="btn btn-success btn-flat" onclick="return submitDistributorPool();">Submit</button>
+                      </div>
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col-12">
@@ -394,6 +405,7 @@
     $("#txtViewPrice").val(objDefaultValues.stPrice);
     $("#txtViewRetailPrice").val(objDefaultValues.stRetailPrice);
     $("#txtViewMemberPrice").val(objDefaultValues.stMemberPrice);
+    $("#txtEditDistributorPool").val(objDefaultValues.stDistributorPool);
 
     if(objDefaultValues.stProduct) {
       $('#txtProduct').val(objDefaultValues.stProduct).trigger('change');
@@ -589,6 +601,11 @@
 
   function viewProduct() {
     document.getElementById('custpage_post').value='submitViewProduct';
+    return true;
+  }
+  function submitDistributorPool() {
+    var txtDistributorPool = document.getElementById("txtEditDistributorPool").value;
+    document.getElementById('custpage_post').value='submitDistributorPool';
     return true;
   }
 
