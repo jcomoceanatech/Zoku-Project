@@ -63,16 +63,22 @@ define(['N/currentRecord', 'N/record', 'N/ui/dialog', 'N/search', 'N/email', 'N/
         function changeAcknowledgeStatus() {
             try {
                 var errorMessage = "";
+                var fetchItemRate = 0;
                 var objProductAllocation = getProductAllocationDetails(getProductAllocationId);
-                var fetchItemRate = getItemPrice(objProductAllocation);
+                if (!objProductAllocation.pricelevel) {
+                    errorMessage += "No Price Level Setup under the Customer Record.\n";
+                }
+
+                if(objProductAllocation.pricelevel) {
+                    fetchItemRate = getItemPrice(objProductAllocation);
+                }
+
                 if (!objProductAllocation.department && !objProductAllocation.class) {
                     errorMessage += "No data available for item department or class fields.\n";
                 }
                 // if(!objProductAllocation.pricinggroup) { errorMessage += "No Pricing Group Setup under the Item Record.\n"; }
-                if (!objProductAllocation.pricelevel) {
-                    errorMessage += "No Price Level Setup under the Customer Record.\n";
-                }
-                if (!fetchItemRate) {
+
+                if (fetchItemRate == 0 || fetchItemRate == "") {
                     errorMessage += "No Price Setup for " + objProductAllocation.priceleveltext + ".\n";
                 }
                 if (!objProductAllocation.advanceitem) {
@@ -95,7 +101,7 @@ define(['N/currentRecord', 'N/record', 'N/ui/dialog', 'N/search', 'N/email', 'N/
                             id: getProductAllocationId
                         });
                         var inLeftovers=parseInt(recProductAllocation.getValue("custrecord_zk_pa_leftovers"));
-                        var inAllocatedQuantity=parseInt(recProductAllocation.getValue("custrecord_zk_pa_allocated_quantity"));
+                        var inAllocatedQuantity=parseInt(recProductAllocation.getValue("custrecord_zk_pa_allocated_quantity") || 0);
                         recProductAllocation.setValue("custrecord_zk_pa_leftovers", 0);
                         recProductAllocation.setValue("custrecord_zk_pa_allocated_quantity", inLeftovers+inAllocatedQuantity);
                         recProductAllocation.setValue("custrecord_zk_pa_to_process_so", true);
@@ -215,9 +221,10 @@ define(['N/currentRecord', 'N/record', 'N/ui/dialog', 'N/search', 'N/email', 'N/
                         values: {custrecord_zk_pa_status: '3'}
                     });
 
-                    if (objProductAllocation.custrecord_zk_pa_salesorder) {
+                    /*if (objProductAllocation.custrecord_zk_pa_salesorder) {
                         record.delete({type: 'salesorder', id: objProductAllocation.custrecord_zk_pa_salesorder});
-                    }
+                    }*/
+                    closeSalesOrder(getProductAllocationId);
 
                     // changeToUnallocatedStatus();
                     window.location.reload(true);
@@ -555,6 +562,44 @@ define(['N/currentRecord', 'N/record', 'N/ui/dialog', 'N/search', 'N/email', 'N/
             }
             console.log('.3')
             return objData;
+        }
+        function closeSalesOrder(getProductAllocationId){
+            if(checkSalesOrders(getProductAllocationId)) {
+                var urlSL = url.resolveScript({
+                    scriptId: 'customscript_zk_sl_xm_close_so_pa',
+                    deploymentId: 'customdeploy_zk_sl_xm_close_so_pa',
+                    returnExternalUrl: true
+                });
+
+                urlSL += '&processtype=' + 'clientscript';
+                urlSL += '&id=' + getProductAllocationId;
+                getSuiteletStatus(urlSL);
+            }
+        }
+        function getSuiteletStatus(url) {
+            try {
+                var request = new XMLHttpRequest();
+                request.open('GET', url);
+                request.send();
+            } catch (err) {
+                log.error('getSuiteletStatus', err);
+            }
+        }
+        function checkSalesOrders(getProductAllocationId){
+            var srSalesOrder = search.create({
+                type: "salesorder",
+                filters:
+                    [
+                        ["type","anyof","SalesOrd"],
+                        "AND",
+                        ["custbody_zk_so_product_allocation","anyof",getProductAllocationId],
+                        "AND",
+                        ["mainline","is","T"]
+                    ]
+            });
+            var inSOCount = srSalesOrder.runPaged().count;
+            log.debug(getProductAllocationId+":result count",inSOCount);
+            return inSOCount>0;
         }
 
 

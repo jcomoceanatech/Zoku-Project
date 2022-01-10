@@ -50,7 +50,9 @@ define(['N/record', 'N/render', 'N/file', 'N/search', 'N/ui/serverWidget', 'N/ta
             var html = file.load({id: '../Library/mainpage.html'}).getContents();
             var template = handlebar.compile(html);
             var objItems = libHelper.getItems();
+            if(objItems[txtProduct]){objItems[txtProduct].name=objItems[txtProduct].name.trim();}
             var objInventoryDetails = libHelper.getItemInventoryDetails(txtProduct, txtBrand, txtCategory);
+            //objInventoryDetails.name=objInventoryDetails.name.trim();
             var objProductAllocations = libHelper.getProductAllocations(txtProduct, txtBrand, txtCategory);
             var intEstimatedQuantity = (txtProduct) ? objItems[txtProduct].estimatedquantity : 0;
             var flDepositAmount = (txtProduct) ? objItems[txtProduct].depositamount : 0;
@@ -62,9 +64,9 @@ define(['N/record', 'N/render', 'N/file', 'N/search', 'N/ui/serverWidget', 'N/ta
                 stProduct: txtProduct,
                 stBrand: txtBrand,
                 stCategory: txtCategory,
-                stES: 0,
+                stES: (txtProduct) ? objItems[txtProduct].es:'',
                 stRemainder: flRemainder,
-                stSample: 0,
+                stSample: (txtProduct) ? objItems[txtProduct].sample:'',
                 intEstimatedQuantity: intEstimatedQuantity,
                 flDepositAmount: flDepositAmount,
                 intAvailableManufactureQuantity: intAvailableManufactureQuantity,

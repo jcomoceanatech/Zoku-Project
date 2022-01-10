@@ -68,10 +68,17 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
                 newRecord.setSublistValue({ sublistId: 'item', fieldId: 'amount', line: 2, value: flNewAmount * -1 });
                 newRecord.setSublistValue({ sublistId: 'item', fieldId: 'custcol_original_rate', line: 2, value: flAdvanceDepositRate * -1 });
 
+                var lookupFieldProductAllocation = search.lookupFields({
+                    type: 'customrecord_zk_product_allocation',
+                    id: intProductAllocationId,
+                    columns: ['custrecord_zk_pa_allocated_quantity']
+                });
+                var flExcessQuantity = parseFloat(flNewQuantity) - parseFloat(flOldQuantity);
+
                 record.submitFields({
                     type: 'customrecord_zk_product_allocation',
                     id: intProductAllocationId,
-                    values: { 'custrecord_zk_pa_allocated_quantity': flNewQuantity }
+                    values: { 'custrecord_zk_pa_allocated_quantity': parseFloat(lookupFieldProductAllocation.custrecord_zk_pa_allocated_quantity) + parseFloat(flExcessQuantity) }
                 });
                 updateEstimatedManufacturedQuantity(context);
             }
@@ -169,4 +176,4 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library','N/search','N/record'], 
 
     return { beforeSubmit: beforeSubmit, afterSubmit: afterSubmit }
 
-    });
+});

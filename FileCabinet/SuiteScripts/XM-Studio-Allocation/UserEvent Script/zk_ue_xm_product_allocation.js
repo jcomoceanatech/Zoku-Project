@@ -28,6 +28,7 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
             var intItemId = currentRecord.getValue({
                 fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.ITEM
             });
+            var intProductAllocId = currentRecord.id;
 
             if (fetchContext.type === fetchContext.UserEventType.VIEW) {
                 var request = fetchContext.request;
@@ -69,7 +70,7 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
                         functionName: 'cancelProductAllocation'
                     });
 
-                    if (checkSalesOrders(intItemId)) {
+                    if (checkSalesOrders(intProductAllocId)) {
                         currentForm.removeButton('edit');
                     }
                     if (getProductAllocationStatus == libHelper.allocationStatus.ACKNOWLEDGE) {
@@ -746,20 +747,20 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
                 values: {custitem_zk_available_manufacture_qty: flRemaningQuantity}
             });
         }
-        function checkSalesOrders(intItemId){
+        function checkSalesOrders(intProductAlloc){
             var srSalesOrder = search.create({
                 type: "salesorder",
                 filters:
                     [
-                        ["item","anyof",intItemId],
-                        "AND",
                         ["type","anyof","SalesOrd"],
                         "AND",
-                        ["mainline","is","F"]
+                        ["custbody_zk_so_product_allocation","anyof",intProductAlloc],
+                        "AND",
+                        ["mainline","is","T"]
                     ]
             });
             var inSOCount = srSalesOrder.runPaged().count;
-            log.debug(intItemId+":result count",inSOCount);
+            log.debug(intProductAlloc+":result count",inSOCount);
             return inSOCount>0;
         }
 
