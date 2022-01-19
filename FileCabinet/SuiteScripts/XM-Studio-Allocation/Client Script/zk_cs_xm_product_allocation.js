@@ -101,9 +101,10 @@ define(['N/currentRecord', 'N/record', 'N/ui/dialog', 'N/search', 'N/email', 'N/
                             id: getProductAllocationId
                         });
                         var inLeftovers=parseInt(recProductAllocation.getValue("custrecord_zk_pa_leftovers"));
-                        var inAllocatedQuantity=parseInt(recProductAllocation.getValue("custrecord_zk_pa_allocated_quantity") || 0);
+                        var inOrderedQuantity=parseInt(recProductAllocation.getValue("custrecord_zk_pa_ordered_quantity") || 0);
                         recProductAllocation.setValue("custrecord_zk_pa_leftovers", 0);
-                        recProductAllocation.setValue("custrecord_zk_pa_allocated_quantity", inLeftovers+inAllocatedQuantity);
+                        recProductAllocation.setValue("custrecord_zk_pa_ordered_quantity", inLeftovers+inOrderedQuantity);
+                        recProductAllocation.setValue("custrecord_zk_pa_allocated_quantity", inLeftovers+inOrderedQuantity);
                         recProductAllocation.setValue("custrecord_zk_pa_to_process_so", true);
                         recProductAllocation.save();
 

@@ -9,18 +9,15 @@
     <!-- Google Font: Source Sans Pro -->
     <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">-->
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <!--  <link rel="stylesheet" href="https://6961610-sb1.app.netsuite.com/core/media/media.nl?id=2675&c=6961610_SB1&h=oXit3Mr6Msc5c2WusqjCSkiwCQpLvSNgV1LSyCyvIw05LfgG&_xt=.css">-->
-    <link rel="stylesheet"
-          href="https://6961610.app.netsuite.com/core/media/media.nl?id=2792&c=6961610&h=r95QB_vxXw_EAkeICnNz58L4nd9FRff0MYQIAYf5ZWYJWMr-&_xt=.css">
+    <link rel="stylesheet" href="https://6961610.app.netsuite.com/core/media/media.nl?id=2792&c=6961610&h=r95QB_vxXw_EAkeICnNz58L4nd9FRff0MYQIAYf5ZWYJWMr-&_xt=.css">
 
     <!-- select2 css -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
 <div class="container defaultFont">
@@ -73,55 +70,46 @@
                                                 <select class="form-control" id="txtProduct" name="txtProduct">
                                                     <option value=""></option>
                                                     {{#each objItems}}
-                                                    <option value="{{recordid}}">{{name}}+" "+{{name}}</option>
+                                                    <option value="{{recordid}}">{{name}}: {{displayname}}</option>
                                                     {{/each}}
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group" style="margin-top: 23px;">
-                                                <button type="submit" class="btn btn-success btn-flat"
-                                                        onclick="return viewProduct();">View Product
-                                                </button>
+                                                <button type="submit" class="btn btn-success btn-flat" onclick="return viewProduct();">View Product</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label for="txtEstimatedQuantity">Estimated Manufactured
-                                                    Quantity</label>
-                                                <input type="text" class="form-control" id="txtEstimatedQuantity"
-                                                       name="txtEstimatedQuantity" disabled>
+                                                <label for="txtEstimatedQuantity">Qty</label>
+                                                <input type="text" class="form-control" id="txtEstimatedQuantity" name="txtEstimatedQuantity" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label for="txtAvailableQuantity">Available Manufactured
-                                                    Quantity</label>
-                                                <input type="text" class="form-control" id="txtAvailableQuantity"
-                                                       name="txtAvailableQuantity" disabled>
+                                                <label for="txtAvailableQuantity">Available Manufactured Quantity</label>
+                                                <input type="text" class="form-control" id="txtAvailableQuantity" name="txtAvailableQuantity" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="txtViewES">ES</label>
-                                                <input type="text" class="form-control" id="txtViewES" name="txtViewES"
-                                                       disabled>
+                                                <input type="text" class="form-control" id="txtViewES" name="txtViewES" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
-                                                <label for="txtViewRemainder">Remainder</label>
-                                                <input type="text" class="form-control" id="txtViewRemainder"
-                                                       name="txtViewRemainder" disabled>
+                                                <label for="txtViewRemainder">Remaining</label>
+                                                <input type="text" class="form-control" id="txtViewRemainder" name="txtViewRemainder" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="txtViewSample">Sample</label>
-                                                <input type="text" class="form-control" id="txtViewSample"
-                                                       name="txtViewSample" disabled>
+                                                <input type="text" class="form-control" id="txtViewSample" name="txtViewSample" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -129,43 +117,50 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="txtViewDeposit">Deposit</label>
-                                                <input type="text" class="form-control" id="txtViewDeposit"
-                                                       name="txtViewDeposit" disabled>
+                                                <input type="text" class="form-control" id="txtViewDeposit" name="txtViewDeposit" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="txtViewPrice">Price(w/o tax)</label>
-                                                <input type="text" class="form-control" id="txtViewPrice"
-                                                       name="txtViewPrice" disabled>
+                                                <input type="text" class="form-control" id="txtViewPrice" name="txtViewPrice" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="txtViewRetailPrice">Retail Price</label>
-                                                <input type="text" class="form-control" id="txtViewRetailPrice"
-                                                       name="txtViewRetailPrice" disabled>
+                                                <input type="text" class="form-control" id="txtViewRetailPrice" name="txtViewRetailPrice" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="txtViewMemberPrice">Member Price</label>
-                                                <input type="text" class="form-control" id="txtViewMemberPrice"
-                                                       name="txtViewMemberPrice" disabled>
+                                                <input type="text" class="form-control" id="txtViewMemberPrice" name="txtViewMemberPrice" disabled>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label for="txtEditDistributorPool">Distributor Pool</label>
-                                                <input type="text" class="form-control" id="txtEditDistributorPool"
-                                                       name="txtEditDistributorPool">
+                                                <input type="number" class="form-control" id="txtEditDistributorPool" name="txtEditDistributorPool">
                                             </div>
                                         </div>
                                         <div class="col-md-1">
                                             <div class="form-group" style="margin-top: 23px;">
-                                                <button type="submit" class="btn btn-success btn-flat"
-                                                        onclick="return submitDistributorPool();">Submit
-                                                </button>
+                                                <button type="submit" class="btn btn-success btn-flat" onclick="return submitDistributorPool();">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="txtViewProductSeries">Product Series</label>
+                                                <input type="text" class="form-control" id="txtViewProductSeries" name="txtViewProductSeries" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="txtViewRetailPrice">&nbsp;</label>
+                                                <span class="badge badge-warning" id="txtItemType" style="font-size:12px; margin-top:30px;"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -175,29 +170,15 @@
                                                 <table class="table table-bordered" id="tableInventoryPerLocation">
                                                     <thead>
                                                     <tr style="border-top:1px solid #dee2e6;">
-                                                        <th colspan="6" align="left" style="font-weight: bold;">
-                                                            Inventory Details
-                                                        </th>
+                                                        <th colspan="6" align="left" style="font-weight: bold;">Inventory Details</th>
                                                     </tr>
                                                     <tr>
-                                                        <th rowspan="2" align="center" style="font-weight: bold;">
-                                                            Location
-                                                        </th>
-                                                        <th rowspan="2" align="center" style="font-weight: bold;">On
-                                                            Hand
-                                                        </th>
-                                                        <th rowspan="2" align="center" style="font-weight: bold;">
-                                                            Available
-                                                        </th>
-                                                        <th rowspan="2" align="center" style="font-weight: bold;">
-                                                            Committed
-                                                        </th>
-                                                        <th rowspan="2" align="center" style="font-weight: bold;">Back
-                                                            Order
-                                                        </th>
-                                                        <th rowspan="2" align="center" style="font-weight: bold;">On
-                                                            Order
-                                                        </th>
+                                                        <th rowspan="2" align="center" style="font-weight: bold;">Location</th>
+                                                        <th rowspan="2" align="center" style="font-weight: bold;">On Hand</th>
+                                                        <th rowspan="2" align="center" style="font-weight: bold;">Available</th>
+                                                        <th rowspan="2" align="center" style="font-weight: bold;">Committed</th>
+                                                        <th rowspan="2" align="center" style="font-weight: bold;">Back Order</th>
+                                                        <th rowspan="2" align="center" style="font-weight: bold;">On Order</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -232,13 +213,10 @@
                         <div class="card-header">
                             <h3 class="card-title">Allocation</h3>
                             <div class="card-tools">
-                                <button type="button" id="btnAddModal" class="btn btn-primary btn-flat btn-sm"
-                                        data-toggle="modal" data-target="#modalAddAllocation">Add
-                                </button>
+                                <button type="button" id="btnAddModal" class="btn btn-primary btn-flat btn-sm" data-toggle="modal" data-target="#modalAddAllocation">Add</button>
                                 <!--                <button type="submit" class="btn btn-primary btn-flat btn-sm">Refresh</button>-->
                                 <!--                <button type="submit" class="btn btn-primary btn-flat btn-sm">Export</button>-->
-                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
-                                        class="fas fa-minus"></i></button>
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"> <i class="fas fa-minus"></i> </button>
                             </div>
                             <!-- /.card-tools -->
                         </div>
@@ -249,32 +227,25 @@
                                     <div class="col-12">
                                         <div class="card-body table-responsive p-0" style="height: 300px;">
                                             <table class="table table-head-fixed text-nowrap" id="tableAllocations">
-                                                <thead>
+                                                <thead style="position: -webkit-sticky; position: sticky; top: 0px; z-index: 100; background:white;">
                                                 <tr>
-                                                    <th rowspan="2" align="center" style="font-weight: bold;">Action
-                                                    </th>
-                                                    <th rowspan="2" align="center" style="font-weight: bold;">
-                                                        Distributor
-                                                    </th>
-                                                    <th rowspan="2" align="center" style="font-weight: bold;">Product
-                                                    </th>
-                                                    <th rowspan="2" align="center" style="font-weight: bold;">Location
-                                                    </th>
+                                                    <th rowspan="2" align="center" style="font-weight: bold;">Action</th>
+                                                    <th rowspan="2" align="center" style="font-weight: bold;">Distributor</th>
+                                                    <th rowspan="2" align="center" style="font-weight: bold;">Product</th>
+                                                    <th rowspan="2" align="center" style="font-weight: bold;">Location</th>
                                                     <th align="center" style="font-weight: bold;">Allocated</th>
                                                     <th align="center" style="font-weight: bold;">Ordered</th>
                                                     <th align="center" style="font-weight: bold;">Leftovers</th>
                                                     <th align="center" style="font-weight: bold;">Waitlists</th>
-                                                    <th rowspan="2" align="center" style="font-weight: bold;">Status
-                                                    </th>
-                                                    <th rowspan="2" align="center" style="font-weight: bold;">Modified
-                                                    </th>
+                                                    <th rowspan="2" align="center" style="font-weight: bold;">Status</th>
+                                                    <th rowspan="2" align="center" style="font-weight: bold;">Modified</th>
                                                     <th rowspan="2" align="center" style="font-weight: bold;">Notes</th>
                                                 </tr>
                                                 <tr>
-                                                    <th align="center" style="font-weight: bold;">0</th>
-                                                    <th align="center" style="font-weight: bold;">0</th>
-                                                    <th align="center" style="font-weight: bold;">0</th>
-                                                    <th align="center" style="font-weight: bold;">0</th>
+                                                    <th align="center" style="font-weight: bold; border-color: #dee2e6;">0</th>
+                                                    <th align="center" style="font-weight: bold; border-color: #dee2e6;">0</th>
+                                                    <th align="center" style="font-weight: bold; border-color: #dee2e6;">0</th>
+                                                    <th align="center" style="font-weight: bold; border-color: #dee2e6;">0</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -334,9 +305,8 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="txtCreateAllocationDistributor">Location</label><br/>
-                                            <select class="js-states form-control" id="txtCreateAllocationLocation"
-                                                    name="txtCreateAllocationLocation">
-                                                <option value=""></option>
+                                            <select class="js-states form-control" id="txtCreateAllocationLocation" name="txtCreateAllocationLocation">
+                                                <option value=""> </option>
                                                 {{#each objLocation}}
                                                 <option value="{{recordid}}">{{name}}</option>
                                                 {{/each}}
@@ -346,16 +316,14 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="txtCreateAllocationQuantity">Quantity</label>
-                                            <input type="text" class="form-control" id="txtCreateAllocationQuantity"
-                                                   name="txtCreateAllocationQuantity">
+                                            <input type="text" class="form-control" id="txtCreateAllocationQuantity" name="txtCreateAllocationQuantity">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="txtCreateAllocationDistributor">Distributor</label><br/>
-                                            <select class="js-states form-control" id="txtCreateAllocationDistributor"
-                                                    name="txtCreateAllocationDistributor">
-                                                <option value=""></option>
+                                            <select class="js-states form-control" id="txtCreateAllocationDistributor" name="txtCreateAllocationDistributor">
+                                                <option value=""> </option>
                                                 {{#each objCustomers}}
                                                 <option value="{{recordid}}">{{name}}</option>
                                                 {{/each}}
@@ -366,20 +334,16 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="txtCreateAllocationDistributor">Available Quantity</label>
-                                            <input type="text" class="form-control"
-                                                   id="txtCreateAllocationAvailableQuantity"
-                                                   name="txtCreateAllocationAvailableQuantity" disabled>
+                                            <label for="txtCreateAllocationDistributor">Remaining</label>
+                                            <input type="text" class="form-control" id="txtCreateAllocationAvailableQuantity" name="txtCreateAllocationAvailableQuantity" disabled>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="txtProduct">Product</label>
-                                            <input type="hidden" id="txtCreateAllocationProduct"
-                                                   name="txtCreateAllocationProduct">
-                                            <select class="form-control" id="txtCreateAllocationProductDisabled"
-                                                    name="txtCreateAllocationProductDisabled" disabled>
-                                                <option value=""></option>
+                                            <input type="hidden" id="txtCreateAllocationProduct" name="txtCreateAllocationProduct">
+                                            <select class="form-control" id="txtCreateAllocationProductDisabled" name="txtCreateAllocationProductDisabled" disabled>
+                                                <option value=""> </option>
                                                 {{#each objItems}}
                                                 <option value="{{recordid}}">{{name}}</option>
                                                 {{/each}}
@@ -389,8 +353,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="txtCreateAllocationPreorderDate">Pre-Order Date</label>
-                                            <input type="date" class="form-control" id="txtCreateAllocationPreorderDate"
-                                                   name="txtCreateAllocationPreorderDate">
+                                            <input type="date" class="form-control" id="txtCreateAllocationPreorderDate" name="txtCreateAllocationPreorderDate">
                                         </div>
                                     </div>
                                 </div>
@@ -398,17 +361,13 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="txtCreateAllocationNotes">Notes</label>
-                                            <textarea class="form-control" id="txtCreateAllocationNotes"
-                                                      name="txtCreateAllocationNotes" rows="4" cols="30"></textarea>
+                                            <textarea class="form-control" id="txtCreateAllocationNotes" name="txtCreateAllocationNotes" rows="4" cols="30"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="txtCreateAllocationFirstOrderDeadline">First Order
-                                                Deadline</label>
-                                            <input type="date" class="form-control"
-                                                   id="txtCreateAllocationFirstOrderDeadline"
-                                                   name="txtCreateAllocationFirstOrderDeadline">
+                                            <label for="txtCreateAllocationFirstOrderDeadline">First Order Deadline</label>
+                                            <input type="date" class="form-control" id="txtCreateAllocationFirstOrderDeadline" name="txtCreateAllocationFirstOrderDeadline">
                                         </div>
                                     </div>
                                 </div>
@@ -416,9 +375,7 @@
                         </div>
                         <div class="modal-footer justify-content-between">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary" onclick="return submitAllocationOrder();">
-                                Submit
-                            </button>
+                            <button type="submit" class="btn btn-primary" onclick="return submitAllocationOrder();">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -430,69 +387,43 @@
 
 </form>
 <footer class="main-footer" style="margin-left:0px !important;">
-    <div class="float-right d-none d-sm-block"><b>Version</b> 1.0</div>
+    <div class="float-right d-none d-sm-block"> <b>Version</b> 1.0 </div>
     <strong>Copyright &copy; 2021 <a href="#">XM Studios PTE. LTD.</a>.</strong> All rights reserved.
 </footer>
 </div>
 
 <script type="text/javascript">
-    var objitems = {
-    {
-        {
-            stItems
-        }
-    }
-    }
-    ;
-    var objDefaultValues = {
-    {
-        {
-            stDefaultValues
-        }
-    }
-    }
-    ;
-    var objInventoryDetails = {
-    {
-        {
-            stItemIventoryDetails
-        }
-    }
-    }
-    ;
-    var objProductAllocations = {
-    {
-        {
-            stProductAllocations
-        }
-    }
-    }
-    ;
+    var objitems = {{{stItems}}};
+    var objDefaultValues = {{{stDefaultValues}}};
+    var objInventoryDetails = {{{stItemIventoryDetails}}};
+    var objProductAllocations = {{{stProductAllocations}}};
 
     /** JQUERY **/
     // $(document).ready(function() {
-    jQuery(document).ready(function () {
+    jQuery(document).ready(function() {
         $('#txtCategory').select2();
         $('#txtBrand').select2();
         $('#txtProduct').select2();
         $('#txtCreateAllocationDistributor').select2();
         $('#txtCreateAllocationLocation').select2();
         $('#txtCreateAllocationProductDisabled').select2();
-        $(".select2-container").attr("style", "width:100% !important;");
-        $(".select2-selection").attr("style", "min-height:40px !important;");
+        $(".select2-container").attr("style","width:100% !important;");
+        $(".select2-selection").attr("style","min-height:40px !important;");
         $('#txtCreateAllocationPreorderDate').val(new Date().toISOString().substr(0, 10));
         $("#txtViewES").val(objDefaultValues.stES ? objDefaultValues.stES : 0);
         $("#txtEstimatedQuantity").val(objDefaultValues.intEstimatedQuantity);
         $("#txtAvailableQuantity").val(objDefaultValues.intAvailableManufactureQuantity);
         $("#txtViewRemainder").val(objDefaultValues.stRemainder);
-        $("#txtViewSample").val(objDefaultValues.stSample ? objDefaultValues.stSample : 0);
+        $("#txtViewSample").val(objDefaultValues.stSample? objDefaultValues.stSample : 0);
         $("#txtViewDeposit").val(objDefaultValues.flDepositAmount);
         $("#txtViewPrice").val(objDefaultValues.stPrice);
         $("#txtViewRetailPrice").val(objDefaultValues.stRetailPrice);
         $("#txtViewMemberPrice").val(objDefaultValues.stMemberPrice);
+        $("#txtItemType").text(objDefaultValues.stItemType);
+        $("#txtViewProductSeries").val(objDefaultValues.stProductSeries);
         $("#txtEditDistributorPool").val(objDefaultValues.stDistributorPool ? objDefaultValues.stDistributorPool : 0);
 
-        if (objDefaultValues.stProduct) {
+        if(objDefaultValues.stProduct) {
             $('#txtProduct').val(objDefaultValues.stProduct).trigger('change');
             $('#txtCreateAllocationProductDisabled').val(objDefaultValues.stProduct).trigger('change');
             $('#txtCreateAllocationProduct').val(objDefaultValues.stProduct).trigger('change');
@@ -501,45 +432,39 @@
             // $("#txtCreateAllocationProduct").val(objDefaultValues.stProduct);
         }
 
-        if (objDefaultValues.stCategory) {
-            $("#txtCategory").val(objDefaultValues.stCategory).trigger('change');
-        }
-        if (objDefaultValues.stBrand) {
-            $("#txtBrand").val(objDefaultValues.stBrand).trigger('change');
-        }
+        if(objDefaultValues.stCategory) { $("#txtCategory").val(objDefaultValues.stCategory).trigger('change'); }
+        if(objDefaultValues.stBrand) { $("#txtBrand").val(objDefaultValues.stBrand).trigger('change'); }
 
         // jQuery('#btnAddModal').click(function() {
         //   jQuery("#txtCreateAllocationAvailableQuantity").val(objitems[jQuery('#txtCreateAllocationProductDisabled').val()].totalquantityonhand || 0);
         // });
 
-        $("#txtCreateAllocationLocation").change(function () {
+        $("#txtCreateAllocationLocation").change(function(){
             var flLocationAvailable = parseFloat(objitems[objDefaultValues.stProduct].availablemanufacturequantity);
             var flTotalAllocated = 0;
-            for (var intIndex in objProductAllocations) {
-                if (objProductAllocations[intIndex].custrecord_zk_pa_status == "Pending") {
-                    flTotalAllocated += parseFloat(objProductAllocations[intIndex].custrecord_zk_pa_allocated_quantity);
+            for(var intIndex in objProductAllocations) {
+                if(objProductAllocations[intIndex].custrecord_zk_pa_status == "Pending") {
+                    flTotalAllocated += parseFloat(objProductAllocations[intIndex].custrecord_zk_pa_leftovers);
                 }
             }
-            $("#txtCreateAllocationAvailableQuantity").val(parseFloat(flLocationAvailable - flTotalAllocated));
+            $("#txtCreateAllocationAvailableQuantity").val(parseFloat(flLocationAvailable-flTotalAllocated));
         });
 
-        $('#txtCreateAllocationQuantity').change(function () {
-            var flAvailableQuantity = parseFloat(jQuery("#txtCreateAllocationAvailableQuantity").val()) || 0;
+        $('#txtCreateAllocationQuantity').change(function() {
+            var flAvailableQuantity = parseFloat( jQuery("#txtCreateAllocationAvailableQuantity").val()) || 0;
 
-            if (parseFloat(this.value) > flAvailableQuantity) {
+            if(parseFloat(this.value) > flAvailableQuantity) {
                 alert("Not Enough Available Quantity");
                 $('#txtCreateAllocationQuantity').val(0).focus();
             }
         });
 
         $('#tableAllocations').DataTable({
-            "footerCallback": function (row, data, start, end, display) {
+            "footerCallback": function ( row, data, start, end, display ) {
                 var api = this.api(), data;
 
                 // Remove the formatting to get integer data for summation
-                var intVal = function (i) {
-                    return typeof i === 'string' ? i.replace(/[\$,]/g, '') * 1 : typeof i === 'number' ? i : 0;
-                };
+                var intVal = function ( i ) { return typeof i === 'string' ? i.replace(/[\$,]/g, '')*1 : typeof i === 'number' ? i : 0; };
                 // Total over this page
                 // var allocatedTotal = api.column(4, { page: 'current'}).data().reduce( function (a, b) { return intVal(a) + intVal(b); }, 0);
                 // var orderedTotal = api.column(5, { page: 'current'}).data().reduce( function (a, b) { return intVal(a) + intVal(b); }, 0);
@@ -552,8 +477,8 @@
                 var orderedTotal = 0;
                 var leftoversTotal = 0;
                 var waitlistsTotal = 0;
-                for (var intIndex in arrData) {
-                    if (arrData[intIndex][8] == '<small class=\"badge badge-success\">Acknowledged</small>' || arrData[intIndex][8] == '<small class=\"badge badge-warning\">Pending</small>') {
+                for(var intIndex in arrData) {
+                    if(arrData[intIndex][8] == '<small class=\"badge badge-success\">Acknowledged</small>' || arrData[intIndex][8] == '<small class=\"badge badge-warning\">Pending</small>') {
                         allocatedTotal += parseFloat(arrData[intIndex][4]);
                         orderedTotal += parseFloat(arrData[intIndex][5]);
                         leftoversTotal += parseFloat(arrData[intIndex][6]);
@@ -570,50 +495,39 @@
         });
 
 
-        $('#txtCategory').change(function () {
-            appendItemOptions();
-        });
-        $('#txtBrand').change(function () {
-            appendItemOptions();
-        });
+        $('#txtCategory').change(function() { appendItemOptions(); });
+        $('#txtBrand').change(function() { appendItemOptions(); });
 
         function appendItemOptions() {
             var selectDOM = $("#txtProduct");
             selectDOM.empty();
             var brand = $('#txtBrand').val();
             var category = $('#txtCategory').val();
-            if (brand || category) {
-                for (var intIndex in objitems) {
+            if(brand || category) {
+                for(var intIndex in objitems) {
                     var isAppend = false;
-                    if (objitems[intIndex].brand == brand && category == "") {
-                        isAppend = true;
-                    }
-                    if (objitems[intIndex].category == category && brand == "") {
-                        isAppend = true;
-                    }
-                    if (objitems[intIndex].category == category && objitems[intIndex].brand == brand) {
-                        isAppend = true;
-                    }
+                    if(objitems[intIndex].brand == brand && category=="") { isAppend = true; }
+                    if(objitems[intIndex].category == category && brand=="") { isAppend = true; }
+                    if(objitems[intIndex].category == category && objitems[intIndex].brand == brand) { isAppend = true; }
 
-                    if (isAppend) {
-                        selectDOM.append('<option value="' + objitems[intIndex].recordid + '">' + objitems[intIndex].name + '</option>');
+                    if(isAppend){
+                        selectDOM.append('<option value="'+objitems[intIndex].recordid+'">'+objitems[intIndex].name+": "+objitems[intIndex].displayname+'</option>');
                     }
 
                 }
             } else {
-                for (var intIndex in objitems) {
-                    selectDOM.append('<option value="' + objitems[intIndex].recordid + '">' + objitems[intIndex].name + '</option>');
+                for(var intIndex in objitems) {
+                    selectDOM.append('<option value="'+objitems[intIndex].recordid+'">'+objitems[intIndex].name+": "+objitems[intIndex].displayname+'</option>');
                 }
             }
         }
 
-        if (objDefaultValues.stProduct) {
+        if(objDefaultValues.stProduct) {
             $("#btnAddModal").prop('disabled', false);
         } else {
             $("#btnAddModal").prop('disabled', true);
         }
     });
-
     // });
 
 
@@ -622,7 +536,7 @@
         var tbodyRef = document.getElementById('tableAllocations').getElementsByTagName('tbody')[0];
         var intDataCounter = 0;
 
-        for (var intIndex in objData) {
+        for(var intIndex in objData) {
             var newRow = tbodyRef.insertRow();
             newRow.insertCell().appendChild(document.createTextNode(objData[intIndex].recordid));
             newRow.insertCell().appendChild(document.createTextNode(objData[intIndex].custrecord_zk_distributor));
@@ -632,12 +546,12 @@
             newRow.insertCell().appendChild(document.createTextNode(objData[intIndex].custrecord_zk_pa_waitlist));
 
             var elemSmall = document.createElement('small');
-            if (objData[intIndex].custrecord_zk_pa_status == 'Pending') {
+            if(objData[intIndex].custrecord_zk_pa_status == 'Pending') {
                 elemSmall.setAttribute('class', 'badge badge-warning');
             } else {
                 elemSmall.setAttribute('class', 'badge badge-success');
             }
-            elemSmall.textContent = objData[intIndex].custrecord_zk_pa_status;
+            elemSmall.textContent  = objData[intIndex].custrecord_zk_pa_status;
             newRow.insertCell().appendChild(elemSmall);
 
             newRow.insertCell().appendChild(document.createTextNode(objData[intIndex].lastmodified));
@@ -646,7 +560,7 @@
             intDataCounter++;
         }
 
-        if (intDataCounter == 0) {
+        if(intDataCounter == 0) {
             var newRow = tbodyRef.insertRow();
             var newCell = newRow.insertCell();
             newCell.setAttribute('colspan', '10');
@@ -659,7 +573,7 @@
         var tbodyRef = document.getElementById('tableInventoryLocation').getElementsByTagName('tbody')[0];
         var intDataCounter = 0;
 
-        for (var intIndex in objData) {
+        for(var intIndex in objData) {
             var newRow = tbodyRef.insertRow();
             newRow.insertCell().appendChild(document.createTextNode(objData[intIndex].recordid));
             newRow.insertCell().appendChild(document.createTextNode(objData[intIndex].custrecord_zk_pa_allocated_quantity));
@@ -682,7 +596,7 @@
             intDataCounter++;
         }
 
-        if (intDataCounter == 0) {
+        if(intDataCounter == 0) {
             var newRow = tbodyRef.insertRow();
             var newCell = newRow.insertCell();
             newCell.setAttribute('colspan', '18');
@@ -693,7 +607,7 @@
 
     function setSelect(elementId, objOptions) {
         var select = document.getElementById(elementId);
-        for (var intIndex in objOptions) {
+        for(var intIndex in objOptions) {
             var ddoption = document.createElement('option');
             ddoption.value = objOptions[intIndex].recordid;
             ddoption.text = objOptions[intIndex].name;
@@ -702,38 +616,29 @@
     }
 
     function viewProduct() {
-        document.getElementById('custpage_post').value = 'submitViewProduct';
+        document.getElementById('custpage_post').value='submitViewProduct';
         return true;
     }
-
     function submitDistributorPool() {
         var txtDistributorPool = document.getElementById("txtEditDistributorPool").value;
-        document.getElementById('custpage_post').value = 'submitDistributorPool';
+        document.getElementById('custpage_post').value='submitDistributorPool';
         return true;
     }
 
     function submitAllocationOrder() {
-        document.getElementById('custpage_post').value = 'submitAllocationOrder';
+        document.getElementById('custpage_post').value='submitAllocationOrder';
         var txtProduct = document.getElementById("txtCreateAllocationProduct").value;
         var txtDistributor = document.getElementById("txtCreateAllocationDistributor").value;
         var txtQuantity = document.getElementById("txtCreateAllocationQuantity").value;
         var txtLocation = document.getElementById("txtCreateAllocationLocation").value;
-        var errorMessage = "";
+        var errorMessage="";
 
-        if (!txtProduct) {
-            errorMessage += 'Kindly Choose a Product. \n';
-        }
-        if (!txtDistributor) {
-            errorMessage += 'Kindly Choose a Distributor. \n';
-        }
-        if (!txtQuantity || txtQuantity <= 0) {
-            errorMessage += 'Kindly Input a Quantity. \n';
-        }
-        if (!txtLocation) {
-            errorMessage += 'Kindly Choose a Location. \n';
-        }
+        if(!txtProduct) { errorMessage+='Kindly Choose a Product. \n'; }
+        if(!txtDistributor) { errorMessage+='Kindly Choose a Distributor. \n'; }
+        if(!txtQuantity || txtQuantity<=0) { errorMessage+='Kindly Input a Quantity. \n'; }
+        if(!txtLocation) { errorMessage+='Kindly Choose a Location. \n'; }
 
-        if (errorMessage) {
+        if(errorMessage) {
             alert(errorMessage);
             return false;
         }

@@ -2,6 +2,15 @@
  * @NApiVersion 2.1
  * @NScriptType MapReduceScript
  */
+/*
+ID        		    : customscript_zk_mr_xm_close_so
+Name                : ZK MR XM Close Sales Order
+Purpose             : Close Sales Order
+Created On          : Dec 29,2021
+Author              : Ceana Technology
+Script Type         : Map Reduce Script
+Saved Searches      : NONE
+*/
 define(['N/record', 'N/search', 'N/runtime'],
 
     (record, search, runtime) => {
@@ -45,6 +54,7 @@ define(['N/record', 'N/search', 'N/runtime'],
                 var intLineCount = recSO.getLineCount({
                     sublistId: 'item'
                 });
+
                 log.debug('intLineCount',intLineCount)
                 for (var lineIndex=0; lineIndex<intLineCount;lineIndex++) {
 

@@ -50,30 +50,28 @@ define(['N/record', 'N/render', 'N/file', 'N/search', 'N/ui/serverWidget', 'N/ta
             var html = file.load({id: '../Library/mainpage.html'}).getContents();
             var template = handlebar.compile(html);
             var objItems = libHelper.getItems();
-            if(objItems[txtProduct]){objItems[txtProduct].name=objItems[txtProduct].name.trim();}
             var objInventoryDetails = libHelper.getItemInventoryDetails(txtProduct, txtBrand, txtCategory);
-            //objInventoryDetails.name=objInventoryDetails.name.trim();
             var objProductAllocations = libHelper.getProductAllocations(txtProduct, txtBrand, txtCategory);
             var intEstimatedQuantity = (txtProduct) ? objItems[txtProduct].estimatedquantity : 0;
             var flDepositAmount = (txtProduct) ? objItems[txtProduct].depositamount : 0;
             var intAvailableManufactureQuantity = (txtProduct) ? objItems[txtProduct].availablemanufacturequantity : 0;
             var flRemainder = calculateRemainder(intAvailableManufactureQuantity, objProductAllocations);
-            var flPrice = (txtProduct) ? objItems[txtProduct].baseprice : 0;
-            log.debug('item:',objItems[txtProduct]);
             var objDefaultValues = {
                 stProduct: txtProduct,
                 stBrand: txtBrand,
                 stCategory: txtCategory,
-                stES: (txtProduct) ? objItems[txtProduct].es:'',
+                stES: (txtProduct) ? objItems[txtProduct].es:0,
                 stRemainder: flRemainder,
-                stSample: (txtProduct) ? objItems[txtProduct].sample:'',
+                stSample: (txtProduct) ? objItems[txtProduct].sample:0,
                 intEstimatedQuantity: intEstimatedQuantity,
                 flDepositAmount: flDepositAmount,
                 intAvailableManufactureQuantity: intAvailableManufactureQuantity,
-                stPrice: flPrice,
-                stRetailPrice: flPrice,
-                stMemberPrice: flPrice,
-                stDistributorPool: (txtProduct) ? objItems[txtProduct].distributorpool:''
+                stPrice: (txtProduct) ? objItems[txtProduct].baseprice : 0,
+                stRetailPrice: (txtProduct) ? objItems[txtProduct].baseprice : 0,
+                stMemberPrice: (txtProduct) ? objItems[txtProduct].baseprice : 0,
+                stDistributorPool: (txtProduct) ? objItems[txtProduct].distributorpool:0,
+                stItemType: (txtProduct) ? objItems[txtProduct].itemtype : "",
+                stProductSeries: (txtProduct) ? objItems[txtProduct].productseries : "",
             };
 
             var objHandleBar = {
@@ -132,6 +130,7 @@ define(['N/record', 'N/render', 'N/file', 'N/search', 'N/ui/serverWidget', 'N/ta
                 value: stDistributor
             });
             recProductAllocation.setValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.ITEM, value: stItem});
+            recProductAllocation.setValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS, value: stQty});
             recProductAllocation.setValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.ALLOCATED_QTY, value: stQty});
             recProductAllocation.setValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.LOCATION, value: stLocation});
             recProductAllocation.setValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.NOTES, value: stNotes});

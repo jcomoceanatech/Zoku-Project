@@ -32,16 +32,17 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
 
             if (fetchContext.type === fetchContext.UserEventType.VIEW) {
                 var request = fetchContext.request;
-                currentForm.removeButton('_back');
 
+                currentForm.removeButton('_back');
                 if (request.parameters.triggeredFromDashboard != null) {
                     if (currentRecord.getValue(libHelper.PRODUCT_ALLOCATION_RECORD.STATUS) == libHelper.allocationStatus.CANCELLED) {
+
                         currentForm.addButton({
                             id: 'custpage_go_to_dashboard',
                             label: 'Dashboard',
                             functionName: 'redirectDashboard'
                         });
-                    } else {
+                    } else if(!currentRecord.getValue(libHelper.PRODUCT_ALLOCATION_RECORD.ORDERED_QTY)){
                         var html = "";
                         var fieldHTML = currentForm.addField({
                             id: 'custpage_html',
@@ -50,12 +51,13 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
                         });
                         html += "<script>";
                         html += "document.getElementById('_back').removeAttribute('onclick');";
-                        html += "document.getElementById('_back').setAttribute('onclick','window.location.href = " + '"/app/site/hosting/scriptlet.nl?script=421&deploy=1&compid=6961610&whence="' + ";');";
+                        html += "document.getElementById('_back').setAttribute('onclick','window.location.href = " + '"/app/site/hosting/scriptlet.nl?script=421&deploy=1&compid=6961610-sb1&whence="' + ";');";
                         html += "</script>";
                         fieldHTML.defaultValue = html;
                     }
 
                 } else {
+
                     currentForm.addButton({
                         id: 'custpage_go_to_dashboard',
                         label: 'Dashboard',
@@ -78,7 +80,7 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
                         currentForm.addButton({
                             id: 'custpage_add_quantity',
                             label: 'Additional Quantity',
-                            functionName: 'showDialogBox('+intItemId+')'
+                            functionName: 'showDialogBox(' + intItemId + ')'
                         });
                     }
 
@@ -179,8 +181,29 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
          * @since 2015.2
          */
         function afterSubmit(scriptContext) {
-            /*var newRecord = scriptContext.newRecord;
-            var oldRecord = scriptContext.oldRecord;
+            try {
+                var newRecord = scriptContext.newRecord;
+                var oldRecord = scriptContext.oldRecord;
+
+                var intOrderedQty = oldRecord.getValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.ORDERED_QTY});
+                var intItemId = oldRecord.getValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.ITEM});
+                var stNewStatus = newRecord.getValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.STATUS});
+                var stOldStatus = oldRecord.getValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.STATUS});
+
+                log.debug('intOrderedQty', intOrderedQty)
+                log.debug('intItemId', intItemId)
+                log.debug('stNewStatus', stNewStatus)
+                log.debug('stOldStatus', stOldStatus)
+
+                if (stNewStatus == libHelper.allocationStatus.CANCELLED && stOldStatus != stNewStatus) {
+                    if(intOrderedQty) {
+                        updateEstimatedManufacturedQuantityFromClientScript(intItemId, intOrderedQty, stNewStatus);
+                    }
+                }
+            }catch (error) {
+                log.error("afterSubmit ERROR:",error)
+            }
+            /*
             // if(newRecord.getValue({fieldId: libHelper.PRODUCT_ALLOCATION_RECORD.INVENTORY_STATUS_CHANGE})) {
             //     record.submitFields({
             //         type: 'customrecord_zk_product_allocation',
@@ -289,9 +312,15 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
             var flDiscountedRate = fetchItemRate - flDiscountAmount;
             var flAdvanceDepositRate = (flDiscountedRate < flDepositAmount) ? flDiscountedRate : flDepositAmount;
 
+            var lookupFieldCustomer = search.lookupFields({
+                type: search.Type.CUSTOMER,
+                id: objProductAllocation.custrecord_zk_pa_distributor,
+                columns: ['subsidiary']
+            });
+            var intSubsidiary = (lookupFieldCustomer.subsidiary.length != 0) ? lookupFieldCustomer.subsidiary[0].value : 1;
             var createSalesOrder = record.create({
                 type: 'salesorder',
-                defaultValues: {entity: objProductAllocation.custrecord_zk_pa_distributor, subsidiary: 1}
+                defaultValues: {entity: objProductAllocation.custrecord_zk_pa_distributor, subsidiary: intSubsidiary}
             });
 
             createSalesOrder.setValue({fieldId: 'tobeemailed', value: false});
@@ -747,21 +776,22 @@ define(['N/ui/serverWidget', '../Library/zk_xm_library', 'N/search', 'N/record']
                 values: {custitem_zk_available_manufacture_qty: flRemaningQuantity}
             });
         }
-        function checkSalesOrders(intProductAlloc){
+
+        function checkSalesOrders(intProductAlloc) {
             var srSalesOrder = search.create({
                 type: "salesorder",
                 filters:
                     [
-                        ["type","anyof","SalesOrd"],
+                        ["type", "anyof", "SalesOrd"],
                         "AND",
-                        ["custbody_zk_so_product_allocation","anyof",intProductAlloc],
+                        ["custbody_zk_so_product_allocation", "anyof", intProductAlloc],
                         "AND",
-                        ["mainline","is","T"]
+                        ["mainline", "is", "T"]
                     ]
             });
             var inSOCount = srSalesOrder.runPaged().count;
-            log.debug(intProductAlloc+":result count",inSOCount);
-            return inSOCount>0;
+            log.debug(intProductAlloc + ":result count", inSOCount);
+            return inSOCount > 0;
         }
 
         return {

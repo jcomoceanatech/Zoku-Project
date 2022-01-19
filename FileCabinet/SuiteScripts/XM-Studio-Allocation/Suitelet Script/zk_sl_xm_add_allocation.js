@@ -27,7 +27,7 @@ define(['N/ui/serverWidget', 'N/file', 'N/record', 'N/search', "../Library/zk_xm
             var stHtml = '<table><tr><td><div>';
             stHtml += '<p>Additional Quantity: <input id="custpage_inputdialog" rows="5" cols="40" style="text-align:right" placeholder="Enter the number here..."></input></p>'
             stHtml += '</div></td><td><div>';
-            stHtml += '<p>Remainder: <input id="custpage_remainder" rows="5" cols="40" style="text-align:right" value="' + inRemainderQty + '"></input></p>';
+            stHtml += '<p>Remaining: <input id="custpage_remainder" rows="5" cols="40" style="text-align:right" value="' + inRemainderQty + '"></input></p>';
             stHtml += '</div></td></tr></table><table><tr><td>';
             stHtml += '<div class="uir-message-buttons"><button value="shadow-1" onclick="submitOK(true)">Ok</button></div></td>';
             stHtml += '<td><div class="uir-message-buttons"><button value="shadow-2" onclick="submitCancel(false)">Cancel</button></div></td></tr></table>';
@@ -74,18 +74,19 @@ define(['N/ui/serverWidget', 'N/file', 'N/record', 'N/search', "../Library/zk_xm
                 var srAllocRecord = search.lookupFields({
                     type: inRecType,
                     id: inRec,
-                    columns: ['custrecord_zk_pa_leftovers']
+                    columns: [libhelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS,libhelper.PRODUCT_ALLOCATION_RECORD.ORDERED_QTY]
                 });
                 var objValues = {};
                 if (stAdditionalQuantity > 0) {
-                    objValues['custrecord_zk_pa_status'] = '2'//libhelper.allocationStatus.PENDING;//libhelper.PRODUCT_ALLOCATION_RECORD.STATUS
+                    objValues[libhelper.PRODUCT_ALLOCATION_RECORD.STATUS] = libhelper.allocationStatus.PENDING
                 }
 
-                srAllocRecord['custrecord_zk_pa_leftovers'] = srAllocRecord['custrecord_zk_pa_leftovers'] != '' ? srAllocRecord['custrecord_zk_pa_leftovers'] : 0;
+                srAllocRecord[libhelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS] = srAllocRecord[libhelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS] != '' ? srAllocRecord['custrecord_zk_pa_leftovers'] : 0;
 
-                stAdditionalQuantity = parseInt(stAdditionalQuantity) + parseInt(srAllocRecord['custrecord_zk_pa_leftovers'])
+                stAdditionalQuantity = parseInt(stAdditionalQuantity) + parseInt(srAllocRecord[libhelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS])
 
-                objValues['custrecord_zk_pa_leftovers'] = stAdditionalQuantity;//libhelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS
+                objValues[libhelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS] = stAdditionalQuantity;//libhelper.PRODUCT_ALLOCATION_RECORD.LEFTOVERS
+                objValues[libhelper.PRODUCT_ALLOCATION_RECORD.ALLOCATED_QTY] = stAdditionalQuantity+parseInt(srAllocRecord[libhelper.PRODUCT_ALLOCATION_RECORD.ORDERED_QTY]);
 
                 var inRecord = record.submitFields({
                     type: inRecType,
